@@ -18,9 +18,9 @@ async function turnOffAirConditioner() {
 }
 ```
 
-## API Coverage
+See [API Documents](https://uetchy.github.io/nature-remo/) for further details.
 
-[API Documents](https://uetchy.github.io/nature-remo/)
+## API Coverage
 
 ### Cloud API
 
