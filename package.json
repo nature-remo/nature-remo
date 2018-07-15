@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc",
     "test": "npm run build && mocha",
-    "docs": "typedoc --mode modules --out docs src"
+    "docs": "typedoc --mode modules --out docs --excludeNotExported src && touch ./docs/.nojekyll"
   },
   "engines": {
     "node": ">=6.14.3"
