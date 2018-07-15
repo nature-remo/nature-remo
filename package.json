@@ -6,7 +6,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "npm run build && mocha"
+    "test": "npm run build && mocha",
+    "docs": "typedoc --mode modules --out docs src"
   },
   "engines": {
     "node": ">=6.14.3"
