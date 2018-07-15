@@ -14,6 +14,9 @@
   "keywords": [
     "nature-remo"
   ],
+  "files": [
+    "dist/"
+  ],
   "author": "Yasuaki Uechi <y@uechi.io> (https://uechi.io/)",
   "license": "MIT",
   "dependencies": {
