@@ -1,5 +1,23 @@
 # Nature Remo
 
+```
+npm install nature-remo
+```
+
+## Basic Usage
+
+```
+const NatureRemo = require('nature-remo')
+
+async function turnOffAirConditioner() {
+  const instance = new NatureRemo(NATURE_REMO_CLOUD_API_TOKEN)
+  const aircon = await instance.getAircon()
+  const newAirconSettings = await instance.updateAirconSettings(aircon.id, {button: 'power-off'})
+  console.log('Aircon: turned-off')
+  console.debug(newAirconSettings)
+}
+```
+
 ## API Coverage
 
 [API Documents](https://uetchy.github.io/nature-remo/)
