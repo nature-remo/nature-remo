@@ -1,0 +1,27 @@
+{
+  "name": "nature-remo",
+  "version": "0.1.0",
+  "description": "Nature Remo Cloud API wrapper.",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && mocha"
+  },
+  "engines": {
+    "node": ">=4.3.2"
+  },
+  "keywords": [
+    "Nature Remo"
+  ],
+  "author": "Yasuaki Uechi <y@uechi.io> (https://uechi.io/)",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^10.5.2",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "typescript": "^2.9.2"
+  }
+}
