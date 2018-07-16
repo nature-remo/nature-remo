@@ -68,7 +68,7 @@
 				<pre><code><span class="hljs-keyword">const</span> NatureRemo = <span class="hljs-built_in">require</span>(<span class="hljs-string">'nature-remo'</span>)
 
 <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">turnOffAirConditioner</span>(<span class="hljs-params"></span>) </span>{
-  <span class="hljs-keyword">const</span> instance = <span class="hljs-keyword">new</span> NatureRemo(NATURE_REMO_CLOUD_API_TOKEN)
+  <span class="hljs-keyword">const</span> instance = <span class="hljs-keyword">new</span> NatureRemo.Cloud(NATURE_REMO_CLOUD_API_TOKEN)
   <span class="hljs-keyword">const</span> aircon = <span class="hljs-keyword">await</span> instance.getAircon()
   <span class="hljs-keyword">const</span> newAirconSettings = <span class="hljs-keyword">await</span> instance.updateAirconSettings(aircon.id, {<span class="hljs-attr">button</span>: <span class="hljs-string">'power-off'</span>})
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Aircon: turned-off'</span>)
@@ -77,7 +77,8 @@
 </code></pre><p>See <a href="https://uetchy.github.io/nature-remo/">API Documents</a> for further details.</p>
 				<h2 id="api-coverage">API Coverage</h2>
 				<h3 id="cloud-api">Cloud API</h3>
-				<table>
+				<pre><code><span class="hljs-keyword">new</span> <span class="hljs-type">NatureRemo</span>.Cloud(NATURE_REMO_CLOUD_API_TOKEN)
+</code></pre><table>
 					<thead>
 						<tr>
 							<th>✓</th>
@@ -88,16 +89,16 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td></td>
+							<td>✓</td>
 							<td>GET</td>
 							<td>/1/users/me</td>
-							<td></td>
+							<td>getUser</td>
 						</tr>
 						<tr>
-							<td></td>
+							<td>✓</td>
 							<td>POST</td>
 							<td>/1/users/me</td>
-							<td></td>
+							<td>updateUser</td>
 						</tr>
 						<tr>
 							<td>✓</td>
@@ -106,10 +107,10 @@
 							<td>getDevices</td>
 						</tr>
 						<tr>
-							<td></td>
+							<td>✓</td>
 							<td>POST</td>
 							<td>/1/detectappliance</td>
-							<td></td>
+							<td>detectAppliance</td>
 						</tr>
 						<tr>
 							<td>✓</td>
@@ -118,28 +119,28 @@
 							<td>getAppliances</td>
 						</tr>
 						<tr>
-							<td></td>
+							<td>✓</td>
 							<td>POST</td>
 							<td>/1/appliances</td>
-							<td></td>
+							<td>createAppliance</td>
 						</tr>
 						<tr>
-							<td></td>
+							<td>✓</td>
 							<td>POST</td>
 							<td>/1/appliance_orders</td>
-							<td></td>
+							<td>updateAppliancesOrder</td>
 						</tr>
 						<tr>
-							<td></td>
+							<td>✓</td>
 							<td>POST</td>
 							<td>/1/appliances/{appliance}/delete</td>
-							<td></td>
+							<td>deleteAppliance</td>
 						</tr>
 						<tr>
-							<td></td>
+							<td>✓</td>
 							<td>POST</td>
 							<td>/1/appliances/{appliance}</td>
-							<td></td>
+							<td>updateAppliance</td>
 						</tr>
 						<tr>
 							<td>✓</td>
@@ -154,62 +155,64 @@
 							<td>getApplianceSignals</td>
 						</tr>
 						<tr>
-							<td></td>
+							<td>✓</td>
 							<td>POST</td>
 							<td>/1/appliances/{appliance}/signals</td>
-							<td></td>
+							<td>createApplianceSignal</td>
 						</tr>
 						<tr>
-							<td></td>
+							<td>✓</td>
 							<td>POST</td>
 							<td>/1/appliances/{appliance}/signal_orders</td>
-							<td></td>
+							<td>updateSignalOrders</td>
 						</tr>
 						<tr>
-							<td></td>
+							<td>✓</td>
 							<td>POST</td>
 							<td>/1/signals/{signal}</td>
-							<td></td>
+							<td>updateSignal</td>
 						</tr>
 						<tr>
-							<td></td>
+							<td>✓</td>
 							<td>POST</td>
 							<td>/1/signals/{signal}/delete</td>
-							<td></td>
+							<td>deleteSignal</td>
 						</tr>
 						<tr>
-							<td></td>
+							<td>✓</td>
 							<td>POST</td>
 							<td>/1/signals/{signal}/send</td>
-							<td></td>
+							<td>sendSignal</td>
 						</tr>
 						<tr>
-							<td></td>
+							<td>✓</td>
 							<td>POST</td>
 							<td>/1/devices/{device}</td>
-							<td></td>
+							<td>updateDevice</td>
 						</tr>
 						<tr>
-							<td></td>
+							<td>✓</td>
 							<td>POST</td>
 							<td>/1/devices/{device}/delete</td>
-							<td></td>
+							<td>deleteDevice</td>
 						</tr>
 						<tr>
-							<td></td>
+							<td>✓</td>
 							<td>POST</td>
 							<td>/1/devices/{device}/temperature_offset</td>
-							<td></td>
+							<td>updateTemperatureOffset</td>
 						</tr>
 						<tr>
-							<td></td>
+							<td>✓</td>
 							<td>POST</td>
 							<td>/1/devices/{device}/humidity_offset</td>
+							<td>updateHumidityOffset</td>
 						</tr>
 					</tbody>
 				</table>
 				<h3 id="local-api">Local API</h3>
-				<table>
+				<pre><code><span class="hljs-keyword">new</span> NatureRemo.<span class="hljs-keyword">Local</span>(NATURE_REMO_LOCAL_ADDRESS)
+</code></pre><table>
 					<thead>
 						<tr>
 							<th>✓</th>
@@ -220,15 +223,16 @@
 					</thead>
 					<tbody>
 						<tr>
-							<td></td>
+							<td>✓</td>
 							<td>GET</td>
 							<td>/messages</td>
-							<td></td>
+							<td>fetchReceivedSignal</td>
 						</tr>
 						<tr>
-							<td></td>
+							<td>✓</td>
 							<td>POST</td>
 							<td>/messages</td>
+							<td>sendSignal</td>
 						</tr>
 					</tbody>
 				</table>
