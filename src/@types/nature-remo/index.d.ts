@@ -1,4 +1,14 @@
 declare namespace NatureRemo {
+  export interface User {
+    id: string
+    nickname: string
+  }
+
+  export interface DetectedAirconModel {
+    model: Model
+    params: AirconSettings
+  }
+
   export interface Temperature {
     value: number
     created_at: Date
@@ -122,7 +132,7 @@ declare namespace NatureRemo {
     image: string
     type: string
     settings: AirconSettings
-    aircon: Aircon
+    aircon?: Aircon
     signals: Signal[]
   }
 
@@ -130,5 +140,11 @@ declare namespace NatureRemo {
     id: string
     name: string
     image: string
+  }
+
+  export interface SignalMessage {
+    data: number[]
+    freq: number
+    format: 'us'
   }
 }
