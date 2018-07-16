@@ -1,5 +1,7 @@
 # Nature Remo
 
+[![npm version](https://badge.fury.io/js/nature-remo.svg)](https://badge.fury.io/js/nature-remo)
+
 ```
 npm install nature-remo
 ```
