@@ -1,10 +1,10 @@
 const { assert } = require('chai')
-const lib = require('../dist')
+const lib = require('../dist').Cloud
 
 const token = process.env.NATURE_REMO_CLOUD_TOKEN
 const airconId = process.env.NATURE_REMO_AIRCON_ID
 
-describe('NatureRemo', function() {
+describe('NatureRemo.Cloud', function() {
   describe('#getDevices()', function() {
     it('should return response', async () => {
       const app = new lib(token)
