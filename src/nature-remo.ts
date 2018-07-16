@@ -78,7 +78,7 @@ export class Cloud {
    * @param message JSON serialized object describing infrared signals. Includes "data", “freq” and “format” keys.
    */
   async detectAppliance(
-    message: object
+    message: NatureRemo.SignalMessage
   ): Promise<NatureRemo.DetectedAirconModel> {
     const response = await this._post<NatureRemo.DetectedAirconModel>(
       '/1/users/me',
