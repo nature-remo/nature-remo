@@ -44,14 +44,18 @@ export class Cloud {
     }
   }
 
-  // Fetch the authenticated user’s information.
+  /**
+   * Fetch the authenticated user’s information.
+   */
   async getUser(): Promise<NatureRemo.User> {
     const response = await this._get<NatureRemo.User>('/1/users/me')
     return response
   }
 
-  // Update authenticated user’s information.
-  // returns updated user
+  /**
+   * Update authenticated user’s information.
+   * @returns updated user
+   */
   async updateUser(nickname: string): Promise<NatureRemo.User> {
     const response = await this._post<NatureRemo.User>('/1/users/me', {
       nickname,
@@ -59,7 +63,9 @@ export class Cloud {
     return response
   }
 
-  // Fetch the list of Remo devices the user has access to.
+  /**
+   * Fetch the list of Remo devices the user has access to.
+   */
   async getDevices(): Promise<NatureRemo.DeviceWithEvents[]> {
     const response = await this._get<NatureRemo.DeviceWithEvents[]>(
       '/1/devices'
@@ -67,10 +73,10 @@ export class Cloud {
     return response
   }
 
-  // Find the air conditioner best matching the provided infrared signal.
-  // Args:
-  //  message: JSON serialized object describing infrared signals.
-  //           Includes "data", “freq” and “format” keys.
+  /**
+   * Find the air conditioner best matching the provided infrared signal.
+   * @param message JSON serialized object describing infrared signals. Includes "data", “freq” and “format” keys.
+   */
   async detectAppliance(
     message: object
   ): Promise<NatureRemo.DetectedAirconModel> {
@@ -83,7 +89,9 @@ export class Cloud {
     return response
   }
 
-  // get sensor value of arbitorary device
+  /**
+   * get sensor value of arbitorary device
+   */
   async getSensorValue(): Promise<NatureRemo.SensorValue> {
     const device = await this.getDevices()
     return <NatureRemo.SensorValue>{
@@ -93,13 +101,17 @@ export class Cloud {
     }
   }
 
-  // Fetch the list of appliances.
+  /**
+   * Fetch the list of appliances.
+   */
   async getAppliances(): Promise<NatureRemo.Appliance[]> {
     const response = await this._get<NatureRemo.Appliance[]>('/1/appliances')
     return response
   }
 
-  // Create a new appliance.
+  /**
+   * Create a new appliance.
+   */
   async createAppliance(
     nickname: string,
     device: string,
@@ -115,8 +127,10 @@ export class Cloud {
     return response
   }
 
-  // Reorder appliances.
-  // appliances: list of appliance Ids
+  /**
+   * Reorder appliances.
+   * @param appliances list of appliance Ids
+   */
   async updateAppliancesOrder(appliances: string[]) {
     const response = await this._post('/1/appliance_orders', {
       appliances: appliances.join(','),
@@ -125,13 +139,17 @@ export class Cloud {
     return response
   }
 
-  // Delete appliance.
+  /**
+   * Delete appliance.
+   */
   async deleteAppliance(applianceId: string) {
     const response = await this._post(`/1/appliances/${applianceId}/delete`)
     return response
   }
 
-  // Update appliance.
+  /**
+   * Update appliance.
+   */
   async updateAppliance(
     applianceId: string,
     nickname: string,
@@ -148,7 +166,9 @@ export class Cloud {
     return response
   }
 
-  // get arbitorary aircon device
+  /**
+   * get arbitorary aircon device
+   */
   async getAircon(): Promise<NatureRemo.Appliance | null> {
     const appliances = await this.getAppliances()
     for (const appliance of appliances) {
@@ -159,7 +179,9 @@ export class Cloud {
     return null
   }
 
-  // Update air conditioner settings.
+  /**
+   * Update air conditioner settings.
+   */
   async updateAirconSettings(
     applianceId: string,
     settings: {}
@@ -172,7 +194,9 @@ export class Cloud {
     return response
   }
 
-  // Fetch signals registered under this appliance.
+  /**
+   * Fetch signals registered under this appliance.
+   */
   async getApplianceSignals(applianceId: string): Promise<NatureRemo.Signal[]> {
     const response = await this._get<NatureRemo.Signal[]>(
       `/1/appliances/${applianceId}/signals`
@@ -180,7 +204,9 @@ export class Cloud {
     return response
   }
 
-  // Create a signal under this appliance.
+  /**
+   * Create a signal under this appliance.
+   */
   async createApplianceSignal(
     applianceId: string,
     name: string,
@@ -199,7 +225,9 @@ export class Cloud {
     return response
   }
 
-  // Reorder signals under this appliance.
+  /**
+   * Reorder signals under this appliance.
+   */
   async updateSignalOrders(applianceId: string, signalIds: string[]) {
     const response = await this._post(
       `/1/appliances/${applianceId}/signal_orders`,
@@ -210,7 +238,9 @@ export class Cloud {
     return response
   }
 
-  // Update infrared signal.
+  /**
+   * Update infrared signal.
+   */
   async updateSignal(signalId: string, name: string, imageId: string) {
     const response = await this._post(`/1/signals/${signalId}`, {
       name,
@@ -219,19 +249,25 @@ export class Cloud {
     return response
   }
 
-  // Delete an infrared signal.
+  /**
+   * Delete an infrared signal.
+   */
   async deleteSignal(signalId: string) {
     const response = await this._post(`/1/signals/${signalId}/delete`)
     return response
   }
 
-  // Send infrared signal.
+  /**
+   * Send infrared signal.
+   */
   async sendSignal(signalId: string) {
     const response = await this._post(`/1/signals/${signalId}`)
     return response
   }
 
-  // Update Remo
+  /**
+   * Update Remo
+   */
   async updateDevice(deviceId: string, name: string) {
     const response = await this._post(`/1/devices/${deviceId}`, {
       name,
@@ -239,13 +275,17 @@ export class Cloud {
     return response
   }
 
-  // Delete Remo
+  /**
+   * Delete Remo
+   */
   async deleteDevice(deviceId: string) {
     const response = await this._post(`/1/devices/${deviceId}/delete`)
     return response
   }
 
-  // Update temperature offset.
+  /**
+   * Update temperature offset.
+   */
   async updateTemperatureOffset(deviceId: string, offset: number) {
     const response = await this._post(
       `/1/devices/${deviceId}/temperature_offset`,
@@ -256,7 +296,9 @@ export class Cloud {
     return response
   }
 
-  // Update humidity offset.
+  /**
+   * Update humidity offset.
+   */
   async updateHumidityOffset(deviceId: string, offset: number) {
     const response = await this._post(
       `/1/devices/${deviceId}/humidity_offset`,
@@ -281,13 +323,17 @@ export class Local {
     })
   }
 
-  // Fetch the newest received IR signal
+  /**
+   * Fetch the newest received IR signal
+   */
   async fetchReceivedSignal(): Promise<NatureRemo.SignalMessage> {
     const response = await this.instance.get('/messages')
     return response.data
   }
 
-  // Send a signal
+  /**
+   * Send a signal
+   */
   async sendSignal(signal: NatureRemo.SignalMessage) {
     const response = await this.instance.post('/messages', signal)
     return response.data
