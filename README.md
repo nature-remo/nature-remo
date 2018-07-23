@@ -12,13 +12,15 @@ npm install nature-remo
 const NatureRemo = require('nature-remo')
 
 async function turnOffAirConditioner() {
-  const instance = new NatureRemo.Cloud(NATURE_REMO_CLOUD_API_TOKEN)
+  const instance = new NatureRemo.Cloud(process.env.NATURE_REMO_CLOUD_API_TOKEN)
   const aircon = await instance.getAircon()
   const newAirconSettings = await instance.updateAirconSettings(aircon.id, {button: 'power-off'})
   console.log('Aircon: turned-off')
   console.debug(newAirconSettings)
 }
 ```
+
+See [RunKit Notebook](https://runkit.com/uetchy/nature-remo-cloud-api-nodejs-example) for Nature Remo Cloud API example.
 
 See [API Documents](https://uetchy.github.io/nature-remo/) for further details.
 
