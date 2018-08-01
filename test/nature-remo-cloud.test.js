@@ -1,8 +1,7 @@
 const { assert } = require('chai')
 const lib = require('../dist').Cloud
 
-const token = process.env.NATURE_REMO_CLOUD_TOKEN
-const airconId = process.env.NATURE_REMO_AIRCON_ID
+const token = process.env.NATURE_REMO_CLOUD_API_TOKEN
 
 describe('NatureRemo.Cloud', function() {
   describe('#getDevices()', function() {
@@ -23,18 +22,20 @@ describe('NatureRemo.Cloud', function() {
     })
   })
 
-  describe('#getAircon', function() {
+  describe('#listAircon', function() {
     it('should return response', async () => {
       const app = new lib(token)
-      const aircon = await app.getAircon()
-      assert.hasAnyKeys(aircon, ['id', 'aircon', 'signals'])
-      assert.exists(aircon.id)
+      const airconList = await app.listAircon()
+      assert.hasAnyKeys(airconList[0], ['id', 'aircon', 'signals'])
+      assert.exists(airconList[0].id)
     })
   })
 
   describe('#getApplianceSignals', function() {
     it('should return response', async () => {
       const app = new lib(token)
+      const airconList = await app.listAircon()
+      const airconId = airconList[0].id
       const response = await app.getApplianceSignals(airconId)
       assert.isArray(response)
     })
@@ -43,6 +44,8 @@ describe('NatureRemo.Cloud', function() {
   describe('#updateAirconSettings()', function() {
     it('should return response', async () => {
       const app = new lib(token)
+      const airconList = await app.listAircon()
+      const airconId = airconList[0].id
       const response = await app.updateAirconSettings(airconId, {
         button: 'power-off',
       })
