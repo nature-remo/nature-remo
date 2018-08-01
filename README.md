@@ -2,13 +2,13 @@
 
 [![npm version](https://badge.fury.io/js/nature-remo.svg)](https://badge.fury.io/js/nature-remo)
 
-```
+```shell
 npm install nature-remo
 ```
 
 ## Basic Usage
 
-```
+```js
 const NatureRemo = require('nature-remo')
 
 async function turnOffAirConditioner() {
@@ -52,7 +52,7 @@ Also, see [API Documents](https://uetchy.github.io/nature-remo/) for detailed AP
 
 ### Cloud API
 
-```
+```js
 new NatureRemo.Cloud(NATURE_REMO_CLOUD_API_TOKEN)
 ```
 
@@ -81,7 +81,7 @@ new NatureRemo.Cloud(NATURE_REMO_CLOUD_API_TOKEN)
 
 ### Local API
 
-```
+```js
 new NatureRemo.Local(NATURE_REMO_LOCAL_ADDRESS)
 ```
 
@@ -92,7 +92,7 @@ new NatureRemo.Local(NATURE_REMO_LOCAL_ADDRESS)
 
 ## Development
 
-```
+```shell
 npm install
 
 NATURE_REMO_CLOUD_TOKEN=<nature-remo-cloud-api-token>
