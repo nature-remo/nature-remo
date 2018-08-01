@@ -13,16 +13,40 @@ const NatureRemo = require('nature-remo')
 
 async function turnOffAirConditioner() {
   const instance = new NatureRemo.Cloud(process.env.NATURE_REMO_CLOUD_API_TOKEN)
-  const aircon = await instance.getAircon()
-  const newAirconSettings = await instance.updateAirconSettings(aircon.id, {button: 'power-off'})
-  console.log('Aircon: turned-off')
+  const airconList = await instance.listAircon()
+  const aircon = airconList[0]
+  const newAirconSettings = await instance.updateAirconSettings(
+    aircon.id,
+    {
+      button: 'power-off'
+    }
+  )
+  console.log('Aircon: turned off')
+  console.debug(newAirconSettings)
+}
+
+async function turnOnAirConditioner() {
+  const instance = new NatureRemo.Cloud(process.env.NATURE_REMO_CLOUD_API_TOKEN)
+  const airconList = await instance.listAircon()
+  const aircon = airconList[0]
+  const newAirconSettings = await instance.updateAirconSettings(
+    aircon.id,
+    {
+      operation_mode: 'cool',
+      temperature: 24
+    }
+  )
+  console.log('Aircon: turned on')
   console.debug(newAirconSettings)
 }
 ```
 
-See [RunKit Notebook](https://runkit.com/uetchy/nature-remo-cloud-api-nodejs-example) for Nature Remo Cloud API example.
+You might want to obtain Nature Remo Cloud API token from https://home.nature.global.
 
-See [API Documents](https://uetchy.github.io/nature-remo/) for further details.
+Checkout [RunKit Notebook](https://runkit.com/uetchy/nature-remo-cloud-api-nodejs-example) for Nature Remo Cloud API example.
+See __example/__ for various code examples.
+
+Also, see [API Documents](https://uetchy.github.io/nature-remo/) for detailed API document.
 
 ## API Coverage
 
