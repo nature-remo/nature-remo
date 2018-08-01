@@ -167,16 +167,17 @@ export class Cloud {
   }
 
   /**
-   * get arbitorary aircon device
+   * get all appliances which has AC characteristics
    */
-  async getAircon(): Promise<NatureRemo.Appliance | null> {
+  async listAircon(): Promise<NatureRemo.Appliance[]> {
     const appliances = await this.getAppliances()
+    let airconList = []
     for (const appliance of appliances) {
       if (appliance.type === 'AC') {
-        return appliance
+        airconList.push(appliance)
       }
     }
-    return null
+    return airconList
   }
 
   /**
