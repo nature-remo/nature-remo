@@ -66,11 +66,35 @@ export class Cloud {
   /**
    * Fetch the list of Remo devices the user has access to.
    */
-  async getDevices(): Promise<NatureRemo.DeviceWithEvents[]> {
-    const response = await this._get<NatureRemo.DeviceWithEvents[]>(
+  async getDevices(): Promise<NatureRemo.DeviceWithSensorValue[]> {
+    const response = await this._get<NatureRemo.PlainDeviceWithSensorValue[]>(
       '/1/devices'
     )
-    return response
+    return response.map(device => ({
+      id: device.id,
+      name: device.name,
+      version: device.firmware_version,
+      offset: {
+        temperature: device.temperature_offset,
+        humidity: device.humidity_offset,
+      },
+      created_at: device.created_at,
+      updated_at: device.updated_at,
+      sensor: {
+        temperature: {
+          value: device.newest_events.te.val,
+          created_at: device.newest_events.te.created_at,
+        },
+        humidity: {
+          value: device.newest_events.hu.val,
+          created_at: device.newest_events.hu.created_at,
+        },
+        illumination: {
+          value: device.newest_events.il.val,
+          created_at: device.newest_events.il.created_at,
+        },
+      },
+    }))
   }
 
   /**
@@ -90,23 +114,55 @@ export class Cloud {
   }
 
   /**
-   * get sensor value of arbitorary device
-   */
-  async getSensorValue(): Promise<NatureRemo.SensorValue> {
-    const device = await this.getDevices()
-    return <NatureRemo.SensorValue>{
-      humidity: device[0].newest_events.hu.value,
-      temperature: device[0].newest_events.te.value,
-      illumination: device[0].newest_events.il.value,
-    }
-  }
-
-  /**
    * Fetch the list of appliances.
    */
   async getAppliances(): Promise<NatureRemo.Appliance[]> {
-    const response = await this._get<NatureRemo.Appliance[]>('/1/appliances')
-    return response
+    const response = await this._get<NatureRemo.PlainAppliance[]>(
+      '/1/appliances'
+    )
+    return response.map(appliance => ({
+      id: appliance.id,
+      name: appliance.nickname,
+      type: appliance.type,
+      device: {
+        id: appliance.device.id,
+        name: appliance.device.name,
+        version: appliance.device.firmware_version,
+        offset: {
+          temperature: appliance.device.temperature_offset,
+          humidity: appliance.device.humidity_offset,
+        },
+        created_at: appliance.device.created_at,
+        updated_at: appliance.device.updated_at,
+      },
+      model: appliance.model,
+      image: appliance.image,
+      signals: appliance.signals,
+      aircon: appliance.settings
+        ? {
+            settings: {
+              mode: appliance.settings.mode,
+              temperature: appliance.settings.temp,
+              speed: appliance.settings.vol,
+              wind_direction: appliance.settings.dir,
+              power: appliance.settings.button,
+            },
+            spec: {
+              range: {
+                modes: {
+                  cool: appliance.aircon.range.cool,
+                  warm: appliance.aircon.range.warm,
+                  dry: appliance.aircon.range.dry,
+                  blow: appliance.aircon.range.blow,
+                  auto: appliance.aircon.range.auto,
+                },
+                fixed_buttons: appliance.aircon.range.fixedButtons,
+              },
+              temperature_unit: appliance.aircon.tempUnit,
+            },
+          }
+        : undefined,
+    }))
   }
 
   /**
@@ -117,13 +173,16 @@ export class Cloud {
     device: string,
     image: string,
     model?: string
-  ): Promise<NatureRemo.Appliance[]> {
-    const response = await this._post<NatureRemo.Appliance[]>('/1/appliances', {
-      nickname,
-      device,
-      image,
-      model,
-    })
+  ): Promise<NatureRemo.PlainAppliance[]> {
+    const response = await this._post<NatureRemo.PlainAppliance[]>(
+      '/1/appliances',
+      {
+        nickname,
+        device,
+        image,
+        model,
+      }
+    )
     return response
   }
 
@@ -155,7 +214,7 @@ export class Cloud {
     nickname: string,
     imageId: string
   ): Promise<NatureRemo.Appliance> {
-    const response = await this._post<NatureRemo.Appliance>(
+    const response = await this._post<NatureRemo.PlainAppliance>(
       `/1/appliances/${applianceId}`,
       {
         nickname,

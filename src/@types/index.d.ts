@@ -5,141 +5,158 @@ declare namespace NatureRemo {
   }
 
   export interface DetectedAirconModel {
-    model: Model
-    params: AirconSettings
+    model: ApplianceModel
+    params: PlainAirconSettings
   }
 
-  export interface Temperature {
-    value: number
+  export interface PlainDevice {
+    id: string
+    name: string
+    firmware_version: string
+    temperature_offset: number
+    humidity_offset: number
     created_at: Date
-  }
-
-  export interface Humidity {
-    value: number
-    created_at: Date
-  }
-
-  export interface Illumination {
-    value: number
-    created_at: Date
-  }
-
-  export interface NewestEvents {
-    te: Temperature
-    hu: Humidity
-    il: Illumination
-  }
-
-  export interface SensorValue {
-    temperature: number
-    humidity: number
-    illumination: number
+    updated_at: Date
   }
 
   export interface Device {
     id: string
     name: string
-    temperature_offset: number
-    humidity_offset: number
+    version: string
+    offset: {
+      temperature: number
+      humidity: number
+    }
     created_at: Date
     updated_at: Date
-    firmware_version: string
   }
 
-  interface DeviceWithEvents extends Device {
-    newest_events: NewestEvents
+  export interface PlainDeviceWithSensorValue extends PlainDevice {
+    newest_events: {
+      te: {
+        val: number
+        created_at: Date
+      }
+      hu: {
+        val: number
+        created_at: Date
+      }
+      il: {
+        val: number
+        created_at: Date
+      }
+    }
   }
 
-  export interface Model {
-    id: string
-    manufacturer: string
-    remote_name: string
-    name: string
-    image: string
+  export interface DeviceWithSensorValue extends Device {
+    sensor: {
+      temperature: {
+        value: number
+        created_at: Date
+      }
+      humidity: {
+        value: number
+        created_at: Date
+      }
+      illumination: {
+        value: number
+        created_at: Date
+      }
+    }
   }
 
-  export interface AirconSettings {
-    temp: string
+  export interface PlainAirconSettings {
     mode: string
+    temp: string
     vol: string
     dir: string
     button: string
   }
 
-  export interface UpdateAirconSettingsResponse extends AirconSettings {
+  export interface AirconSettings {
+    mode: string
+    temperature: string
+    speed: string
+    wind_direction: string
+    power: boolean
+  }
+
+  export interface UpdateAirconSettingsResponse extends PlainAirconSettings {
     updated_at: Date
   }
 
-  export interface CoolMode {
+  export interface AirconModeSpec {
     temp: string[]
     vol: string[]
     dir: string[]
   }
 
-  export interface WarmMode {
-    temp: string[]
-    vol: string[]
-    dir: string[]
-  }
-
-  export interface DryMode {
-    temp: string[]
-    vol: string[]
-    dir: string[]
-  }
-
-  export interface BlowMode {
-    temp: string[]
-    vol: string[]
-    dir: string[]
-  }
-
-  export interface AutoMode {
-    temp: string[]
-    vol: string[]
-    dir: string[]
-  }
-
-  export interface Modes {
-    cool: CoolMode
-    warm: WarmMode
-    dry: DryMode
-    blow: BlowMode
-    auto: AutoMode
-  }
-
-  export interface Range {
-    modes: Modes
-    fixedButtons: string[]
-  }
-
-  export interface Aircon {
-    range: Range
+  export interface PlainAirconSpec {
+    range: {
+      modes: {
+        cool: AirconModeSpec
+        warm: AirconModeSpec
+        dry: AirconModeSpec
+        blow: AirconModeSpec
+        auto: AirconModeSpec
+      }
+      fixedButtons: string[]
+    }
     tempUnit: string
+  }
+
+  export interface AirconSpec {
+    range: {
+      modes: {
+        cool: AirconModeSpec
+        warm: AirconModeSpec
+        dry: AirconModeSpec
+        blow: AirconModeSpec
+        auto: AirconModeSpec
+      }
+      fixed_buttons: string[]
+    }
+    temperature_unit: string
   }
 
   export interface Signal {
     id: string
     name: string
     image: string
+  }
+
+  export interface ApplianceModel {
+    id: string
+    name: string
+    manufacturer: string
+    remote_name: string
+    image: string
+  }
+
+  export interface PlainAppliance {
+    id: string
+    nickname: string
+    type: string
+    device: PlainDevice
+    model: ApplianceModel
+    image: string
+    signals: Signal[]
+    settings: PlainAirconSettings
+    aircon?: PlainAirconSpec
   }
 
   export interface Appliance {
     id: string
-    device: Device
-    model: Model
-    nickname: string
-    image: string
-    type: string
-    settings: AirconSettings
-    aircon?: Aircon
-    signals: Signal[]
-  }
-
-  export interface Signal {
-    id: string
     name: string
+    type: string
+    device: Device
+    model: ApplianceModel
     image: string
+    signals: Signal[]
+    aircon?: {
+      settings: AirconSettings
+      spec: AirconSpec
+    }
   }
 
   export interface SignalMessage {
