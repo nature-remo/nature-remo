@@ -47,7 +47,7 @@ declare namespace NatureRemo {
     firmware_version: string
   }
 
-  interface DeviceWithEvents extends Device {
+  export interface DeviceWithEvents extends Device {
     newest_events: NewestEvents
   }
 
