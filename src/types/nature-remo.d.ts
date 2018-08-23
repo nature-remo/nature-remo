@@ -1,4 +1,5 @@
 declare namespace NatureRemo {
+  /** User */
   export interface User {
     id: string
     nickname: string

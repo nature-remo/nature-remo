@@ -1,1 +1,4 @@
-export * from './nature-remo'
+import Cloud from './cloud'
+import Local from './local'
+
+export { Cloud, Local }
