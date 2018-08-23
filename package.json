@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc",
     "test": "npm run build && mocha",
-    "docs": "typedoc --mode modules --out docs --excludeNotExported --excludeExternals --includeDeclarations src && touch ./docs/.nojekyll"
+    "docs": "typedoc --mode file --out docs --excludeExternals --excludePrivate --includeDeclarations src && touch ./docs/.nojekyll"
   },
   "engines": {
     "node": ">=6.14.3"
@@ -27,7 +27,7 @@
     "@types/node": "^10.5.2",
     "chai": "^4.1.2",
     "mocha": "^5.2.0",
-    "typedoc": "^0.11.1",
+    "typedoc": "^0.12.0",
     "typescript": "^3.0.1"
   }
 }

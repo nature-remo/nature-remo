@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Local | nature-remo</title>
+	<title>AirconSettings | nature-remo</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -38,6 +38,8 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -52,13 +54,13 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_nature_remo_.html">&quot;nature-remo&quot;</a>
+					<a href="../modules/natureremo.html">NatureRemo</a>
 				</li>
 				<li>
-					<a href="_nature_remo_.local.html">Local</a>
+					<a href="natureremo.airconsettings.html">AirconSettings</a>
 				</li>
 			</ul>
-			<h1>Class Local</h1>
+			<h1>Interface AirconSettings</h1>
 		</div>
 	</div>
 </header>
@@ -69,7 +71,12 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Local</span>
+						<span class="target">AirconSettings</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<a href="natureremo.updateairconsettingsresponse.html" class="tsd-signature-type">UpdateAirconSettingsResponse</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -78,117 +85,69 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Constructors</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_nature_remo_.local.html#constructor" class="tsd-kind-icon">constructor</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="_nature_remo_.local.html#instance" class="tsd-kind-icon">instance</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Methods</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_nature_remo_.local.html#fetchreceivedsignal" class="tsd-kind-icon">fetch<wbr>Received<wbr>Signal</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="_nature_remo_.local.html#sendsignal" class="tsd-kind-icon">send<wbr>Signal</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="natureremo.airconsettings.html#button" class="tsd-kind-icon">button</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="natureremo.airconsettings.html#dir" class="tsd-kind-icon">dir</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="natureremo.airconsettings.html#mode" class="tsd-kind-icon">mode</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="natureremo.airconsettings.html#temp" class="tsd-kind-icon">temp</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="natureremo.airconsettings.html#vol" class="tsd-kind-icon">vol</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
-					<a name="constructor" class="tsd-anchor"></a>
-					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Local<span class="tsd-signature-symbol">(</span>address<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_nature_remo_.local.html" class="tsd-signature-type">Local</a></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/uetchy/nature-remo/blob/46c8d21/src/nature-remo.ts#L315">nature-remo.ts:315</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>address: <span class="tsd-signature-type">string</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_nature_remo_.local.html" class="tsd-signature-type">Local</a></h4>
-						</li>
-					</ul>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
-					<a name="instance" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagPrivate">Private</span> instance</h3>
-					<div class="tsd-signature tsd-kind-icon">instance<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">AxiosInstance</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="button" class="tsd-anchor"></a>
+					<h3>button</h3>
+					<div class="tsd-signature tsd-kind-icon">button<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/uetchy/nature-remo/blob/46c8d21/src/nature-remo.ts#L315">nature-remo.ts:315</a></li>
+							<li>Defined in types/nature-remo.d.ts:67</li>
 						</ul>
 					</aside>
 				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="fetchreceivedsignal" class="tsd-anchor"></a>
-					<h3>fetch<wbr>Received<wbr>Signal</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">fetch<wbr>Received<wbr>Signal<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SignalMessage</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/uetchy/nature-remo/blob/46c8d21/src/nature-remo.ts#L330">nature-remo.ts:330</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Fetch the newest received IR signal</p>
-								</div>
-							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">SignalMessage</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="dir" class="tsd-anchor"></a>
+					<h3>dir</h3>
+					<div class="tsd-signature tsd-kind-icon">dir<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in types/nature-remo.d.ts:66</li>
+						</ul>
+					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="sendsignal" class="tsd-anchor"></a>
-					<h3>send<wbr>Signal</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">send<wbr>Signal<span class="tsd-signature-symbol">(</span>signal<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">SignalMessage</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/uetchy/nature-remo/blob/46c8d21/src/nature-remo.ts#L338">nature-remo.ts:338</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Send a signal</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>signal: <span class="tsd-signature-type">SignalMessage</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
-						</li>
-					</ul>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="mode" class="tsd-anchor"></a>
+					<h3>mode</h3>
+					<div class="tsd-signature tsd-kind-icon">mode<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in types/nature-remo.d.ts:64</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="temp" class="tsd-anchor"></a>
+					<h3>temp</h3>
+					<div class="tsd-signature tsd-kind-icon">temp<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in types/nature-remo.d.ts:63</li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="vol" class="tsd-anchor"></a>
+					<h3>vol</h3>
+					<div class="tsd-signature tsd-kind-icon">vol<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in types/nature-remo.d.ts:65</li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 		</div>
@@ -198,43 +157,103 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/__types_index_d_.html">"@types/index.d"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_index_.html">"index"</a>
-					</li>
-					<li class="current tsd-kind-external-module">
-						<a href="../modules/_nature_remo_.html">"nature-<wbr>remo"</a>
+					<li class="current tsd-kind-module tsd-is-not-exported">
+						<a href="../modules/natureremo.html">Nature<wbr>Remo</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_nature_remo_.cloud.html" class="tsd-kind-icon">Cloud</a>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="natureremo.aircon.html" class="tsd-kind-icon">Aircon</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_nature_remo_.local.html" class="tsd-kind-icon">Local</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-module">
+						<a href="natureremo.airconsettings.html" class="tsd-kind-icon">Aircon<wbr>Settings</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="_nature_remo_.local.html#constructor" class="tsd-kind-icon">constructor</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="natureremo.airconsettings.html#button" class="tsd-kind-icon">button</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
-								<a href="_nature_remo_.local.html#instance" class="tsd-kind-icon">instance</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="natureremo.airconsettings.html#dir" class="tsd-kind-icon">dir</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_nature_remo_.local.html#fetchreceivedsignal" class="tsd-kind-icon">fetch<wbr>Received<wbr>Signal</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="natureremo.airconsettings.html#mode" class="tsd-kind-icon">mode</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="_nature_remo_.local.html#sendsignal" class="tsd-kind-icon">send<wbr>Signal</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="natureremo.airconsettings.html#temp" class="tsd-kind-icon">temp</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="natureremo.airconsettings.html#vol" class="tsd-kind-icon">vol</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="natureremo.appliance.html" class="tsd-kind-icon">Appliance</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="natureremo.automode.html" class="tsd-kind-icon">Auto<wbr>Mode</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="natureremo.blowmode.html" class="tsd-kind-icon">Blow<wbr>Mode</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="natureremo.coolmode.html" class="tsd-kind-icon">Cool<wbr>Mode</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="natureremo.detectedairconmodel.html" class="tsd-kind-icon">Detected<wbr>Aircon<wbr>Model</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="natureremo.device.html" class="tsd-kind-icon">Device</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
+						<a href="natureremo.devicewithevents.html" class="tsd-kind-icon">Device<wbr>With<wbr>Events</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="natureremo.drymode.html" class="tsd-kind-icon">Dry<wbr>Mode</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="natureremo.humidity.html" class="tsd-kind-icon">Humidity</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="natureremo.illumination.html" class="tsd-kind-icon">Illumination</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="natureremo.model.html" class="tsd-kind-icon">Model</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="natureremo.modes.html" class="tsd-kind-icon">Modes</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="natureremo.newestevents.html" class="tsd-kind-icon">Newest<wbr>Events</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="natureremo.range.html" class="tsd-kind-icon">Range</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="natureremo.sensorvalue.html" class="tsd-kind-icon">Sensor<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="natureremo.signal.html" class="tsd-kind-icon">Signal</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="natureremo.signalmessage.html" class="tsd-kind-icon">Signal<wbr>Message</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="natureremo.temperature.html" class="tsd-kind-icon">Temperature</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="natureremo.updateairconsettingsresponse.html" class="tsd-kind-icon">Update<wbr>Aircon<wbr>Settings<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="natureremo.user.html" class="tsd-kind-icon">User</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-parent-kind-module">
+						<a href="natureremo.warmmode.html" class="tsd-kind-icon">Warm<wbr>Mode</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
