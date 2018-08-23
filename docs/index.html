@@ -64,205 +64,49 @@
 			<div class="tsd-panel tsd-typography">
 				<h1 id="nature-remo">Nature Remo</h1>
 				<p><a href="https://badge.fury.io/js/nature-remo"><img src="https://badge.fury.io/js/nature-remo.svg" alt="npm version"></a></p>
-				<pre><code class="language-shell">npm install nature-remo</code></pre>
+				<pre><code class="language-bash">npm install nature-remo</code></pre>
 				<h2 id="basic-usage">Basic Usage</h2>
 				<pre><code class="language-js"><span class="hljs-keyword">const</span> NatureRemo = <span class="hljs-built_in">require</span>(<span class="hljs-string">'nature-remo'</span>)
+<span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> NatureRemo.Cloud(process.env.NATURE_REMO_CLOUD_API_TOKEN)
 
 <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">turnOffAirConditioner</span>(<span class="hljs-params"></span>) </span>{
-  <span class="hljs-keyword">const</span> instance = <span class="hljs-keyword">new</span> NatureRemo.Cloud(process.env.NATURE_REMO_CLOUD_API_TOKEN)
-  <span class="hljs-keyword">const</span> airconList = <span class="hljs-keyword">await</span> instance.listAircon()
+  <span class="hljs-keyword">const</span> airconList = <span class="hljs-keyword">await</span> client.listAircon()
   <span class="hljs-keyword">const</span> aircon = airconList[<span class="hljs-number">0</span>]
-  <span class="hljs-keyword">const</span> newAirconSettings = <span class="hljs-keyword">await</span> instance.updateAirconSettings(
-    aircon.id,
-    {
-      <span class="hljs-attr">button</span>: <span class="hljs-string">'power-off'</span>
-    }
-  )
+  <span class="hljs-keyword">const</span> newAirconSettings = <span class="hljs-keyword">await</span> client.updateAirconSettings(aircon.id, {
+    <span class="hljs-attr">button</span>: <span class="hljs-string">'power-off'</span>,
+  })
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Aircon: turned off'</span>)
   <span class="hljs-built_in">console</span>.debug(newAirconSettings)
 }
 
 <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">turnOnAirConditioner</span>(<span class="hljs-params"></span>) </span>{
-  <span class="hljs-keyword">const</span> instance = <span class="hljs-keyword">new</span> NatureRemo.Cloud(process.env.NATURE_REMO_CLOUD_API_TOKEN)
-  <span class="hljs-keyword">const</span> airconList = <span class="hljs-keyword">await</span> instance.listAircon()
+  <span class="hljs-keyword">const</span> airconList = <span class="hljs-keyword">await</span> client.listAircon()
   <span class="hljs-keyword">const</span> aircon = airconList[<span class="hljs-number">0</span>]
-  <span class="hljs-keyword">const</span> newAirconSettings = <span class="hljs-keyword">await</span> instance.updateAirconSettings(
-    aircon.id,
-    {
-      <span class="hljs-attr">operation_mode</span>: <span class="hljs-string">'cool'</span>,
-      <span class="hljs-attr">temperature</span>: <span class="hljs-number">24</span>
-    }
-  )
+  <span class="hljs-keyword">const</span> newAirconSettings = <span class="hljs-keyword">await</span> client.updateAirconSettings(aircon.id, {
+    <span class="hljs-attr">operation_mode</span>: <span class="hljs-string">'cool'</span>,
+    <span class="hljs-attr">temperature</span>: <span class="hljs-number">24</span>,
+  })
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Aircon: turned on'</span>)
   <span class="hljs-built_in">console</span>.debug(newAirconSettings)
 }</code></pre>
 				<p>You might want to obtain Nature Remo Cloud API token from <a href="https://home.nature.global">https://home.nature.global</a>.</p>
 				<p>Checkout <a href="https://runkit.com/uetchy/nature-remo-cloud-api-nodejs-example">RunKit Notebook</a> for Nature Remo Cloud API example.
 				See <strong>example/</strong> for various code examples.</p>
-				<p>Also, see <a href="https://uetchy.github.io/nature-remo/">API Documents</a> for detailed API document.</p>
-				<h2 id="api-coverage">API Coverage</h2>
+				<p>Also, see <a href="https://uetchy.github.io/nature-remo/">API Documents</a> for detailed API documents.</p>
+				<h2 id="api">API</h2>
+				<pre><code class="language-js"><span class="hljs-keyword">const</span> NatureRemo = <span class="hljs-built_in">require</span>(<span class="hljs-string">'nature-remo'</span>)</code></pre>
 				<h3 id="cloud-api">Cloud API</h3>
-				<pre><code class="language-js"><span class="hljs-keyword">new</span> NatureRemo.Cloud(NATURE_REMO_CLOUD_API_TOKEN)</code></pre>
-				<table>
-					<thead>
-						<tr>
-							<th>✓</th>
-							<th>method</th>
-							<th>endpoint</th>
-							<th>JS method</th>
-						</tr>
-					</thead>
-					<tbody><tr>
-							<td>✓</td>
-							<td>GET</td>
-							<td>/1/users/me</td>
-							<td>getUser</td>
-						</tr>
-						<tr>
-							<td>✓</td>
-							<td>POST</td>
-							<td>/1/users/me</td>
-							<td>updateUser</td>
-						</tr>
-						<tr>
-							<td>✓</td>
-							<td>GET</td>
-							<td>/1/devices</td>
-							<td>getDevices</td>
-						</tr>
-						<tr>
-							<td>✓</td>
-							<td>POST</td>
-							<td>/1/detectappliance</td>
-							<td>detectAppliance</td>
-						</tr>
-						<tr>
-							<td>✓</td>
-							<td>GET</td>
-							<td>/1/appliances</td>
-							<td>getAppliances</td>
-						</tr>
-						<tr>
-							<td>✓</td>
-							<td>POST</td>
-							<td>/1/appliances</td>
-							<td>createAppliance</td>
-						</tr>
-						<tr>
-							<td>✓</td>
-							<td>POST</td>
-							<td>/1/appliance_orders</td>
-							<td>updateAppliancesOrder</td>
-						</tr>
-						<tr>
-							<td>✓</td>
-							<td>POST</td>
-							<td>/1/appliances/{appliance}/delete</td>
-							<td>deleteAppliance</td>
-						</tr>
-						<tr>
-							<td>✓</td>
-							<td>POST</td>
-							<td>/1/appliances/{appliance}</td>
-							<td>updateAppliance</td>
-						</tr>
-						<tr>
-							<td>✓</td>
-							<td>POST</td>
-							<td>/1/appliances/{appliance}/aircon_settings</td>
-							<td>updateAirconSettings</td>
-						</tr>
-						<tr>
-							<td>✓</td>
-							<td>GET</td>
-							<td>/1/appliances/{appliance}/signals</td>
-							<td>getApplianceSignals</td>
-						</tr>
-						<tr>
-							<td>✓</td>
-							<td>POST</td>
-							<td>/1/appliances/{appliance}/signals</td>
-							<td>createApplianceSignal</td>
-						</tr>
-						<tr>
-							<td>✓</td>
-							<td>POST</td>
-							<td>/1/appliances/{appliance}/signal_orders</td>
-							<td>updateSignalOrders</td>
-						</tr>
-						<tr>
-							<td>✓</td>
-							<td>POST</td>
-							<td>/1/signals/{signal}</td>
-							<td>updateSignal</td>
-						</tr>
-						<tr>
-							<td>✓</td>
-							<td>POST</td>
-							<td>/1/signals/{signal}/delete</td>
-							<td>deleteSignal</td>
-						</tr>
-						<tr>
-							<td>✓</td>
-							<td>POST</td>
-							<td>/1/signals/{signal}/send</td>
-							<td>sendSignal</td>
-						</tr>
-						<tr>
-							<td>✓</td>
-							<td>POST</td>
-							<td>/1/devices/{device}</td>
-							<td>updateDevice</td>
-						</tr>
-						<tr>
-							<td>✓</td>
-							<td>POST</td>
-							<td>/1/devices/{device}/delete</td>
-							<td>deleteDevice</td>
-						</tr>
-						<tr>
-							<td>✓</td>
-							<td>POST</td>
-							<td>/1/devices/{device}/temperature_offset</td>
-							<td>updateTemperatureOffset</td>
-						</tr>
-						<tr>
-							<td>✓</td>
-							<td>POST</td>
-							<td>/1/devices/{device}/humidity_offset</td>
-							<td>updateHumidityOffset</td>
-						</tr>
-				</tbody></table>
+				<p>See <a href="https://uetchy.github.io/nature-remo/classes/cloud.html">Cloud API Documents</a>.</p>
+				<pre><code class="language-js"><span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> NatureRemo.Cloud(NATURE_REMO_CLOUD_API_TOKEN)</code></pre>
 				<h3 id="local-api">Local API</h3>
-				<pre><code class="language-js"><span class="hljs-keyword">new</span> NatureRemo.Local(NATURE_REMO_LOCAL_ADDRESS)</code></pre>
-				<table>
-					<thead>
-						<tr>
-							<th>✓</th>
-							<th>method</th>
-							<th>endpoint</th>
-							<th>JS method</th>
-						</tr>
-					</thead>
-					<tbody><tr>
-							<td>✓</td>
-							<td>GET</td>
-							<td>/messages</td>
-							<td>fetchReceivedSignal</td>
-						</tr>
-						<tr>
-							<td>✓</td>
-							<td>POST</td>
-							<td>/messages</td>
-							<td>sendSignal</td>
-						</tr>
-				</tbody></table>
+				<p>See <a href="https://uetchy.github.io/nature-remo/classes/local.html">Local API Documents</a>.</p>
+				<pre><code class="language-js"><span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> NatureRemo.Local(NATURE_REMO_LOCAL_ADDRESS)</code></pre>
 				<h2 id="development">Development</h2>
-				<pre><code class="language-shell">npm install
+				<pre><code class="language-bash">npm install
 
 NATURE_REMO_CLOUD_TOKEN=&lt;nature-remo-cloud-api-token&gt;
 NATURE_REMO_AIRCON_ID=&lt;arbitorary aircon id&gt;
-npm test</code></pre>
+npm <span class="hljs-built_in">test</span></code></pre>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
