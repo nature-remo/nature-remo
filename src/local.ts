@@ -1,4 +1,5 @@
 import axios, { AxiosInstance } from 'axios'
+import { NatureRemo } from './types/nature-remo'
 
 export default class Local {
   private readonly instance: AxiosInstance

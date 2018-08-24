@@ -1,4 +1,4 @@
-declare namespace NatureRemo {
+export namespace NatureRemo {
   /** User */
   export interface User {
     id: string

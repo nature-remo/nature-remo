@@ -1,5 +1,6 @@
 import axios, { AxiosInstance } from 'axios'
 import * as querystring from 'querystring'
+import { NatureRemo } from './types/nature-remo'
 
 export default class Cloud {
   private readonly token: string
