@@ -1,4 +1,4 @@
-const NatureRemo = require('../dist')
+const NatureRemo = require('nature-remo')
 
 // Turn on/off air conditioner.
 async function toggleAirconSwitch() {

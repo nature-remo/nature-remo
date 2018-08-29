@@ -1,4 +1,4 @@
-const NatureRemo = require('../dist')
+const NatureRemo = require('nature-remo')
 
 // Print the value of the sensor of an Nature Remo
 async function printSensorValue() {

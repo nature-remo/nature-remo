@@ -1,4 +1,4 @@
-const NatureRemo = require('../dist')
+const NatureRemo = require('nature-remo')
 
 async function listAppliances() {
   // Instantiate Nature Remo client with an API token
