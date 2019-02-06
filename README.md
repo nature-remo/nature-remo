@@ -3,6 +3,8 @@
 [![npm version](https://badge.fury.io/js/nature-remo.svg)](https://badge.fury.io/js/nature-remo)
 
 ```bash
+yarn add nature-remo
+# or
 npm install nature-remo
 ```
 
