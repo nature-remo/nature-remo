@@ -7,12 +7,13 @@ async function listAppliances() {
   // Get a list of the appliances
   const appliances = await client.getAppliances()
   for (const appliance of appliances) {
+    const { id, nickname, type } = appliance
     console.log({
-      id: appliance.id,
-      name: appliance.nickname,
-      type: appliance.type,
+      id,
+      nickname,
+      type,
     })
   }
 }
 
-listAppliances()
+listAppliances().catch((err) => console.log(err))

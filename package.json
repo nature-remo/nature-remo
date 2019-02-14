@@ -3,7 +3,8 @@
   "description": "Nature Remo API client",
   "version": "0.3.0",
   "author": "Yasuaki Uechi <y@uechi.io> (https://uechi.io/)",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "build": "rm -r ./lib && tsc",
     "docs": "yarn build && typedoc --mode file --out docs --excludeExternals  --excludePrivate --exclude '**/__tests__/*' src && touch ./docs/.nojekyll",
@@ -30,10 +31,11 @@
     "node": ">=8.14.3"
   },
   "files": [
-    "dist/"
+    "lib"
   ],
   "keywords": [
-    "nature-remo"
+    "nature-remo",
+    "smart-home"
   ],
   "license": "MIT"
 }
