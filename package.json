@@ -1,26 +1,33 @@
 {
   "name": "nature-remo",
-  "description": "Nature Remo Cloud API wrapper.",
+  "description": "Nature Remo API client",
   "version": "0.3.0",
   "author": "Yasuaki Uechi <y@uechi.io> (https://uechi.io/)",
   "main": "dist/index.js",
   "scripts": {
-    "build": "rm -r ./dist && tsc",
-    "docs": "npm run build && typedoc --mode file --out docs --excludeExternals --excludeNotExported --excludePrivate --includeDeclarations src && touch ./docs/.nojekyll",
-    "test": "npm run build && mocha"
+    "build": "rm -r ./lib && tsc",
+    "docs": "yarn build && typedoc --mode file --out docs --excludeExternals  --excludePrivate --exclude '**/__tests__/*' src && touch ./docs/.nojekyll",
+    "test": "jest"
   },
   "dependencies": {
     "axios": "^0.18.0"
   },
   "devDependencies": {
-    "@types/node": "^10.5.2",
+    "@types/jest": "^24.0.4",
+    "@types/nock": "^9.3.1",
+    "@types/node": "^11.9.3",
+    "@types/node-fetch": "^2.1.6",
+    "apish": "^2.0.0",
     "chai": "^4.1.2",
-    "mocha": "^5.2.0",
-    "typedoc": "^0.12.0",
-    "typescript": "^3.0.1"
+    "jest": "24.1.0",
+    "nock": "^10.0.6",
+    "node-fetch": "^2.3.0",
+    "ts-jest": "^23.10.5",
+    "typedoc": "^0.14.2",
+    "typescript": "^3.3.3"
   },
   "engines": {
-    "node": ">=6.14.3"
+    "node": ">=8.14.3"
   },
   "files": [
     "dist/"
@@ -28,6 +35,5 @@
   "keywords": [
     "nature-remo"
   ],
-  "license": "MIT",
-  "types": "dist/index.d.ts"
+  "license": "MIT"
 }

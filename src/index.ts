@@ -1,4 +1,2 @@
-import Cloud from './cloud'
-import Local from './local'
-
-export { Cloud, Local }
+export { Cloud } from './cloud'
+export { Local } from './local'

@@ -1,7 +1,7 @@
 import axios, { AxiosInstance } from 'axios'
-import { NatureRemo } from './types/nature-remo'
+import { NatureRemo } from './interfaces'
 
-export default class Local {
+export class Local {
   private readonly instance: AxiosInstance
 
   constructor(address: string) {

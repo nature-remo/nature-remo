@@ -1,43 +1,43 @@
-export namespace NatureRemo {
+export declare namespace NatureRemo {
   /** User */
-  export interface User {
+  interface User {
     id: string
     nickname: string
   }
 
-  export interface DetectedAirconModel {
+  interface DetectedAirconModel {
     model: Model
     params: AirconSettings
   }
 
-  export interface Temperature {
+  interface Temperature {
     value: number
     created_at: Date
   }
 
-  export interface Humidity {
+  interface Humidity {
     value: number
     created_at: Date
   }
 
-  export interface Illumination {
+  interface Illumination {
     value: number
     created_at: Date
   }
 
-  export interface NewestEvents {
+  interface NewestEvents {
     te: Temperature
     hu: Humidity
     il: Illumination
   }
 
-  export interface SensorValue {
+  interface SensorValue {
     temperature: number
     humidity: number
     illumination: number
   }
 
-  export interface Device {
+  interface Device {
     id: string
     name: string
     temperature_offset: number
@@ -47,11 +47,11 @@ export namespace NatureRemo {
     firmware_version: string
   }
 
-  export interface DeviceWithEvents extends Device {
+  interface DeviceWithEvents extends Device {
     newest_events: NewestEvents
   }
 
-  export interface Model {
+  interface Model {
     id: string
     manufacturer: string
     remote_name: string
@@ -59,7 +59,7 @@ export namespace NatureRemo {
     image: string
   }
 
-  export interface AirconSettings {
+  interface AirconSettings {
     temp: string
     mode: string
     vol: string
@@ -67,41 +67,41 @@ export namespace NatureRemo {
     button: string
   }
 
-  export interface UpdateAirconSettingsResponse extends AirconSettings {
+  interface UpdateAirconSettingsResponse extends AirconSettings {
     updated_at: Date
   }
 
-  export interface CoolMode {
+  interface CoolMode {
     temp: string[]
     vol: string[]
     dir: string[]
   }
 
-  export interface WarmMode {
+  interface WarmMode {
     temp: string[]
     vol: string[]
     dir: string[]
   }
 
-  export interface DryMode {
+  interface DryMode {
     temp: string[]
     vol: string[]
     dir: string[]
   }
 
-  export interface BlowMode {
+  interface BlowMode {
     temp: string[]
     vol: string[]
     dir: string[]
   }
 
-  export interface AutoMode {
+  interface AutoMode {
     temp: string[]
     vol: string[]
     dir: string[]
   }
 
-  export interface Modes {
+  interface Modes {
     cool: CoolMode
     warm: WarmMode
     dry: DryMode
@@ -109,23 +109,23 @@ export namespace NatureRemo {
     auto: AutoMode
   }
 
-  export interface Range {
+  interface Range {
     modes: Modes
     fixedButtons: string[]
   }
 
-  export interface Aircon {
+  interface Aircon {
     range: Range
     tempUnit: string
   }
 
-  export interface Signal {
+  interface Signal {
     id: string
     name: string
     image: string
   }
 
-  export interface Appliance {
+  interface Appliance {
     id: string
     device: Device
     model: Model
@@ -137,13 +137,13 @@ export namespace NatureRemo {
     signals: Signal[]
   }
 
-  export interface Signal {
+  interface Signal {
     id: string
     name: string
     image: string
   }
 
-  export interface SignalMessage {
+  interface SignalMessage {
     data: number[]
     freq: number
     format: 'us'
