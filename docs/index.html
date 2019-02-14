@@ -38,6 +38,8 @@
 							</div>
 							<input type="checkbox" id="tsd-filter-inherited" checked />
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -62,7 +64,9 @@
 			<div class="tsd-panel tsd-typography">
 				<h1 id="nature-remo">Nature Remo</h1>
 				<p><a href="https://badge.fury.io/js/nature-remo"><img src="https://badge.fury.io/js/nature-remo.svg" alt="npm version"></a></p>
-				<pre><code class="language-bash">npm install nature-remo</code></pre>
+				<pre><code class="language-bash">yarn add nature-remo
+<span class="hljs-comment"># or</span>
+npm install nature-remo</code></pre>
 				<h2 id="basic-usage">Basic Usage</h2>
 				<pre><code class="language-js"><span class="hljs-keyword">const</span> NatureRemo = <span class="hljs-built_in">require</span>(<span class="hljs-string">'nature-remo'</span>)
 <span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> NatureRemo.Cloud(process.env.NATURE_REMO_CLOUD_API_TOKEN)
