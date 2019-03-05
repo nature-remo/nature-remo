@@ -3,17 +3,17 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>nature-remo</title>
+	<title>IRange | nature-remo</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="../assets/css/main.css">
 </head>
 <body>
 <header>
 	<div class="tsd-page-toolbar">
 		<div class="container">
 			<div class="table-wrap">
-				<div class="table-cell" id="tsd-search" data-index="assets/js/search.js" data-base=".">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.js" data-base="..">
 					<div class="field">
 						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
 						<input id="tsd-search-field" type="text" />
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title">nature-remo</a>
+					<a href="../index.html" class="title">nature-remo</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -51,155 +51,161 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="globals.html">Globals</a>
+					<a href="../globals.html">Globals</a>
+				</li>
+				<li>
+					<a href="irange.html">IRange</a>
 				</li>
 			</ul>
-			<h1> nature-remo</h1>
+			<h1>Interface IRange</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<div class="tsd-panel tsd-typography">
-				<h1 id="nature-remo">Nature Remo</h1>
-				<p><a href="https://badge.fury.io/js/nature-remo"><img src="https://badge.fury.io/js/nature-remo.svg" alt="npm version"></a></p>
-				<pre><code class="language-bash">yarn add nature-remo
-<span class="hljs-comment"># or</span>
-npm install nature-remo</code></pre>
-				<h2 id="basic-usage">Basic Usage</h2>
-				<pre><code class="language-js"><span class="hljs-keyword">const</span> NatureRemo = <span class="hljs-built_in">require</span>(<span class="hljs-string">'nature-remo'</span>)
-
-<span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> NatureRemo.Cloud(process.env.NATURE_REMO_CLOUD_API_TOKEN)
-
-<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">turnOffAirConditioner</span>(<span class="hljs-params"></span>) </span>{
-  <span class="hljs-keyword">const</span> airconList = <span class="hljs-keyword">await</span> client.listAircon()
-  <span class="hljs-keyword">const</span> aircon = airconList[<span class="hljs-number">0</span>]
-
-  <span class="hljs-keyword">await</span> client.updateAirconSettings(aircon.id, {
-    <span class="hljs-attr">button</span>: <span class="hljs-string">'power-off'</span>,
-  })
-
-  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Aircon: turned off'</span>)
-}
-
-<span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">turnOnAirConditioner</span>(<span class="hljs-params"></span>) </span>{
-  <span class="hljs-keyword">const</span> airconList = <span class="hljs-keyword">await</span> client.listAircon()
-  <span class="hljs-keyword">const</span> aircon = airconList[<span class="hljs-number">0</span>]
-
-  <span class="hljs-keyword">await</span> client.updateAirconSettings(aircon.id, {
-    <span class="hljs-attr">operation_mode</span>: <span class="hljs-string">'cool'</span>,
-    <span class="hljs-attr">temperature</span>: <span class="hljs-number">24</span>,
-  })
-
-  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Aircon: turned on'</span>)
-}</code></pre>
-				<p>You might want to obtain Nature Remo Cloud API token from <a href="https://home.nature.global">https://home.nature.global</a>.</p>
-				<ul>
-					<li><strong>RunKit Notebook</strong>: Check out <a href="https://runkit.com/uetchy/nature-remo-cloud-api-nodejs-example">RunKit Notebook</a> for Nature Remo Cloud API example.</li>
-					<li><strong>Code Example</strong>: See <a href="https://github.com/uetchy/nature-remo/tree/master/examples">examples</a> for various code examples.</li>
-					<li><strong>Documents</strong>: See <a href="https://uetchy.github.io/nature-remo/">API Documents</a> for detailed API documents.</li>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">IRange</span>
+					</li>
 				</ul>
-				<h2 id="api">API</h2>
-				<pre><code class="language-js"><span class="hljs-keyword">const</span> NatureRemo = <span class="hljs-built_in">require</span>(<span class="hljs-string">'nature-remo'</span>)</code></pre>
-				<h3 id="cloud-api">Cloud API</h3>
-				<p>See <a href="https://uetchy.github.io/nature-remo/classes/cloud.html">Cloud API Documents</a>.</p>
-				<pre><code class="language-js"><span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> NatureRemo.Cloud(NATURE_REMO_CLOUD_API_TOKEN)</code></pre>
-				<h3 id="local-api">Local API</h3>
-				<p>See <a href="https://uetchy.github.io/nature-remo/classes/local.html">Local API Documents</a>.</p>
-				<pre><code class="language-js"><span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> NatureRemo.Local(NATURE_REMO_LOCAL_ADDRESS)</code></pre>
-				<h2 id="development">Development</h2>
-				<pre><code class="language-bash">npm install
-
-NATURE_REMO_CLOUD_TOKEN=&lt;nature-remo-cloud-api-token&gt;
-NATURE_REMO_AIRCON_ID=&lt;arbitorary aircon id&gt;
-npm <span class="hljs-built_in">test</span></code></pre>
-			</div>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="irange.html#fixedbuttons" class="tsd-kind-icon">fixed<wbr>Buttons</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="irange.html#modes" class="tsd-kind-icon">modes</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="fixedbuttons" class="tsd-anchor"></a>
+					<h3>fixed<wbr>Buttons</h3>
+					<div class="tsd-signature tsd-kind-icon">fixed<wbr>Buttons<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/uetchy/nature-remo/blob/b7bf3d5/src/interfaces.ts#L113">interfaces.ts:113</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="modes" class="tsd-anchor"></a>
+					<h3>modes</h3>
+					<div class="tsd-signature tsd-kind-icon">modes<span class="tsd-signature-symbol">:</span> <a href="imodes.html" class="tsd-signature-type">IModes</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/uetchy/nature-remo/blob/b7bf3d5/src/interfaces.ts#L112">interfaces.ts:112</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
 				<ul>
 					<li class="globals  ">
-						<a href="globals.html"><em>Globals</em></a>
+						<a href="../globals.html"><em>Globals</em></a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class">
-						<a href="classes/cloud.html" class="tsd-kind-icon">Cloud</a>
+						<a href="../classes/cloud.html" class="tsd-kind-icon">Cloud</a>
 					</li>
 					<li class=" tsd-kind-class">
-						<a href="classes/local.html" class="tsd-kind-icon">Local</a>
+						<a href="../classes/local.html" class="tsd-kind-icon">Local</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/iaircon.html" class="tsd-kind-icon">IAircon</a>
+						<a href="iaircon.html" class="tsd-kind-icon">IAircon</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/iairconsettings.html" class="tsd-kind-icon">IAircon<wbr>Settings</a>
+						<a href="iairconsettings.html" class="tsd-kind-icon">IAircon<wbr>Settings</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/iappliance.html" class="tsd-kind-icon">IAppliance</a>
+						<a href="iappliance.html" class="tsd-kind-icon">IAppliance</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/iautomode.html" class="tsd-kind-icon">IAuto<wbr>Mode</a>
+						<a href="iautomode.html" class="tsd-kind-icon">IAuto<wbr>Mode</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/iblowmode.html" class="tsd-kind-icon">IBlow<wbr>Mode</a>
+						<a href="iblowmode.html" class="tsd-kind-icon">IBlow<wbr>Mode</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/icoolmode.html" class="tsd-kind-icon">ICool<wbr>Mode</a>
+						<a href="icoolmode.html" class="tsd-kind-icon">ICool<wbr>Mode</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/idetectedairconmodel.html" class="tsd-kind-icon">IDetected<wbr>Aircon<wbr>Model</a>
+						<a href="idetectedairconmodel.html" class="tsd-kind-icon">IDetected<wbr>Aircon<wbr>Model</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/idevice.html" class="tsd-kind-icon">IDevice</a>
+						<a href="idevice.html" class="tsd-kind-icon">IDevice</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/idevicewithevents.html" class="tsd-kind-icon">IDevice<wbr>With<wbr>Events</a>
+						<a href="idevicewithevents.html" class="tsd-kind-icon">IDevice<wbr>With<wbr>Events</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/idrymode.html" class="tsd-kind-icon">IDry<wbr>Mode</a>
+						<a href="idrymode.html" class="tsd-kind-icon">IDry<wbr>Mode</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/ihumidity.html" class="tsd-kind-icon">IHumidity</a>
+						<a href="ihumidity.html" class="tsd-kind-icon">IHumidity</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/iillumination.html" class="tsd-kind-icon">IIllumination</a>
+						<a href="iillumination.html" class="tsd-kind-icon">IIllumination</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/imodel.html" class="tsd-kind-icon">IModel</a>
+						<a href="imodel.html" class="tsd-kind-icon">IModel</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/imodes.html" class="tsd-kind-icon">IModes</a>
+						<a href="imodes.html" class="tsd-kind-icon">IModes</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/inewestevents.html" class="tsd-kind-icon">INewest<wbr>Events</a>
+						<a href="inewestevents.html" class="tsd-kind-icon">INewest<wbr>Events</a>
+					</li>
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface">
+						<a href="irange.html" class="tsd-kind-icon">IRange</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="irange.html#fixedbuttons" class="tsd-kind-icon">fixed<wbr>Buttons</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="irange.html#modes" class="tsd-kind-icon">modes</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+					<li class=" tsd-kind-interface">
+						<a href="isensorvalue.html" class="tsd-kind-icon">ISensor<wbr>Value</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/irange.html" class="tsd-kind-icon">IRange</a>
+						<a href="isignal.html" class="tsd-kind-icon">ISignal</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/isensorvalue.html" class="tsd-kind-icon">ISensor<wbr>Value</a>
+						<a href="isignalmessage.html" class="tsd-kind-icon">ISignal<wbr>Message</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/isignal.html" class="tsd-kind-icon">ISignal</a>
+						<a href="itemperature.html" class="tsd-kind-icon">ITemperature</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/isignalmessage.html" class="tsd-kind-icon">ISignal<wbr>Message</a>
+						<a href="iupdateairconsettingsresponse.html" class="tsd-kind-icon">IUpdate<wbr>Aircon<wbr>Settings<wbr>Response</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/itemperature.html" class="tsd-kind-icon">ITemperature</a>
+						<a href="iuser.html" class="tsd-kind-icon">IUser</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/iupdateairconsettingsresponse.html" class="tsd-kind-icon">IUpdate<wbr>Aircon<wbr>Settings<wbr>Response</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/iuser.html" class="tsd-kind-icon">IUser</a>
-					</li>
-					<li class=" tsd-kind-interface">
-						<a href="interfaces/iwarmmode.html" class="tsd-kind-icon">IWarm<wbr>Mode</a>
+						<a href="iwarmmode.html" class="tsd-kind-icon">IWarm<wbr>Mode</a>
 					</li>
 				</ul>
 			</nav>
@@ -269,7 +275,7 @@ npm <span class="hljs-built_in">test</span></code></pre>
 	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
-<script src="assets/js/main.js"></script>
-<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+<script src="../assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="../assets/js/search.js"><' + '/script>');</script>
 </body>
 </html>

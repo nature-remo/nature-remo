@@ -104,7 +104,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/uetchy/nature-remo/blob/d9de301/src/local.ts#L5">local.ts:5</a></li>
+									<li>Defined in <a href="https://github.com/uetchy/nature-remo/blob/b7bf3d5/src/local.ts#L5">local.ts:5</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -124,13 +124,13 @@
 					<a name="fetchreceivedsignal" class="tsd-anchor"></a>
 					<h3>fetch<wbr>Received<wbr>Signal</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">fetch<wbr>Received<wbr>Signal<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/natureremo.signalmessage.html" class="tsd-signature-type">SignalMessage</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">fetch<wbr>Received<wbr>Signal<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">NatureRemo.ISignalMessage</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/uetchy/nature-remo/blob/d9de301/src/local.ts#L20">local.ts:20</a></li>
+									<li>Defined in <a href="https://github.com/uetchy/nature-remo/blob/b7bf3d5/src/local.ts#L20">local.ts:20</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -138,7 +138,7 @@
 									<p>Fetch the newest received IR signal</p>
 								</div>
 							</div>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/natureremo.signalmessage.html" class="tsd-signature-type">SignalMessage</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">NatureRemo.ISignalMessage</span><span class="tsd-signature-symbol">&gt;</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -146,13 +146,13 @@
 					<a name="sendsignal" class="tsd-anchor"></a>
 					<h3>send<wbr>Signal</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">send<wbr>Signal<span class="tsd-signature-symbol">(</span>signal<span class="tsd-signature-symbol">: </span><a href="../interfaces/natureremo.signalmessage.html" class="tsd-signature-type">SignalMessage</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">send<wbr>Signal<span class="tsd-signature-symbol">(</span>signal<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">NatureRemo.ISignalMessage</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/uetchy/nature-remo/blob/d9de301/src/local.ts#L28">local.ts:28</a></li>
+									<li>Defined in <a href="https://github.com/uetchy/nature-remo/blob/b7bf3d5/src/local.ts#L28">local.ts:28</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -163,7 +163,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>signal: <a href="../interfaces/natureremo.signalmessage.html" class="tsd-signature-type">SignalMessage</a></h5>
+									<h5>signal: <span class="tsd-signature-type">NatureRemo.ISignalMessage</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -203,6 +203,75 @@
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iaircon.html" class="tsd-kind-icon">IAircon</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iairconsettings.html" class="tsd-kind-icon">IAircon<wbr>Settings</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iappliance.html" class="tsd-kind-icon">IAppliance</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iautomode.html" class="tsd-kind-icon">IAuto<wbr>Mode</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iblowmode.html" class="tsd-kind-icon">IBlow<wbr>Mode</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/icoolmode.html" class="tsd-kind-icon">ICool<wbr>Mode</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/idetectedairconmodel.html" class="tsd-kind-icon">IDetected<wbr>Aircon<wbr>Model</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/idevice.html" class="tsd-kind-icon">IDevice</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/idevicewithevents.html" class="tsd-kind-icon">IDevice<wbr>With<wbr>Events</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/idrymode.html" class="tsd-kind-icon">IDry<wbr>Mode</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/ihumidity.html" class="tsd-kind-icon">IHumidity</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iillumination.html" class="tsd-kind-icon">IIllumination</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/imodel.html" class="tsd-kind-icon">IModel</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/imodes.html" class="tsd-kind-icon">IModes</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/inewestevents.html" class="tsd-kind-icon">INewest<wbr>Events</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/irange.html" class="tsd-kind-icon">IRange</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/isensorvalue.html" class="tsd-kind-icon">ISensor<wbr>Value</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/isignal.html" class="tsd-kind-icon">ISignal</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/isignalmessage.html" class="tsd-kind-icon">ISignal<wbr>Message</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/itemperature.html" class="tsd-kind-icon">ITemperature</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iupdateairconsettingsresponse.html" class="tsd-kind-icon">IUpdate<wbr>Aircon<wbr>Settings<wbr>Response</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iuser.html" class="tsd-kind-icon">IUser</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/iwarmmode.html" class="tsd-kind-icon">IWarm<wbr>Mode</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
