@@ -1,5 +1,5 @@
 import axios, { AxiosInstance } from 'axios'
-import { NatureRemo } from './interfaces'
+import * as NatureRemo from './interfaces'
 
 export class Local {
   private readonly instance: AxiosInstance
@@ -7,17 +7,17 @@ export class Local {
   constructor(address: string) {
     this.instance = axios.create({
       baseURL: address,
-      timeout: 5000,
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8',
       },
+      timeout: 5000,
     })
   }
 
   /**
    * Fetch the newest received IR signal
    */
-  async fetchReceivedSignal(): Promise<NatureRemo.SignalMessage> {
+  public async fetchReceivedSignal(): Promise<NatureRemo.ISignalMessage> {
     const response = await this.instance.get('/messages')
     return response.data
   }
@@ -25,7 +25,7 @@ export class Local {
   /**
    * Send a signal
    */
-  async sendSignal(signal: NatureRemo.SignalMessage) {
+  public async sendSignal(signal: NatureRemo.ISignalMessage) {
     const response = await this.instance.post('/messages', signal)
     return response.data
   }

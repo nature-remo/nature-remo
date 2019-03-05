@@ -1,5 +1,6 @@
-import { Cloud } from '../cloud'
+/* tslint:disable:object-literal-sort-keys */
 import nock from 'nock'
+import { Cloud } from '../cloud'
 
 const TOKEN = 'anonymous'
 
