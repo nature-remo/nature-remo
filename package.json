@@ -6,9 +6,10 @@
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
-    "build": "rm -r ./lib && tsc",
+    "build": "shx rm -r ./lib && tsc",
     "docs": "yarn build && typedoc --mode file --out docs --excludeExternals  --excludePrivate --exclude '**/__tests__/*' src && touch ./docs/.nojekyll",
-    "lint": "tslint --project ./tsconfig.json --fix && prettier 'src/**/*.ts' --write",
+    "format": "prettier 'src/**/*.ts' --write",
+    "lint": "tslint --project ./tsconfig.json --fix",
     "test": "jest"
   },
   "dependencies": {
@@ -18,22 +19,34 @@
     "@types/jest": "^24.0.9",
     "@types/nock": "^9.3.1",
     "@types/node": "^11.10.4",
+    "docz": "^0.13.7",
+    "docz-theme-default": "^0.13.7",
     "jest": "24.1.0",
     "nock": "^10.0.6",
+    "shx": "^0.3.2",
     "ts-jest": "^24.0.0",
     "tslint": "^5.13.1",
     "typedoc": "^0.14.2",
     "typescript": "^3.3.3333"
   },
+  "bugs": {
+    "url": "https://github.com/uetchy/nature-remo/issues"
+  },
   "engines": {
     "node": ">=8.14.3"
   },
   "files": [
-    "lib"
+    "lib/*.js",
+    "lib/*.d.ts"
   ],
+  "homepage": "https://github.com/uetchy/nature-remo",
   "keywords": [
     "nature-remo",
     "smart-home"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uetchy/nature-remo.git"
+  }
 }
