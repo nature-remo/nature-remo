@@ -1,5 +1,5 @@
 import axios, { AxiosInstance } from 'axios'
-import * as querystring from 'querystring'
+import { stringify } from 'querystring'
 import * as NatureRemo from './interfaces'
 
 export class Cloud {
@@ -291,10 +291,7 @@ export class Cloud {
 
   private async _post<T>(path: string, body?: object): Promise<T> {
     try {
-      const response = await this.instance.post(
-        path,
-        querystring.stringify(body)
-      )
+      const response = await this.instance.post(path, stringify(body))
       return response.data
     } catch (error) {
       if (error.response) {
