@@ -44,20 +44,21 @@
   "homepage": "https://github.com/uetchy/nature-remo",
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged && pretty-quick --staged"
+      "pre-commit": "lint-staged && pretty-quick --staged",
+      "pre-push": "yarn test"
     }
-  },
-  "lint-staged": {
-    "*.ts": [
-      "tslint --project ./tsconfig.json --fix",
-      "git add"
-    ]
   },
   "keywords": [
     "nature-remo",
     "smart-home"
   ],
   "license": "MIT",
+  "lint-staged": {
+    "*.ts": [
+      "tslint --fix",
+      "git add"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/uetchy/nature-remo.git"

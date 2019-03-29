@@ -5,6 +5,7 @@ import { Cloud } from '../cloud'
 const TOKEN = 'anonymous'
 
 beforeEach(() => {
+  nock.disableNetConnect()
   nock('https://api.nature.global/1/')
     .get('/devices')
     .reply(200, [
