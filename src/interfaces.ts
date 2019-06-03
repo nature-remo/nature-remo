@@ -46,7 +46,7 @@ export interface IModel {
 
 export interface IAirconSettings {
   temp: string
-  mode: string
+  mode: IAirconModeType
   vol: string
   dir: string
   button: string
