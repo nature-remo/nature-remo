@@ -28,15 +28,15 @@ beforeEach(() => {
         ],
         newest_events: {
           hu: {
-            val: 30,
+            value: 30,
             created_at: '2019-02-14T11:28:52Z',
           },
           il: {
-            val: 24.6,
+            value: 24.6,
             created_at: '2019-02-14T10:00:22Z',
           },
           te: {
-            val: 21.6,
+            value: 21.6,
             created_at: '2019-02-14T06:18:27Z',
           },
         },
