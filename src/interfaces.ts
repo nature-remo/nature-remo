@@ -32,7 +32,7 @@ export interface IDeviceWithEvents extends IDevice {
 }
 
 export interface IEventValue {
-  value: number
+  val: number
   created_at: Date
 }
 
