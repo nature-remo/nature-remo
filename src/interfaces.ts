@@ -9,25 +9,15 @@ export interface IDetectedAirconModel {
   params: IAirconSettings
 }
 
-export interface ITemperature {
-  value: number
-  created_at: Date
-}
-
-export interface IHumidity {
-  value: number
-  created_at: Date
-}
-
-export interface IIllumination {
+export interface IEventValue {
   value: number
   created_at: Date
 }
 
 export interface INewestEvents {
-  te: ITemperature
-  hu: IHumidity
-  il: IIllumination
+  te: IEventValue
+  hu: IEventValue
+  il: IEventValue
 }
 
 export interface ISensorValue {
@@ -59,7 +49,7 @@ export interface IModel {
 }
 
 export interface IAirconSettings {
-  temp: string
+  temp: number
   mode: string
   vol: string
   dir: string
@@ -70,46 +60,8 @@ export interface IUpdateAirconSettingsResponse extends IAirconSettings {
   updated_at: Date
 }
 
-export interface ICoolMode {
-  temp: string[]
-  vol: string[]
-  dir: string[]
-}
-
-export interface IWarmMode {
-  temp: string[]
-  vol: string[]
-  dir: string[]
-}
-
-export interface IDryMode {
-  temp: string[]
-  vol: string[]
-  dir: string[]
-}
-
-export interface IBlowMode {
-  temp: string[]
-  vol: string[]
-  dir: string[]
-}
-
-export interface IAutoMode {
-  temp: string[]
-  vol: string[]
-  dir: string[]
-}
-
-export interface IModes {
-  cool: ICoolMode
-  warm: IWarmMode
-  dry: IDryMode
-  blow: IBlowMode
-  auto: IAutoMode
-}
-
 export interface IRange {
-  modes: IModes
+  modes: 'cool' | 'warm' | 'dry' | 'blow' | 'auto'
   fixedButtons: string[]
 }
 
