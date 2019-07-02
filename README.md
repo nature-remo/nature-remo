@@ -1,6 +1,8 @@
 # Nature Remo
 
 [![npm version](https://badge.fury.io/js/nature-remo.svg)](https://badge.fury.io/js/nature-remo)
+[![Build Status](https://travis-ci.com/uetchy/nature-remo.svg?branch=master)](https://travis-ci.com/uetchy/nature-remo)
+[![codecov](https://codecov.io/gh/uetchy/nature-remo/branch/master/graph/badge.svg)](https://codecov.io/gh/uetchy/nature-remo)
 
 ```bash
 yarn add nature-remo
