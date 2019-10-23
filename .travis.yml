@@ -5,7 +5,7 @@ node_js:
 script:
   - jest --coverage
 after_success:
-  - curl -s https://codecov.io/bash | bash
+  - cat ./coverage/lcov.info | codacy-coverage
 notifications:
   email:
     on_success: never
