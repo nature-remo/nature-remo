@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/nature-remo.svg)](https://badge.fury.io/js/nature-remo)
 [![Build Status](https://travis-ci.com/uetchy/nature-remo.svg?branch=master)](https://travis-ci.com/uetchy/nature-remo)
-[![codecov](https://codecov.io/gh/uetchy/nature-remo/branch/master/graph/badge.svg)](https://codecov.io/gh/uetchy/nature-remo)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/7913641e31be48f6ba6cf2c68fa8b698)](https://www.codacy.com/manual/uetchy/nature-remo?utm_source=github.com&utm_medium=referral&utm_content=uetchy/nature-remo&utm_campaign=Badge_Grade)
 
 ```bash
 yarn add nature-remo
