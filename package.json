@@ -2,14 +2,13 @@
   "name": "nature-remo",
   "description": "Nature Remo API client",
   "version": "1.0.3",
-  "author": "Yasuaki Uechi <y@uechi.io> (https://uechi.io/)",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
   "scripts": {
     "build": "shx rm -r ./lib && tsc",
     "docs": "yarn build && typedoc --mode file --out docs --excludeExternals  --excludePrivate --exclude '**/__tests__/*' src && touch ./docs/.nojekyll",
     "format": "prettier 'src/**/*.ts' --write",
     "lint": "tslint --project ./tsconfig.json --fix",
+    "release:prepare": "shipjs prepare",
+    "release:trigger": "shipjs trigger",
     "test": "jest"
   },
   "dependencies": {
@@ -26,12 +25,29 @@
     "nock": "^11.3.3",
     "prettier": "^1.17.1",
     "pretty-quick": "^2.0.0",
+    "shipjs": "0.12.1",
     "shx": "^0.3.2",
     "ts-jest": "^24.0.2",
     "tslint": "^5.17.0",
     "typedoc": "^0.15.0",
     "typescript": "^3.5.1"
   },
+  "types": "lib/index.d.ts",
+  "main": "lib/index.js",
+  "lint-staged": {
+    "*.ts": [
+      "tslint --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && pretty-quick --staged",
+      "pre-push": "yarn test"
+    }
+  },
+  "author": "Yasuaki Uechi <y@uechi.io> (https://uechi.io/)",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/uetchy/nature-remo/issues"
   },
@@ -43,23 +59,10 @@
     "lib/*.d.ts"
   ],
   "homepage": "https://github.com/uetchy/nature-remo",
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged && pretty-quick --staged",
-      "pre-push": "yarn test"
-    }
-  },
   "keywords": [
     "nature-remo",
     "smart-home"
   ],
-  "license": "MIT",
-  "lint-staged": {
-    "*.ts": [
-      "tslint --fix",
-      "git add"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/uetchy/nature-remo.git"
