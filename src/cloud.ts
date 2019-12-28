@@ -198,7 +198,7 @@ export class Cloud {
       {
         appliance: applianceId,
         image: imageId,
-        message,
+        message: JSON.stringify(message),
         name,
       }
     )
