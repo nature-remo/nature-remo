@@ -1,7 +1,7 @@
 language: node_js
 node_js:
   - node
-  - '8'
+  - '10'
 script:
   - jest --coverage
 after_success:
