@@ -73,6 +73,10 @@ export interface IAircon {
   tempUnit: 'c' | 'f'
 }
 
+export interface IUpdateTVResponse {
+  input: 't' | 'bs' | 'cs'
+}
+
 export interface ISignal {
   id: string
   name: string

@@ -78,9 +78,16 @@ export class Cloud {
   /**
    * Fetch the list of appliances.
    */
-  public async getAppliances(): Promise<NatureRemo.IAppliance[]> {
+  public async getAppliances(
+    type?: 'AC' | 'TV' | 'LIGHT'
+  ): Promise<NatureRemo.IAppliance[]> {
     const response = await this._get<NatureRemo.IAppliance[]>('/1/appliances')
-    return response
+
+    if (type) {
+      return response.filter((appliance) => appliance.type === type)
+    } else {
+      return response
+    }
   }
 
   /**
@@ -147,14 +154,7 @@ export class Cloud {
    * get all appliances which has AC characteristics
    */
   public async listAircon(): Promise<NatureRemo.IAppliance[]> {
-    const appliances = await this.getAppliances()
-    const airconList = []
-    for (const appliance of appliances) {
-      if (appliance.type === 'AC') {
-        airconList.push(appliance)
-      }
-    }
-    return airconList
+    return await this.getAppliances('AC')
   }
 
   /**
@@ -167,6 +167,28 @@ export class Cloud {
     const response = await this._post<NatureRemo.IUpdateAirconSettingsResponse>(
       `/1/appliances/${applianceId}/aircon_settings`,
       settings
+    )
+
+    return response
+  }
+
+  /**
+   * get all appliances which has TV characteristics
+   */
+  public async listTV(): Promise<NatureRemo.IAppliance[]> {
+    return await this.getAppliances('TV')
+  }
+
+  /**
+   * Update TV button.
+   */
+  public async updateTV(
+    applianceId: string,
+    button: string
+  ): Promise<NatureRemo.IUpdateTVResponse> {
+    const response = await this._post<NatureRemo.IUpdateTVResponse>(
+      `/1/appliances/${applianceId}/tv`,
+      { button }
     )
 
     return response
