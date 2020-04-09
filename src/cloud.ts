@@ -185,8 +185,8 @@ export class Cloud {
   public async updateTV(
     applianceId: string,
     button: string
-  ): Promise<NatureRemo.IUpdateTVResponse> {
-    const response = await this._post<NatureRemo.IUpdateTVResponse>(
+  ): Promise<NatureRemo.ITVState> {
+    const response = await this._post<NatureRemo.ITVState>(
       `/1/appliances/${applianceId}/tv`,
       { button }
     )
@@ -207,8 +207,8 @@ export class Cloud {
   public async updateLight(
     applianceId: string,
     button: string
-  ): Promise<NatureRemo.IUpdateLightResponse> {
-    const response = this._post<NatureRemo.IUpdateLightResponse>(
+  ): Promise<NatureRemo.ILightState> {
+    const response = this._post<NatureRemo.ILightState>(
       `/1/appliances/${applianceId}/light`,
       { button }
     )
