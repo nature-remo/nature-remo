@@ -73,6 +73,32 @@ export interface IAircon {
   tempUnit: 'c' | 'f'
 }
 
+export interface IButton {
+  name: string
+  image: string
+  label: string
+}
+
+export interface ILightState {
+  brightness: string
+  power: 'on' | 'off'
+  last_button: string
+}
+
+export interface ILight {
+  state: ILightState
+  buttons: IButton[]
+}
+
+export interface ITVState {
+  input: 't' | 'bs' | 'cs'
+}
+
+export interface ITV {
+  state: ITVState
+  buttons: IButton[]
+}
+
 export interface ISignal {
   id: string
   name: string
@@ -88,6 +114,8 @@ export interface IAppliance {
   type: string
   settings: IAirconSettings
   aircon?: IAircon
+  tv?: ITV
+  light?: ILight
   signals: ISignal[]
 }
 
