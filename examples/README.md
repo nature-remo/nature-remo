@@ -1,3 +1,3 @@
-# examples
+# Code Examples
 
-Do not forget to specify `NATURE_REMO_CLOUD_API_TOKEN` env var before run the example codes.
+Do not forget to assign an API token to `NATURE_REMO_CLOUD_API_TOKEN` before running the example codes above.

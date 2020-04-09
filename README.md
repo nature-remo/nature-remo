@@ -42,9 +42,9 @@ async function turnOnAirConditioner() {
 }
 ```
 
-You might want to obtain Nature Remo Cloud API token from https://home.nature.global.
+You might want to grab an API token from https://home.nature.global.
 
-- **RunKit Notebook**: Check out [RunKit Notebook](https://runkit.com/uetchy/nature-remo-cloud-api-nodejs-example) for Nature Remo Cloud API example.
+- **RunKit Notebook**: Check out [RunKit Notebook](https://runkit.com/uetchy/nature-remo-cloud-api-nodejs-example) for runnable code snippets.
 - **Code Example**: See [examples](https://github.com/uetchy/nature-remo/tree/master/examples) for various code examples.
 - **Documents**: See [API Documents](https://uetchy.github.io/nature-remo/) for detailed API documents.
 
@@ -73,9 +73,12 @@ const client = new NatureRemo.Local(NATURE_REMO_LOCAL_ADDRESS)
 ## Development
 
 ```bash
-npm install
-
-NATURE_REMO_CLOUD_TOKEN=<nature-remo-cloud-api-token>
-NATURE_REMO_AIRCON_ID=<arbitorary aircon id>
-npm test
+git clone https://github.com/uetchy/nature-remo # clone this repository
+cd nature-remo # move to the repository folder
+yarn install # install deps
+NATURE_REMO_CLOUD_TOKEN=<nature-remo-cloud-api-token> yarn test # run test before creating a pull request
 ```
+
+## Sibling projects
+
+### [Nature Remo for Rust](https://github.com/uetchy/nature-remo-rs)
