@@ -81,7 +81,7 @@ NATURE_REMO_CLOUD_TOKEN=<nature-remo-cloud-api-token> yarn test # run test befor
 
 ## Sibling projects
 
-### [Nature Remo for Rust](https://github.com/uetchy/nature-remo-rs)
+- 🌇 [Nature Remo for Rust](https://github.com/uetchy/nature-remo-rs)
 
 ## Contributors ✨
 
