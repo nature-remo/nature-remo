@@ -19,6 +19,15 @@
         "code",
         "doc"
       ]
+    },
+    {
+      "login": "kkosuge",
+      "name": "Kosuge Kazuya",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/781452?v=4",
+      "profile": "http://kksg.net",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7

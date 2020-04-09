@@ -93,6 +93,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="https://uechi.io"><img src="https://avatars0.githubusercontent.com/u/431808?v=4" width="100px;" alt=""/><br /><sub><b>Yasuaki Uechi</b></sub></a><br /><a href="https://github.com/uetchy/nature-remo/commits?author=uetchy" title="Code">💻</a> <a href="https://github.com/uetchy/nature-remo/commits?author=uetchy" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://kksg.net"><img src="https://avatars0.githubusercontent.com/u/781452?v=4" width="100px;" alt=""/><br /><sub><b>Kosuge Kazuya</b></sub></a><br /><a href="https://github.com/uetchy/nature-remo/commits?author=kkosuge" title="Code">💻</a></td>
   </tr>
 </table>
 
