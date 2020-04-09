@@ -77,6 +77,12 @@ export interface IUpdateTVResponse {
   input: 't' | 'bs' | 'cs'
 }
 
+export interface IUpdateLightResponse {
+  brightness: string
+  power: 'on' | 'off'
+  last_button: string
+}
+
 export interface ISignal {
   id: string
   name: string

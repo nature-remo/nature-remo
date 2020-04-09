@@ -195,6 +195,28 @@ export class Cloud {
   }
 
   /**
+   * get all appliances which has LIGHT characteristics
+   */
+  public async listLight(): Promise<NatureRemo.IAppliance[]> {
+    return await this.getAppliances('LIGHT')
+  }
+
+  /**
+   * Update Light button.
+   */
+  public async updateLight(
+    applianceId: string,
+    button: string
+  ): Promise<NatureRemo.IUpdateLightResponse> {
+    const response = this._post<NatureRemo.IUpdateLightResponse>(
+      `/1/appliances/${applianceId}/light`,
+      { button }
+    )
+
+    return response
+  }
+
+  /**
    * Fetch signals registered under this appliance.
    */
   public async getApplianceSignals(
