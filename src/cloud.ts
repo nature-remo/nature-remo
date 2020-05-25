@@ -285,7 +285,7 @@ export class Cloud {
    * Send infrared signal.
    */
   public async sendSignal(signalId: string) {
-    const response = await this._post(`/1/signals/${signalId}`)
+    const response = await this._post(`/1/signals/${signalId}/send`)
     return response
   }
 
