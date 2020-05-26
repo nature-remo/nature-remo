@@ -1,7 +1,7 @@
 {
   "name": "nature-remo",
   "description": "Nature Remo API client",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "scripts": {
     "build": "shx rm -r ./lib && tsc",
     "docs": "yarn build && typedoc --mode file --out docs --excludeExternals  --excludePrivate --exclude '**/__tests__/*' src && touch ./docs/.nojekyll",
