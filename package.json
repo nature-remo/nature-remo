@@ -2,14 +2,16 @@
   "name": "nature-remo",
   "description": "Nature Remo API client",
   "version": "1.2.2",
+  "author": "Yasuaki Uechi <y@uechi.io> (https://uechi.io/)",
   "scripts": {
     "build": "shx rm -r ./lib && tsc",
     "docs": "yarn build && typedoc --mode file --out docs --excludeExternals  --excludePrivate --exclude '**/__tests__/*' src && touch ./docs/.nojekyll",
     "format": "prettier 'src/**/*.ts' --write",
     "lint": "tslint --project ./tsconfig.json --fix",
+    "prepare": "yarn build",
     "release:prepare": "shipjs prepare",
     "release:trigger": "shipjs trigger",
-    "test": "yarn build && jest"
+    "test": "jest"
   },
   "dependencies": {
     "axios": "^0.19.0"
@@ -34,6 +36,14 @@
   },
   "types": "lib/index.d.ts",
   "main": "lib/index.js",
+  "files": [
+    "lib/*.js",
+    "lib/*.d.ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uetchy/nature-remo.git"
+  },
   "lint-staged": {
     "*.ts": [
       "tslint --fix",
@@ -46,7 +56,6 @@
       "pre-push": "yarn test"
     }
   },
-  "author": "Yasuaki Uechi <y@uechi.io> (https://uechi.io/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/uetchy/nature-remo/issues"
@@ -54,17 +63,9 @@
   "engines": {
     "node": ">=8.14.3"
   },
-  "files": [
-    "lib/*.js",
-    "lib/*.d.ts"
-  ],
   "homepage": "https://github.com/uetchy/nature-remo",
   "keywords": [
     "nature-remo",
     "smart-home"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/uetchy/nature-remo.git"
-  }
+  ]
 }
