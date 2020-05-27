@@ -4,11 +4,11 @@
   "version": "1.2.2",
   "author": "Yasuaki Uechi <y@uechi.io> (https://uechi.io/)",
   "scripts": {
-    "build": "shx rm -r ./lib && tsc",
+    "build": "shx rm -rf ./lib && tsc",
     "docs": "yarn build && typedoc --mode file --out docs --excludeExternals  --excludePrivate --exclude '**/__tests__/*' src && touch ./docs/.nojekyll",
     "format": "prettier 'src/**/*.ts' --write",
     "lint": "tslint --project ./tsconfig.json --fix",
-    "prepare": "yarn build",
+    "prepare": "npm run build",
     "release:prepare": "shipjs prepare",
     "release:trigger": "shipjs trigger",
     "test": "jest"
