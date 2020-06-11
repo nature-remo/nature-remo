@@ -162,7 +162,7 @@ export class Cloud {
    */
   public async updateAirconSettings(
     applianceId: string,
-    settings: {}
+    settings: Partial<NatureRemo.IUpdateAirconSettingsOptions>
   ): Promise<NatureRemo.IUpdateAirconSettingsResponse> {
     const response = await this._post<NatureRemo.IUpdateAirconSettingsResponse>(
       `/1/appliances/${applianceId}/aircon_settings`,

@@ -52,6 +52,14 @@ export interface IAirconSettings {
   button: string
 }
 
+export interface IUpdateAirconSettingsOptions {
+  temperature: string
+  operation_mode: string
+  air_volume: string
+  air_direction: string
+  button: string
+}
+
 export interface IUpdateAirconSettingsResponse extends IAirconSettings {
   updated_at: Date
 }
