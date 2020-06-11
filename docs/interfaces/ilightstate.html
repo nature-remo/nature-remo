@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>IAirconSettings | nature-remo</title>
+    <title>ILightState | nature-remo</title>
     <meta name="description" content="Documentation for nature-remo" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../assets/css/main.css" />
@@ -74,10 +74,10 @@
               <a href="../globals.html">Globals</a>
             </li>
             <li>
-              <a href="iairconsettings.html">IAirconSettings</a>
+              <a href="ilightstate.html">ILightState</a>
             </li>
           </ul>
-          <h1>Interface IAirconSettings</h1>
+          <h1>Interface ILightState</h1>
         </div>
       </div>
     </header>
@@ -88,16 +88,7 @@
             <h3>Hierarchy</h3>
             <ul class="tsd-hierarchy">
               <li>
-                <span class="target">IAirconSettings</span>
-                <ul class="tsd-hierarchy">
-                  <li>
-                    <a
-                      href="iupdateairconsettingsresponse.html"
-                      class="tsd-signature-type"
-                      >IUpdateAirconSettingsResponse</a
-                    >
-                  </li>
-                </ul>
+                <span class="target">ILightState</span>
               </li>
             </ul>
           </section>
@@ -110,29 +101,21 @@
                   <ul class="tsd-index-list">
                     <li class="tsd-kind-property tsd-parent-kind-interface">
                       <a
-                        href="iairconsettings.html#button"
+                        href="ilightstate.html#brightness"
                         class="tsd-kind-icon"
-                        >button</a
+                        >brightness</a
                       >
                     </li>
                     <li class="tsd-kind-property tsd-parent-kind-interface">
-                      <a href="iairconsettings.html#dir" class="tsd-kind-icon"
-                        >dir</a
+                      <a
+                        href="ilightstate.html#last_button"
+                        class="tsd-kind-icon"
+                        >last_<wbr />button</a
                       >
                     </li>
                     <li class="tsd-kind-property tsd-parent-kind-interface">
-                      <a href="iairconsettings.html#mode" class="tsd-kind-icon"
-                        >mode</a
-                      >
-                    </li>
-                    <li class="tsd-kind-property tsd-parent-kind-interface">
-                      <a href="iairconsettings.html#temp" class="tsd-kind-icon"
-                        >temp</a
-                      >
-                    </li>
-                    <li class="tsd-kind-property tsd-parent-kind-interface">
-                      <a href="iairconsettings.html#vol" class="tsd-kind-icon"
-                        >vol</a
+                      <a href="ilightstate.html#power" class="tsd-kind-icon"
+                        >power</a
                       >
                     </li>
                   </ul>
@@ -145,10 +128,10 @@
             <section
               class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"
             >
-              <a name="button" class="tsd-anchor"></a>
-              <h3>button</h3>
+              <a name="brightness" class="tsd-anchor"></a>
+              <h3>brightness</h3>
               <div class="tsd-signature tsd-kind-icon">
-                button<span class="tsd-signature-symbol">:</span>
+                brightness<span class="tsd-signature-symbol">:</span>
                 <span class="tsd-signature-type">string</span>
               </div>
               <aside class="tsd-sources">
@@ -156,8 +139,8 @@
                   <li>
                     Defined in
                     <a
-                      href="https://github.com/uetchy/nature-remo/blob/b4b485d/src/interfaces.ts#L52"
-                      >interfaces.ts:52</a
+                      href="https://github.com/uetchy/nature-remo/blob/b4b485d/src/interfaces.ts#L83"
+                      >interfaces.ts:83</a
                     >
                   </li>
                 </ul>
@@ -166,10 +149,10 @@
             <section
               class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"
             >
-              <a name="dir" class="tsd-anchor"></a>
-              <h3>dir</h3>
+              <a name="last_button" class="tsd-anchor"></a>
+              <h3>last_<wbr />button</h3>
               <div class="tsd-signature tsd-kind-icon">
-                dir<span class="tsd-signature-symbol">:</span>
+                last_<wbr />button<span class="tsd-signature-symbol">:</span>
                 <span class="tsd-signature-type">string</span>
               </div>
               <aside class="tsd-sources">
@@ -177,8 +160,8 @@
                   <li>
                     Defined in
                     <a
-                      href="https://github.com/uetchy/nature-remo/blob/b4b485d/src/interfaces.ts#L51"
-                      >interfaces.ts:51</a
+                      href="https://github.com/uetchy/nature-remo/blob/b4b485d/src/interfaces.ts#L85"
+                      >interfaces.ts:85</a
                     >
                   </li>
                 </ul>
@@ -187,65 +170,21 @@
             <section
               class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"
             >
-              <a name="mode" class="tsd-anchor"></a>
-              <h3>mode</h3>
+              <a name="power" class="tsd-anchor"></a>
+              <h3>power</h3>
               <div class="tsd-signature tsd-kind-icon">
-                mode<span class="tsd-signature-symbol">:</span>
-                <a
-                  href="../globals.html#iairconmodetype"
-                  class="tsd-signature-type"
-                  >IAirconModeType</a
-                >
+                power<span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">"on"</span
+                ><span class="tsd-signature-symbol"> | </span
+                ><span class="tsd-signature-type">"off"</span>
               </div>
               <aside class="tsd-sources">
                 <ul>
                   <li>
                     Defined in
                     <a
-                      href="https://github.com/uetchy/nature-remo/blob/b4b485d/src/interfaces.ts#L49"
-                      >interfaces.ts:49</a
-                    >
-                  </li>
-                </ul>
-              </aside>
-            </section>
-            <section
-              class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"
-            >
-              <a name="temp" class="tsd-anchor"></a>
-              <h3>temp</h3>
-              <div class="tsd-signature tsd-kind-icon">
-                temp<span class="tsd-signature-symbol">:</span>
-                <span class="tsd-signature-type">string</span>
-              </div>
-              <aside class="tsd-sources">
-                <ul>
-                  <li>
-                    Defined in
-                    <a
-                      href="https://github.com/uetchy/nature-remo/blob/b4b485d/src/interfaces.ts#L48"
-                      >interfaces.ts:48</a
-                    >
-                  </li>
-                </ul>
-              </aside>
-            </section>
-            <section
-              class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"
-            >
-              <a name="vol" class="tsd-anchor"></a>
-              <h3>vol</h3>
-              <div class="tsd-signature tsd-kind-icon">
-                vol<span class="tsd-signature-symbol">:</span>
-                <span class="tsd-signature-type">string</span>
-              </div>
-              <aside class="tsd-sources">
-                <ul>
-                  <li>
-                    Defined in
-                    <a
-                      href="https://github.com/uetchy/nature-remo/blob/b4b485d/src/interfaces.ts#L50"
-                      >interfaces.ts:50</a
+                      href="https://github.com/uetchy/nature-remo/blob/b4b485d/src/interfaces.ts#L84"
+                      >interfaces.ts:84</a
                     >
                   </li>
                 </ul>
@@ -282,42 +221,11 @@
                   >IAircon<wbr />Range</a
                 >
               </li>
-            </ul>
-            <ul class="current">
-              <li class="current tsd-kind-interface">
+              <li class="tsd-kind-interface">
                 <a href="iairconsettings.html" class="tsd-kind-icon"
                   >IAircon<wbr />Settings</a
                 >
-                <ul>
-                  <li class="tsd-kind-property tsd-parent-kind-interface">
-                    <a href="iairconsettings.html#button" class="tsd-kind-icon"
-                      >button</a
-                    >
-                  </li>
-                  <li class="tsd-kind-property tsd-parent-kind-interface">
-                    <a href="iairconsettings.html#dir" class="tsd-kind-icon"
-                      >dir</a
-                    >
-                  </li>
-                  <li class="tsd-kind-property tsd-parent-kind-interface">
-                    <a href="iairconsettings.html#mode" class="tsd-kind-icon"
-                      >mode</a
-                    >
-                  </li>
-                  <li class="tsd-kind-property tsd-parent-kind-interface">
-                    <a href="iairconsettings.html#temp" class="tsd-kind-icon"
-                      >temp</a
-                    >
-                  </li>
-                  <li class="tsd-kind-property tsd-parent-kind-interface">
-                    <a href="iairconsettings.html#vol" class="tsd-kind-icon"
-                      >vol</a
-                    >
-                  </li>
-                </ul>
               </li>
-            </ul>
-            <ul class="after-current">
               <li class="tsd-kind-interface">
                 <a href="iappliance.html" class="tsd-kind-icon">IAppliance</a>
               </li>
@@ -345,11 +253,32 @@
               <li class="tsd-kind-interface">
                 <a href="ilight.html" class="tsd-kind-icon">ILight</a>
               </li>
-              <li class="tsd-kind-interface">
+            </ul>
+            <ul class="current">
+              <li class="current tsd-kind-interface">
                 <a href="ilightstate.html" class="tsd-kind-icon"
                   >ILight<wbr />State</a
                 >
+                <ul>
+                  <li class="tsd-kind-property tsd-parent-kind-interface">
+                    <a href="ilightstate.html#brightness" class="tsd-kind-icon"
+                      >brightness</a
+                    >
+                  </li>
+                  <li class="tsd-kind-property tsd-parent-kind-interface">
+                    <a href="ilightstate.html#last_button" class="tsd-kind-icon"
+                      >last_<wbr />button</a
+                    >
+                  </li>
+                  <li class="tsd-kind-property tsd-parent-kind-interface">
+                    <a href="ilightstate.html#power" class="tsd-kind-icon"
+                      >power</a
+                    >
+                  </li>
+                </ul>
               </li>
+            </ul>
+            <ul class="after-current">
               <li class="tsd-kind-interface">
                 <a href="imodel.html" class="tsd-kind-icon">IModel</a>
               </li>

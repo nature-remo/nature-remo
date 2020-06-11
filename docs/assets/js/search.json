@@ -1,0 +1,1701 @@
+{
+  "kinds": {
+    "128": "Class",
+    "256": "Interface",
+    "512": "Constructor",
+    "1024": "Property",
+    "2048": "Method",
+    "65536": "Type literal",
+    "4194304": "Type alias"
+  },
+  "rows": [
+    {
+      "id": 0,
+      "kind": 256,
+      "name": "IUser",
+      "url": "interfaces/iuser.html",
+      "classes": "tsd-kind-interface"
+    },
+    {
+      "id": 1,
+      "kind": 1024,
+      "name": "id",
+      "url": "interfaces/iuser.html#id",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IUser"
+    },
+    {
+      "id": 2,
+      "kind": 1024,
+      "name": "nickname",
+      "url": "interfaces/iuser.html#nickname",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IUser"
+    },
+    {
+      "id": 3,
+      "kind": 256,
+      "name": "IDetectedAirconModel",
+      "url": "interfaces/idetectedairconmodel.html",
+      "classes": "tsd-kind-interface"
+    },
+    {
+      "id": 4,
+      "kind": 1024,
+      "name": "model",
+      "url": "interfaces/idetectedairconmodel.html#model",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IDetectedAirconModel"
+    },
+    {
+      "id": 5,
+      "kind": 1024,
+      "name": "params",
+      "url": "interfaces/idetectedairconmodel.html#params",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IDetectedAirconModel"
+    },
+    {
+      "id": 6,
+      "kind": 256,
+      "name": "ISensorValue",
+      "url": "interfaces/isensorvalue.html",
+      "classes": "tsd-kind-interface"
+    },
+    {
+      "id": 7,
+      "kind": 1024,
+      "name": "temperature",
+      "url": "interfaces/isensorvalue.html#temperature",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "ISensorValue"
+    },
+    {
+      "id": 8,
+      "kind": 1024,
+      "name": "humidity",
+      "url": "interfaces/isensorvalue.html#humidity",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "ISensorValue"
+    },
+    {
+      "id": 9,
+      "kind": 1024,
+      "name": "illumination",
+      "url": "interfaces/isensorvalue.html#illumination",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "ISensorValue"
+    },
+    {
+      "id": 10,
+      "kind": 256,
+      "name": "IDevice",
+      "url": "interfaces/idevice.html",
+      "classes": "tsd-kind-interface"
+    },
+    {
+      "id": 11,
+      "kind": 1024,
+      "name": "id",
+      "url": "interfaces/idevice.html#id",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IDevice"
+    },
+    {
+      "id": 12,
+      "kind": 1024,
+      "name": "name",
+      "url": "interfaces/idevice.html#name",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IDevice"
+    },
+    {
+      "id": 13,
+      "kind": 1024,
+      "name": "temperature_offset",
+      "url": "interfaces/idevice.html#temperature_offset",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IDevice"
+    },
+    {
+      "id": 14,
+      "kind": 1024,
+      "name": "humidity_offset",
+      "url": "interfaces/idevice.html#humidity_offset",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IDevice"
+    },
+    {
+      "id": 15,
+      "kind": 1024,
+      "name": "created_at",
+      "url": "interfaces/idevice.html#created_at",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IDevice"
+    },
+    {
+      "id": 16,
+      "kind": 1024,
+      "name": "updated_at",
+      "url": "interfaces/idevice.html#updated_at",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IDevice"
+    },
+    {
+      "id": 17,
+      "kind": 1024,
+      "name": "firmware_version",
+      "url": "interfaces/idevice.html#firmware_version",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IDevice"
+    },
+    {
+      "id": 18,
+      "kind": 256,
+      "name": "IDeviceWithEvents",
+      "url": "interfaces/idevicewithevents.html",
+      "classes": "tsd-kind-interface"
+    },
+    {
+      "id": 19,
+      "kind": 1024,
+      "name": "newest_events",
+      "url": "interfaces/idevicewithevents.html#newest_events",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IDeviceWithEvents"
+    },
+    {
+      "id": 20,
+      "kind": 65536,
+      "name": "__type",
+      "url": "interfaces/idevicewithevents.html#newest_events.__type",
+      "classes": "tsd-kind-type-literal tsd-parent-kind-property",
+      "parent": "IDeviceWithEvents.newest_events"
+    },
+    {
+      "id": 21,
+      "kind": 1024,
+      "name": "id",
+      "url": "interfaces/idevicewithevents.html#id",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "IDeviceWithEvents"
+    },
+    {
+      "id": 22,
+      "kind": 1024,
+      "name": "name",
+      "url": "interfaces/idevicewithevents.html#name",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "IDeviceWithEvents"
+    },
+    {
+      "id": 23,
+      "kind": 1024,
+      "name": "temperature_offset",
+      "url": "interfaces/idevicewithevents.html#temperature_offset",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "IDeviceWithEvents"
+    },
+    {
+      "id": 24,
+      "kind": 1024,
+      "name": "humidity_offset",
+      "url": "interfaces/idevicewithevents.html#humidity_offset",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "IDeviceWithEvents"
+    },
+    {
+      "id": 25,
+      "kind": 1024,
+      "name": "created_at",
+      "url": "interfaces/idevicewithevents.html#created_at",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "IDeviceWithEvents"
+    },
+    {
+      "id": 26,
+      "kind": 1024,
+      "name": "updated_at",
+      "url": "interfaces/idevicewithevents.html#updated_at",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "IDeviceWithEvents"
+    },
+    {
+      "id": 27,
+      "kind": 1024,
+      "name": "firmware_version",
+      "url": "interfaces/idevicewithevents.html#firmware_version",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "IDeviceWithEvents"
+    },
+    {
+      "id": 28,
+      "kind": 256,
+      "name": "IEventValue",
+      "url": "interfaces/ieventvalue.html",
+      "classes": "tsd-kind-interface"
+    },
+    {
+      "id": 29,
+      "kind": 1024,
+      "name": "val",
+      "url": "interfaces/ieventvalue.html#val",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IEventValue"
+    },
+    {
+      "id": 30,
+      "kind": 1024,
+      "name": "created_at",
+      "url": "interfaces/ieventvalue.html#created_at",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IEventValue"
+    },
+    {
+      "id": 31,
+      "kind": 256,
+      "name": "IModel",
+      "url": "interfaces/imodel.html",
+      "classes": "tsd-kind-interface"
+    },
+    {
+      "id": 32,
+      "kind": 1024,
+      "name": "id",
+      "url": "interfaces/imodel.html#id",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IModel"
+    },
+    {
+      "id": 33,
+      "kind": 1024,
+      "name": "manufacturer",
+      "url": "interfaces/imodel.html#manufacturer",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IModel"
+    },
+    {
+      "id": 34,
+      "kind": 1024,
+      "name": "remote_name",
+      "url": "interfaces/imodel.html#remote_name",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IModel"
+    },
+    {
+      "id": 35,
+      "kind": 1024,
+      "name": "name",
+      "url": "interfaces/imodel.html#name",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IModel"
+    },
+    {
+      "id": 36,
+      "kind": 1024,
+      "name": "image",
+      "url": "interfaces/imodel.html#image",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IModel"
+    },
+    {
+      "id": 37,
+      "kind": 256,
+      "name": "IAirconSettings",
+      "url": "interfaces/iairconsettings.html",
+      "classes": "tsd-kind-interface"
+    },
+    {
+      "id": 38,
+      "kind": 1024,
+      "name": "temp",
+      "url": "interfaces/iairconsettings.html#temp",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IAirconSettings"
+    },
+    {
+      "id": 39,
+      "kind": 1024,
+      "name": "mode",
+      "url": "interfaces/iairconsettings.html#mode",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IAirconSettings"
+    },
+    {
+      "id": 40,
+      "kind": 1024,
+      "name": "vol",
+      "url": "interfaces/iairconsettings.html#vol",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IAirconSettings"
+    },
+    {
+      "id": 41,
+      "kind": 1024,
+      "name": "dir",
+      "url": "interfaces/iairconsettings.html#dir",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IAirconSettings"
+    },
+    {
+      "id": 42,
+      "kind": 1024,
+      "name": "button",
+      "url": "interfaces/iairconsettings.html#button",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IAirconSettings"
+    },
+    {
+      "id": 43,
+      "kind": 256,
+      "name": "IUpdateAirconSettingsResponse",
+      "url": "interfaces/iupdateairconsettingsresponse.html",
+      "classes": "tsd-kind-interface"
+    },
+    {
+      "id": 44,
+      "kind": 1024,
+      "name": "updated_at",
+      "url": "interfaces/iupdateairconsettingsresponse.html#updated_at",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IUpdateAirconSettingsResponse"
+    },
+    {
+      "id": 45,
+      "kind": 1024,
+      "name": "temp",
+      "url": "interfaces/iupdateairconsettingsresponse.html#temp",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "IUpdateAirconSettingsResponse"
+    },
+    {
+      "id": 46,
+      "kind": 1024,
+      "name": "mode",
+      "url": "interfaces/iupdateairconsettingsresponse.html#mode",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "IUpdateAirconSettingsResponse"
+    },
+    {
+      "id": 47,
+      "kind": 1024,
+      "name": "vol",
+      "url": "interfaces/iupdateairconsettingsresponse.html#vol",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "IUpdateAirconSettingsResponse"
+    },
+    {
+      "id": 48,
+      "kind": 1024,
+      "name": "dir",
+      "url": "interfaces/iupdateairconsettingsresponse.html#dir",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "IUpdateAirconSettingsResponse"
+    },
+    {
+      "id": 49,
+      "kind": 1024,
+      "name": "button",
+      "url": "interfaces/iupdateairconsettingsresponse.html#button",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "IUpdateAirconSettingsResponse"
+    },
+    {
+      "id": 50,
+      "kind": 256,
+      "name": "IAirconModeValue",
+      "url": "interfaces/iairconmodevalue.html",
+      "classes": "tsd-kind-interface"
+    },
+    {
+      "id": 51,
+      "kind": 1024,
+      "name": "temp",
+      "url": "interfaces/iairconmodevalue.html#temp",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IAirconModeValue"
+    },
+    {
+      "id": 52,
+      "kind": 1024,
+      "name": "dir",
+      "url": "interfaces/iairconmodevalue.html#dir",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IAirconModeValue"
+    },
+    {
+      "id": 53,
+      "kind": 1024,
+      "name": "vol",
+      "url": "interfaces/iairconmodevalue.html#vol",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IAirconModeValue"
+    },
+    {
+      "id": 54,
+      "kind": 256,
+      "name": "IAirconRange",
+      "url": "interfaces/iairconrange.html",
+      "classes": "tsd-kind-interface"
+    },
+    {
+      "id": 55,
+      "kind": 1024,
+      "name": "modes",
+      "url": "interfaces/iairconrange.html#modes",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IAirconRange"
+    },
+    {
+      "id": 56,
+      "kind": 65536,
+      "name": "__type",
+      "url": "interfaces/iairconrange.html#modes.__type",
+      "classes": "tsd-kind-type-literal tsd-parent-kind-property",
+      "parent": "IAirconRange.modes"
+    },
+    {
+      "id": 57,
+      "kind": 1024,
+      "name": "fixedButtons",
+      "url": "interfaces/iairconrange.html#fixedbuttons",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IAirconRange"
+    },
+    {
+      "id": 58,
+      "kind": 256,
+      "name": "IAircon",
+      "url": "interfaces/iaircon.html",
+      "classes": "tsd-kind-interface"
+    },
+    {
+      "id": 59,
+      "kind": 1024,
+      "name": "range",
+      "url": "interfaces/iaircon.html#range",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IAircon"
+    },
+    {
+      "id": 60,
+      "kind": 1024,
+      "name": "tempUnit",
+      "url": "interfaces/iaircon.html#tempunit",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IAircon"
+    },
+    {
+      "id": 61,
+      "kind": 256,
+      "name": "IButton",
+      "url": "interfaces/ibutton.html",
+      "classes": "tsd-kind-interface"
+    },
+    {
+      "id": 62,
+      "kind": 1024,
+      "name": "name",
+      "url": "interfaces/ibutton.html#name",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IButton"
+    },
+    {
+      "id": 63,
+      "kind": 1024,
+      "name": "image",
+      "url": "interfaces/ibutton.html#image",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IButton"
+    },
+    {
+      "id": 64,
+      "kind": 1024,
+      "name": "label",
+      "url": "interfaces/ibutton.html#label",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IButton"
+    },
+    {
+      "id": 65,
+      "kind": 256,
+      "name": "ILightState",
+      "url": "interfaces/ilightstate.html",
+      "classes": "tsd-kind-interface"
+    },
+    {
+      "id": 66,
+      "kind": 1024,
+      "name": "brightness",
+      "url": "interfaces/ilightstate.html#brightness",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "ILightState"
+    },
+    {
+      "id": 67,
+      "kind": 1024,
+      "name": "power",
+      "url": "interfaces/ilightstate.html#power",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "ILightState"
+    },
+    {
+      "id": 68,
+      "kind": 1024,
+      "name": "last_button",
+      "url": "interfaces/ilightstate.html#last_button",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "ILightState"
+    },
+    {
+      "id": 69,
+      "kind": 256,
+      "name": "ILight",
+      "url": "interfaces/ilight.html",
+      "classes": "tsd-kind-interface"
+    },
+    {
+      "id": 70,
+      "kind": 1024,
+      "name": "state",
+      "url": "interfaces/ilight.html#state",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "ILight"
+    },
+    {
+      "id": 71,
+      "kind": 1024,
+      "name": "buttons",
+      "url": "interfaces/ilight.html#buttons",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "ILight"
+    },
+    {
+      "id": 72,
+      "kind": 256,
+      "name": "ITVState",
+      "url": "interfaces/itvstate.html",
+      "classes": "tsd-kind-interface"
+    },
+    {
+      "id": 73,
+      "kind": 1024,
+      "name": "input",
+      "url": "interfaces/itvstate.html#input",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "ITVState"
+    },
+    {
+      "id": 74,
+      "kind": 256,
+      "name": "ITV",
+      "url": "interfaces/itv.html",
+      "classes": "tsd-kind-interface"
+    },
+    {
+      "id": 75,
+      "kind": 1024,
+      "name": "state",
+      "url": "interfaces/itv.html#state",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "ITV"
+    },
+    {
+      "id": 76,
+      "kind": 1024,
+      "name": "buttons",
+      "url": "interfaces/itv.html#buttons",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "ITV"
+    },
+    {
+      "id": 77,
+      "kind": 256,
+      "name": "ISignal",
+      "url": "interfaces/isignal.html",
+      "classes": "tsd-kind-interface"
+    },
+    {
+      "id": 78,
+      "kind": 1024,
+      "name": "id",
+      "url": "interfaces/isignal.html#id",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "ISignal"
+    },
+    {
+      "id": 79,
+      "kind": 1024,
+      "name": "name",
+      "url": "interfaces/isignal.html#name",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "ISignal"
+    },
+    {
+      "id": 80,
+      "kind": 1024,
+      "name": "image",
+      "url": "interfaces/isignal.html#image",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "ISignal"
+    },
+    {
+      "id": 81,
+      "kind": 256,
+      "name": "IAppliance",
+      "url": "interfaces/iappliance.html",
+      "classes": "tsd-kind-interface"
+    },
+    {
+      "id": 82,
+      "kind": 1024,
+      "name": "id",
+      "url": "interfaces/iappliance.html#id",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IAppliance"
+    },
+    {
+      "id": 83,
+      "kind": 1024,
+      "name": "device",
+      "url": "interfaces/iappliance.html#device",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IAppliance"
+    },
+    {
+      "id": 84,
+      "kind": 1024,
+      "name": "model",
+      "url": "interfaces/iappliance.html#model",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IAppliance"
+    },
+    {
+      "id": 85,
+      "kind": 1024,
+      "name": "nickname",
+      "url": "interfaces/iappliance.html#nickname",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IAppliance"
+    },
+    {
+      "id": 86,
+      "kind": 1024,
+      "name": "image",
+      "url": "interfaces/iappliance.html#image",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IAppliance"
+    },
+    {
+      "id": 87,
+      "kind": 1024,
+      "name": "type",
+      "url": "interfaces/iappliance.html#type",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IAppliance"
+    },
+    {
+      "id": 88,
+      "kind": 1024,
+      "name": "settings",
+      "url": "interfaces/iappliance.html#settings",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IAppliance"
+    },
+    {
+      "id": 89,
+      "kind": 1024,
+      "name": "aircon",
+      "url": "interfaces/iappliance.html#aircon",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IAppliance"
+    },
+    {
+      "id": 90,
+      "kind": 1024,
+      "name": "tv",
+      "url": "interfaces/iappliance.html#tv",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IAppliance"
+    },
+    {
+      "id": 91,
+      "kind": 1024,
+      "name": "light",
+      "url": "interfaces/iappliance.html#light",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IAppliance"
+    },
+    {
+      "id": 92,
+      "kind": 1024,
+      "name": "signals",
+      "url": "interfaces/iappliance.html#signals",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IAppliance"
+    },
+    {
+      "id": 93,
+      "kind": 256,
+      "name": "ISignalMessage",
+      "url": "interfaces/isignalmessage.html",
+      "classes": "tsd-kind-interface"
+    },
+    {
+      "id": 94,
+      "kind": 1024,
+      "name": "data",
+      "url": "interfaces/isignalmessage.html#data",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "ISignalMessage"
+    },
+    {
+      "id": 95,
+      "kind": 1024,
+      "name": "freq",
+      "url": "interfaces/isignalmessage.html#freq",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "ISignalMessage"
+    },
+    {
+      "id": 96,
+      "kind": 1024,
+      "name": "format",
+      "url": "interfaces/isignalmessage.html#format",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "ISignalMessage"
+    },
+    {
+      "id": 97,
+      "kind": 4194304,
+      "name": "IDeviceEventType",
+      "url": "globals.html#ideviceeventtype",
+      "classes": "tsd-kind-type-alias"
+    },
+    {
+      "id": 98,
+      "kind": 4194304,
+      "name": "IAirconModeType",
+      "url": "globals.html#iairconmodetype",
+      "classes": "tsd-kind-type-alias"
+    },
+    {
+      "id": 99,
+      "kind": 128,
+      "name": "Cloud",
+      "url": "classes/cloud.html",
+      "classes": "tsd-kind-class"
+    },
+    {
+      "id": 100,
+      "kind": 512,
+      "name": "constructor",
+      "url": "classes/cloud.html#constructor",
+      "classes": "tsd-kind-constructor tsd-parent-kind-class",
+      "parent": "Cloud"
+    },
+    {
+      "id": 101,
+      "kind": 2048,
+      "name": "getUser",
+      "url": "classes/cloud.html#getuser",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "Cloud"
+    },
+    {
+      "id": 102,
+      "kind": 2048,
+      "name": "updateUser",
+      "url": "classes/cloud.html#updateuser",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "Cloud"
+    },
+    {
+      "id": 103,
+      "kind": 2048,
+      "name": "getDevices",
+      "url": "classes/cloud.html#getdevices",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "Cloud"
+    },
+    {
+      "id": 104,
+      "kind": 2048,
+      "name": "detectAppliance",
+      "url": "classes/cloud.html#detectappliance",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "Cloud"
+    },
+    {
+      "id": 105,
+      "kind": 2048,
+      "name": "getSensorValue",
+      "url": "classes/cloud.html#getsensorvalue",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "Cloud"
+    },
+    {
+      "id": 106,
+      "kind": 2048,
+      "name": "getAppliances",
+      "url": "classes/cloud.html#getappliances",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "Cloud"
+    },
+    {
+      "id": 107,
+      "kind": 2048,
+      "name": "createAppliance",
+      "url": "classes/cloud.html#createappliance",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "Cloud"
+    },
+    {
+      "id": 108,
+      "kind": 2048,
+      "name": "updateAppliancesOrder",
+      "url": "classes/cloud.html#updateappliancesorder",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "Cloud"
+    },
+    {
+      "id": 109,
+      "kind": 2048,
+      "name": "deleteAppliance",
+      "url": "classes/cloud.html#deleteappliance",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "Cloud"
+    },
+    {
+      "id": 110,
+      "kind": 2048,
+      "name": "updateAppliance",
+      "url": "classes/cloud.html#updateappliance",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "Cloud"
+    },
+    {
+      "id": 111,
+      "kind": 2048,
+      "name": "listAircon",
+      "url": "classes/cloud.html#listaircon",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "Cloud"
+    },
+    {
+      "id": 112,
+      "kind": 2048,
+      "name": "updateAirconSettings",
+      "url": "classes/cloud.html#updateairconsettings",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "Cloud"
+    },
+    {
+      "id": 113,
+      "kind": 2048,
+      "name": "listTV",
+      "url": "classes/cloud.html#listtv",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "Cloud"
+    },
+    {
+      "id": 114,
+      "kind": 2048,
+      "name": "updateTV",
+      "url": "classes/cloud.html#updatetv",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "Cloud"
+    },
+    {
+      "id": 115,
+      "kind": 2048,
+      "name": "listLight",
+      "url": "classes/cloud.html#listlight",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "Cloud"
+    },
+    {
+      "id": 116,
+      "kind": 2048,
+      "name": "updateLight",
+      "url": "classes/cloud.html#updatelight",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "Cloud"
+    },
+    {
+      "id": 117,
+      "kind": 2048,
+      "name": "getApplianceSignals",
+      "url": "classes/cloud.html#getappliancesignals",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "Cloud"
+    },
+    {
+      "id": 118,
+      "kind": 2048,
+      "name": "createApplianceSignal",
+      "url": "classes/cloud.html#createappliancesignal",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "Cloud"
+    },
+    {
+      "id": 119,
+      "kind": 2048,
+      "name": "updateSignalOrders",
+      "url": "classes/cloud.html#updatesignalorders",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "Cloud"
+    },
+    {
+      "id": 120,
+      "kind": 2048,
+      "name": "updateSignal",
+      "url": "classes/cloud.html#updatesignal",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "Cloud"
+    },
+    {
+      "id": 121,
+      "kind": 2048,
+      "name": "deleteSignal",
+      "url": "classes/cloud.html#deletesignal",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "Cloud"
+    },
+    {
+      "id": 122,
+      "kind": 2048,
+      "name": "sendSignal",
+      "url": "classes/cloud.html#sendsignal",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "Cloud"
+    },
+    {
+      "id": 123,
+      "kind": 2048,
+      "name": "updateDevice",
+      "url": "classes/cloud.html#updatedevice",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "Cloud"
+    },
+    {
+      "id": 124,
+      "kind": 2048,
+      "name": "deleteDevice",
+      "url": "classes/cloud.html#deletedevice",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "Cloud"
+    },
+    {
+      "id": 125,
+      "kind": 2048,
+      "name": "updateTemperatureOffset",
+      "url": "classes/cloud.html#updatetemperatureoffset",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "Cloud"
+    },
+    {
+      "id": 126,
+      "kind": 2048,
+      "name": "updateHumidityOffset",
+      "url": "classes/cloud.html#updatehumidityoffset",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "Cloud"
+    },
+    {
+      "id": 127,
+      "kind": 128,
+      "name": "Local",
+      "url": "classes/local.html",
+      "classes": "tsd-kind-class"
+    },
+    {
+      "id": 128,
+      "kind": 512,
+      "name": "constructor",
+      "url": "classes/local.html#constructor",
+      "classes": "tsd-kind-constructor tsd-parent-kind-class",
+      "parent": "Local"
+    },
+    {
+      "id": 129,
+      "kind": 2048,
+      "name": "fetchReceivedSignal",
+      "url": "classes/local.html#fetchreceivedsignal",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "Local"
+    },
+    {
+      "id": 130,
+      "kind": 2048,
+      "name": "sendSignal",
+      "url": "classes/local.html#sendsignal",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "Local"
+    }
+  ],
+  "index": {
+    "version": "2.3.8",
+    "fields": ["name", "parent"],
+    "fieldVectors": [
+      ["name/0", [0, 36.3]],
+      ["parent/0", []],
+      ["name/1", [1, 30.11]],
+      ["parent/1", [0, 3.325]],
+      ["name/2", [2, 39.665]],
+      ["parent/2", [0, 3.325]],
+      ["name/3", [3, 36.3]],
+      ["parent/3", []],
+      ["name/4", [4, 39.665]],
+      ["parent/4", [3, 3.325]],
+      ["name/5", [5, 44.773]],
+      ["parent/5", [3, 3.325]],
+      ["name/6", [6, 33.787]],
+      ["parent/6", []],
+      ["name/7", [7, 44.773]],
+      ["parent/7", [6, 3.095]],
+      ["name/8", [8, 44.773]],
+      ["parent/8", [6, 3.095]],
+      ["name/9", [9, 44.773]],
+      ["parent/9", [6, 3.095]],
+      ["name/10", [10, 27.427]],
+      ["parent/10", []],
+      ["name/11", [1, 30.11]],
+      ["parent/11", [10, 2.512]],
+      ["name/12", [11, 31.781]],
+      ["parent/12", [10, 2.512]],
+      ["name/13", [12, 39.665]],
+      ["parent/13", [10, 2.512]],
+      ["name/14", [13, 39.665]],
+      ["parent/14", [10, 2.512]],
+      ["name/15", [14, 36.3]],
+      ["parent/15", [10, 2.512]],
+      ["name/16", [15, 36.3]],
+      ["parent/16", [10, 2.512]],
+      ["name/17", [16, 39.665]],
+      ["parent/17", [10, 2.512]],
+      ["name/18", [17, 26.315]],
+      ["parent/18", []],
+      ["name/19", [18, 44.773]],
+      ["parent/19", [17, 2.41]],
+      ["name/20", [19, 39.665]],
+      ["parent/20", [20, 4.101]],
+      ["name/21", [1, 30.11]],
+      ["parent/21", [17, 2.41]],
+      ["name/22", [11, 31.781]],
+      ["parent/22", [17, 2.41]],
+      ["name/23", [12, 39.665]],
+      ["parent/23", [17, 2.41]],
+      ["name/24", [13, 39.665]],
+      ["parent/24", [17, 2.41]],
+      ["name/25", [14, 36.3]],
+      ["parent/25", [17, 2.41]],
+      ["name/26", [15, 36.3]],
+      ["parent/26", [17, 2.41]],
+      ["name/27", [16, 39.665]],
+      ["parent/27", [17, 2.41]],
+      ["name/28", [21, 36.3]],
+      ["parent/28", []],
+      ["name/29", [22, 44.773]],
+      ["parent/29", [21, 3.325]],
+      ["name/30", [14, 36.3]],
+      ["parent/30", [21, 3.325]],
+      ["name/31", [23, 30.11]],
+      ["parent/31", []],
+      ["name/32", [1, 30.11]],
+      ["parent/32", [23, 2.758]],
+      ["name/33", [24, 44.773]],
+      ["parent/33", [23, 2.758]],
+      ["name/34", [25, 44.773]],
+      ["parent/34", [23, 2.758]],
+      ["name/35", [11, 31.781]],
+      ["parent/35", [23, 2.758]],
+      ["name/36", [26, 33.787]],
+      ["parent/36", [23, 2.758]],
+      ["name/37", [27, 30.11]],
+      ["parent/37", []],
+      ["name/38", [28, 36.3]],
+      ["parent/38", [27, 2.758]],
+      ["name/39", [29, 39.665]],
+      ["parent/39", [27, 2.758]],
+      ["name/40", [30, 36.3]],
+      ["parent/40", [27, 2.758]],
+      ["name/41", [31, 36.3]],
+      ["parent/41", [27, 2.758]],
+      ["name/42", [32, 39.665]],
+      ["parent/42", [27, 2.758]],
+      ["name/43", [33, 28.679]],
+      ["parent/43", []],
+      ["name/44", [15, 36.3]],
+      ["parent/44", [33, 2.627]],
+      ["name/45", [28, 36.3]],
+      ["parent/45", [33, 2.627]],
+      ["name/46", [29, 39.665]],
+      ["parent/46", [33, 2.627]],
+      ["name/47", [30, 36.3]],
+      ["parent/47", [33, 2.627]],
+      ["name/48", [31, 36.3]],
+      ["parent/48", [33, 2.627]],
+      ["name/49", [32, 39.665]],
+      ["parent/49", [33, 2.627]],
+      ["name/50", [34, 33.787]],
+      ["parent/50", []],
+      ["name/51", [28, 36.3]],
+      ["parent/51", [34, 3.095]],
+      ["name/52", [31, 36.3]],
+      ["parent/52", [34, 3.095]],
+      ["name/53", [30, 36.3]],
+      ["parent/53", [34, 3.095]],
+      ["name/54", [35, 36.3]],
+      ["parent/54", []],
+      ["name/55", [36, 44.773]],
+      ["parent/55", [35, 3.325]],
+      ["name/56", [19, 39.665]],
+      ["parent/56", [37, 4.101]],
+      ["name/57", [38, 44.773]],
+      ["parent/57", [35, 3.325]],
+      ["name/58", [39, 36.3]],
+      ["parent/58", []],
+      ["name/59", [40, 44.773]],
+      ["parent/59", [39, 3.325]],
+      ["name/60", [41, 44.773]],
+      ["parent/60", [39, 3.325]],
+      ["name/61", [42, 33.787]],
+      ["parent/61", []],
+      ["name/62", [11, 31.781]],
+      ["parent/62", [42, 3.095]],
+      ["name/63", [26, 33.787]],
+      ["parent/63", [42, 3.095]],
+      ["name/64", [43, 44.773]],
+      ["parent/64", [42, 3.095]],
+      ["name/65", [44, 33.787]],
+      ["parent/65", []],
+      ["name/66", [45, 44.773]],
+      ["parent/66", [44, 3.095]],
+      ["name/67", [46, 44.773]],
+      ["parent/67", [44, 3.095]],
+      ["name/68", [47, 44.773]],
+      ["parent/68", [44, 3.095]],
+      ["name/69", [48, 36.3]],
+      ["parent/69", []],
+      ["name/70", [49, 39.665]],
+      ["parent/70", [48, 3.325]],
+      ["name/71", [50, 39.665]],
+      ["parent/71", [48, 3.325]],
+      ["name/72", [51, 39.665]],
+      ["parent/72", []],
+      ["name/73", [52, 44.773]],
+      ["parent/73", [51, 3.633]],
+      ["name/74", [53, 36.3]],
+      ["parent/74", []],
+      ["name/75", [49, 39.665]],
+      ["parent/75", [53, 3.325]],
+      ["name/76", [50, 39.665]],
+      ["parent/76", [53, 3.325]],
+      ["name/77", [54, 33.787]],
+      ["parent/77", []],
+      ["name/78", [1, 30.11]],
+      ["parent/78", [54, 3.095]],
+      ["name/79", [11, 31.781]],
+      ["parent/79", [54, 3.095]],
+      ["name/80", [26, 33.787]],
+      ["parent/80", [54, 3.095]],
+      ["name/81", [55, 23.571]],
+      ["parent/81", []],
+      ["name/82", [1, 30.11]],
+      ["parent/82", [55, 2.159]],
+      ["name/83", [56, 44.773]],
+      ["parent/83", [55, 2.159]],
+      ["name/84", [4, 39.665]],
+      ["parent/84", [55, 2.159]],
+      ["name/85", [2, 39.665]],
+      ["parent/85", [55, 2.159]],
+      ["name/86", [26, 33.787]],
+      ["parent/86", [55, 2.159]],
+      ["name/87", [57, 44.773]],
+      ["parent/87", [55, 2.159]],
+      ["name/88", [58, 44.773]],
+      ["parent/88", [55, 2.159]],
+      ["name/89", [59, 44.773]],
+      ["parent/89", [55, 2.159]],
+      ["name/90", [60, 44.773]],
+      ["parent/90", [55, 2.159]],
+      ["name/91", [61, 44.773]],
+      ["parent/91", [55, 2.159]],
+      ["name/92", [62, 44.773]],
+      ["parent/92", [55, 2.159]],
+      ["name/93", [63, 33.787]],
+      ["parent/93", []],
+      ["name/94", [64, 44.773]],
+      ["parent/94", [63, 3.095]],
+      ["name/95", [65, 44.773]],
+      ["parent/95", [63, 3.095]],
+      ["name/96", [66, 44.773]],
+      ["parent/96", [63, 3.095]],
+      ["name/97", [67, 44.773]],
+      ["parent/97", []],
+      ["name/98", [68, 44.773]],
+      ["parent/98", []],
+      ["name/99", [69, 15.329]],
+      ["parent/99", []],
+      ["name/100", [70, 39.665]],
+      ["parent/100", [69, 1.404]],
+      ["name/101", [71, 44.773]],
+      ["parent/101", [69, 1.404]],
+      ["name/102", [72, 44.773]],
+      ["parent/102", [69, 1.404]],
+      ["name/103", [73, 44.773]],
+      ["parent/103", [69, 1.404]],
+      ["name/104", [74, 44.773]],
+      ["parent/104", [69, 1.404]],
+      ["name/105", [75, 44.773]],
+      ["parent/105", [69, 1.404]],
+      ["name/106", [76, 44.773]],
+      ["parent/106", [69, 1.404]],
+      ["name/107", [77, 44.773]],
+      ["parent/107", [69, 1.404]],
+      ["name/108", [78, 44.773]],
+      ["parent/108", [69, 1.404]],
+      ["name/109", [79, 44.773]],
+      ["parent/109", [69, 1.404]],
+      ["name/110", [80, 44.773]],
+      ["parent/110", [69, 1.404]],
+      ["name/111", [81, 44.773]],
+      ["parent/111", [69, 1.404]],
+      ["name/112", [82, 44.773]],
+      ["parent/112", [69, 1.404]],
+      ["name/113", [83, 44.773]],
+      ["parent/113", [69, 1.404]],
+      ["name/114", [84, 44.773]],
+      ["parent/114", [69, 1.404]],
+      ["name/115", [85, 44.773]],
+      ["parent/115", [69, 1.404]],
+      ["name/116", [86, 44.773]],
+      ["parent/116", [69, 1.404]],
+      ["name/117", [87, 44.773]],
+      ["parent/117", [69, 1.404]],
+      ["name/118", [88, 44.773]],
+      ["parent/118", [69, 1.404]],
+      ["name/119", [89, 44.773]],
+      ["parent/119", [69, 1.404]],
+      ["name/120", [90, 44.773]],
+      ["parent/120", [69, 1.404]],
+      ["name/121", [91, 44.773]],
+      ["parent/121", [69, 1.404]],
+      ["name/122", [92, 39.665]],
+      ["parent/122", [69, 1.404]],
+      ["name/123", [93, 44.773]],
+      ["parent/123", [69, 1.404]],
+      ["name/124", [94, 44.773]],
+      ["parent/124", [69, 1.404]],
+      ["name/125", [95, 44.773]],
+      ["parent/125", [69, 1.404]],
+      ["name/126", [96, 44.773]],
+      ["parent/126", [69, 1.404]],
+      ["name/127", [97, 33.787]],
+      ["parent/127", []],
+      ["name/128", [70, 39.665]],
+      ["parent/128", [97, 3.095]],
+      ["name/129", [98, 44.773]],
+      ["parent/129", [97, 3.095]],
+      ["name/130", [92, 39.665]],
+      ["parent/130", [97, 3.095]]
+    ],
+    "invertedIndex": [
+      [
+        "__type",
+        { "_index": 19, "name": { "20": {}, "56": {} }, "parent": {} }
+      ],
+      ["aircon", { "_index": 59, "name": { "89": {} }, "parent": {} }],
+      ["brightness", { "_index": 45, "name": { "66": {} }, "parent": {} }],
+      [
+        "button",
+        { "_index": 32, "name": { "42": {}, "49": {} }, "parent": {} }
+      ],
+      [
+        "buttons",
+        { "_index": 50, "name": { "71": {}, "76": {} }, "parent": {} }
+      ],
+      [
+        "cloud",
+        {
+          "_index": 69,
+          "name": { "99": {} },
+          "parent": {
+            "100": {},
+            "101": {},
+            "102": {},
+            "103": {},
+            "104": {},
+            "105": {},
+            "106": {},
+            "107": {},
+            "108": {},
+            "109": {},
+            "110": {},
+            "111": {},
+            "112": {},
+            "113": {},
+            "114": {},
+            "115": {},
+            "116": {},
+            "117": {},
+            "118": {},
+            "119": {},
+            "120": {},
+            "121": {},
+            "122": {},
+            "123": {},
+            "124": {},
+            "125": {},
+            "126": {}
+          }
+        }
+      ],
+      [
+        "constructor",
+        { "_index": 70, "name": { "100": {}, "128": {} }, "parent": {} }
+      ],
+      [
+        "createappliance",
+        { "_index": 77, "name": { "107": {} }, "parent": {} }
+      ],
+      [
+        "createappliancesignal",
+        { "_index": 88, "name": { "118": {} }, "parent": {} }
+      ],
+      [
+        "created_at",
+        { "_index": 14, "name": { "15": {}, "25": {}, "30": {} }, "parent": {} }
+      ],
+      ["data", { "_index": 64, "name": { "94": {} }, "parent": {} }],
+      [
+        "deleteappliance",
+        { "_index": 79, "name": { "109": {} }, "parent": {} }
+      ],
+      ["deletedevice", { "_index": 94, "name": { "124": {} }, "parent": {} }],
+      ["deletesignal", { "_index": 91, "name": { "121": {} }, "parent": {} }],
+      [
+        "detectappliance",
+        { "_index": 74, "name": { "104": {} }, "parent": {} }
+      ],
+      ["device", { "_index": 56, "name": { "83": {} }, "parent": {} }],
+      [
+        "dir",
+        { "_index": 31, "name": { "41": {}, "48": {}, "52": {} }, "parent": {} }
+      ],
+      [
+        "fetchreceivedsignal",
+        { "_index": 98, "name": { "129": {} }, "parent": {} }
+      ],
+      [
+        "firmware_version",
+        { "_index": 16, "name": { "17": {}, "27": {} }, "parent": {} }
+      ],
+      ["fixedbuttons", { "_index": 38, "name": { "57": {} }, "parent": {} }],
+      ["format", { "_index": 66, "name": { "96": {} }, "parent": {} }],
+      ["freq", { "_index": 65, "name": { "95": {} }, "parent": {} }],
+      ["getappliances", { "_index": 76, "name": { "106": {} }, "parent": {} }],
+      [
+        "getappliancesignals",
+        { "_index": 87, "name": { "117": {} }, "parent": {} }
+      ],
+      ["getdevices", { "_index": 73, "name": { "103": {} }, "parent": {} }],
+      ["getsensorvalue", { "_index": 75, "name": { "105": {} }, "parent": {} }],
+      ["getuser", { "_index": 71, "name": { "101": {} }, "parent": {} }],
+      ["humidity", { "_index": 8, "name": { "8": {} }, "parent": {} }],
+      [
+        "humidity_offset",
+        { "_index": 13, "name": { "14": {}, "24": {} }, "parent": {} }
+      ],
+      [
+        "iaircon",
+        { "_index": 39, "name": { "58": {} }, "parent": { "59": {}, "60": {} } }
+      ],
+      ["iairconmodetype", { "_index": 68, "name": { "98": {} }, "parent": {} }],
+      [
+        "iairconmodevalue",
+        {
+          "_index": 34,
+          "name": { "50": {} },
+          "parent": { "51": {}, "52": {}, "53": {} }
+        }
+      ],
+      [
+        "iairconrange",
+        { "_index": 35, "name": { "54": {} }, "parent": { "55": {}, "57": {} } }
+      ],
+      [
+        "iairconrange.modes",
+        { "_index": 37, "name": {}, "parent": { "56": {} } }
+      ],
+      [
+        "iairconsettings",
+        {
+          "_index": 27,
+          "name": { "37": {} },
+          "parent": { "38": {}, "39": {}, "40": {}, "41": {}, "42": {} }
+        }
+      ],
+      [
+        "iappliance",
+        {
+          "_index": 55,
+          "name": { "81": {} },
+          "parent": {
+            "82": {},
+            "83": {},
+            "84": {},
+            "85": {},
+            "86": {},
+            "87": {},
+            "88": {},
+            "89": {},
+            "90": {},
+            "91": {},
+            "92": {}
+          }
+        }
+      ],
+      [
+        "ibutton",
+        {
+          "_index": 42,
+          "name": { "61": {} },
+          "parent": { "62": {}, "63": {}, "64": {} }
+        }
+      ],
+      [
+        "id",
+        {
+          "_index": 1,
+          "name": { "1": {}, "11": {}, "21": {}, "32": {}, "78": {}, "82": {} },
+          "parent": {}
+        }
+      ],
+      [
+        "idetectedairconmodel",
+        { "_index": 3, "name": { "3": {} }, "parent": { "4": {}, "5": {} } }
+      ],
+      [
+        "idevice",
+        {
+          "_index": 10,
+          "name": { "10": {} },
+          "parent": {
+            "11": {},
+            "12": {},
+            "13": {},
+            "14": {},
+            "15": {},
+            "16": {},
+            "17": {}
+          }
+        }
+      ],
+      [
+        "ideviceeventtype",
+        { "_index": 67, "name": { "97": {} }, "parent": {} }
+      ],
+      [
+        "idevicewithevents",
+        {
+          "_index": 17,
+          "name": { "18": {} },
+          "parent": {
+            "19": {},
+            "21": {},
+            "22": {},
+            "23": {},
+            "24": {},
+            "25": {},
+            "26": {},
+            "27": {}
+          }
+        }
+      ],
+      [
+        "idevicewithevents.newest_events",
+        { "_index": 20, "name": {}, "parent": { "20": {} } }
+      ],
+      [
+        "ieventvalue",
+        { "_index": 21, "name": { "28": {} }, "parent": { "29": {}, "30": {} } }
+      ],
+      [
+        "ilight",
+        { "_index": 48, "name": { "69": {} }, "parent": { "70": {}, "71": {} } }
+      ],
+      [
+        "ilightstate",
+        {
+          "_index": 44,
+          "name": { "65": {} },
+          "parent": { "66": {}, "67": {}, "68": {} }
+        }
+      ],
+      ["illumination", { "_index": 9, "name": { "9": {} }, "parent": {} }],
+      [
+        "image",
+        {
+          "_index": 26,
+          "name": { "36": {}, "63": {}, "80": {}, "86": {} },
+          "parent": {}
+        }
+      ],
+      [
+        "imodel",
+        {
+          "_index": 23,
+          "name": { "31": {} },
+          "parent": { "32": {}, "33": {}, "34": {}, "35": {}, "36": {} }
+        }
+      ],
+      ["input", { "_index": 52, "name": { "73": {} }, "parent": {} }],
+      [
+        "isensorvalue",
+        {
+          "_index": 6,
+          "name": { "6": {} },
+          "parent": { "7": {}, "8": {}, "9": {} }
+        }
+      ],
+      [
+        "isignal",
+        {
+          "_index": 54,
+          "name": { "77": {} },
+          "parent": { "78": {}, "79": {}, "80": {} }
+        }
+      ],
+      [
+        "isignalmessage",
+        {
+          "_index": 63,
+          "name": { "93": {} },
+          "parent": { "94": {}, "95": {}, "96": {} }
+        }
+      ],
+      [
+        "itv",
+        { "_index": 53, "name": { "74": {} }, "parent": { "75": {}, "76": {} } }
+      ],
+      [
+        "itvstate",
+        { "_index": 51, "name": { "72": {} }, "parent": { "73": {} } }
+      ],
+      [
+        "iupdateairconsettingsresponse",
+        {
+          "_index": 33,
+          "name": { "43": {} },
+          "parent": {
+            "44": {},
+            "45": {},
+            "46": {},
+            "47": {},
+            "48": {},
+            "49": {}
+          }
+        }
+      ],
+      [
+        "iuser",
+        { "_index": 0, "name": { "0": {} }, "parent": { "1": {}, "2": {} } }
+      ],
+      ["label", { "_index": 43, "name": { "64": {} }, "parent": {} }],
+      ["last_button", { "_index": 47, "name": { "68": {} }, "parent": {} }],
+      ["light", { "_index": 61, "name": { "91": {} }, "parent": {} }],
+      ["listaircon", { "_index": 81, "name": { "111": {} }, "parent": {} }],
+      ["listlight", { "_index": 85, "name": { "115": {} }, "parent": {} }],
+      ["listtv", { "_index": 83, "name": { "113": {} }, "parent": {} }],
+      [
+        "local",
+        {
+          "_index": 97,
+          "name": { "127": {} },
+          "parent": { "128": {}, "129": {}, "130": {} }
+        }
+      ],
+      ["manufacturer", { "_index": 24, "name": { "33": {} }, "parent": {} }],
+      ["mode", { "_index": 29, "name": { "39": {}, "46": {} }, "parent": {} }],
+      ["model", { "_index": 4, "name": { "4": {}, "84": {} }, "parent": {} }],
+      ["modes", { "_index": 36, "name": { "55": {} }, "parent": {} }],
+      [
+        "name",
+        {
+          "_index": 11,
+          "name": { "12": {}, "22": {}, "35": {}, "62": {}, "79": {} },
+          "parent": {}
+        }
+      ],
+      ["newest_events", { "_index": 18, "name": { "19": {} }, "parent": {} }],
+      [
+        "nickname",
+        { "_index": 2, "name": { "2": {}, "85": {} }, "parent": {} }
+      ],
+      ["params", { "_index": 5, "name": { "5": {} }, "parent": {} }],
+      ["power", { "_index": 46, "name": { "67": {} }, "parent": {} }],
+      ["range", { "_index": 40, "name": { "59": {} }, "parent": {} }],
+      ["remote_name", { "_index": 25, "name": { "34": {} }, "parent": {} }],
+      [
+        "sendsignal",
+        { "_index": 92, "name": { "122": {}, "130": {} }, "parent": {} }
+      ],
+      ["settings", { "_index": 58, "name": { "88": {} }, "parent": {} }],
+      ["signals", { "_index": 62, "name": { "92": {} }, "parent": {} }],
+      ["state", { "_index": 49, "name": { "70": {}, "75": {} }, "parent": {} }],
+      [
+        "temp",
+        { "_index": 28, "name": { "38": {}, "45": {}, "51": {} }, "parent": {} }
+      ],
+      ["temperature", { "_index": 7, "name": { "7": {} }, "parent": {} }],
+      [
+        "temperature_offset",
+        { "_index": 12, "name": { "13": {}, "23": {} }, "parent": {} }
+      ],
+      ["tempunit", { "_index": 41, "name": { "60": {} }, "parent": {} }],
+      ["tv", { "_index": 60, "name": { "90": {} }, "parent": {} }],
+      ["type", { "_index": 57, "name": { "87": {} }, "parent": {} }],
+      [
+        "updateairconsettings",
+        { "_index": 82, "name": { "112": {} }, "parent": {} }
+      ],
+      [
+        "updateappliance",
+        { "_index": 80, "name": { "110": {} }, "parent": {} }
+      ],
+      [
+        "updateappliancesorder",
+        { "_index": 78, "name": { "108": {} }, "parent": {} }
+      ],
+      [
+        "updated_at",
+        { "_index": 15, "name": { "16": {}, "26": {}, "44": {} }, "parent": {} }
+      ],
+      ["updatedevice", { "_index": 93, "name": { "123": {} }, "parent": {} }],
+      [
+        "updatehumidityoffset",
+        { "_index": 96, "name": { "126": {} }, "parent": {} }
+      ],
+      ["updatelight", { "_index": 86, "name": { "116": {} }, "parent": {} }],
+      ["updatesignal", { "_index": 90, "name": { "120": {} }, "parent": {} }],
+      [
+        "updatesignalorders",
+        { "_index": 89, "name": { "119": {} }, "parent": {} }
+      ],
+      [
+        "updatetemperatureoffset",
+        { "_index": 95, "name": { "125": {} }, "parent": {} }
+      ],
+      ["updatetv", { "_index": 84, "name": { "114": {} }, "parent": {} }],
+      ["updateuser", { "_index": 72, "name": { "102": {} }, "parent": {} }],
+      ["val", { "_index": 22, "name": { "29": {} }, "parent": {} }],
+      [
+        "vol",
+        { "_index": 30, "name": { "40": {}, "47": {}, "53": {} }, "parent": {} }
+      ]
+    ],
+    "pipeline": []
+  }
+}

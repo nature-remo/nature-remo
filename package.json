@@ -5,7 +5,7 @@
   "author": "Yasuaki Uechi <y@uechi.io> (https://uechi.io/)",
   "scripts": {
     "build": "shx rm -rf ./lib && tsc",
-    "docs": "yarn build && typedoc --mode file --out docs --excludeExternals  --excludePrivate --exclude '**/__tests__/*' src && touch ./docs/.nojekyll",
+    "docs": "yarn build && typedoc --mode file --out docs --excludeExternals --excludePrivate --exclude '**/__tests__/*' src && shx touch ./docs/.nojekyll",
     "format": "prettier 'src/**/*.ts' --write",
     "lint": "tslint --project ./tsconfig.json --fix",
     "prepare": "npm run build",
