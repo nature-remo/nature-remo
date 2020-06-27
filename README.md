@@ -1,6 +1,7 @@
 # Nature Remo
 
 [![npm version](https://badge.fury.io/js/nature-remo.svg)](https://badge.fury.io/js/nature-remo)
+![npm: total downloads](https://badgen.net/npm/dt/nature-remo)
 [![Build Status](https://travis-ci.com/uetchy/nature-remo.svg?branch=master)](https://travis-ci.com/uetchy/nature-remo)
 [![Codacy Badge](https://api.codacy.com/project/badge/Coverage/7913641e31be48f6ba6cf2c68fa8b698)](https://www.codacy.com/manual/uetchy/nature-remo?utm_source=github.com&utm_medium=referral&utm_content=uetchy/nature-remo&utm_campaign=Badge_Coverage)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7913641e31be48f6ba6cf2c68fa8b698)](https://www.codacy.com/manual/uetchy/nature-remo?utm_source=github.com&utm_medium=referral&utm_content=uetchy/nature-remo&utm_campaign=Badge_Grade)
@@ -100,6 +101,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
