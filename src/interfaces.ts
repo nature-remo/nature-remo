@@ -11,8 +11,8 @@ export interface IDetectedAirconModel {
 
 export interface ISensorValue {
   temperature: number
-  humidity: number
-  illumination: number
+  humidity: number | undefined
+  illumination: number | undefined
 }
 
 export interface IDevice {

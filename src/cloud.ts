@@ -69,8 +69,8 @@ export class Cloud {
   public async getSensorValue(): Promise<NatureRemo.ISensorValue> {
     const device = await this.getDevices()
     return {
-      humidity: device[0].newest_events.hu.val,
-      illumination: device[0].newest_events.il.val,
+      humidity: device[0].newest_events.hu?.val,
+      illumination: device[0].newest_events.il?.val,
       temperature: device[0].newest_events.te.val,
     } as NatureRemo.ISensorValue
   }
