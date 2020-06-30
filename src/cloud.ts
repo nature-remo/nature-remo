@@ -64,13 +64,13 @@ export class Cloud {
   }
 
   /**
-   * get sensor value of arbitorary device
+   * get sensor value of arbitorary device. "humidity" and "illumination" will be undefined if Nature Remo mini
    */
   public async getSensorValue(): Promise<NatureRemo.ISensorValue> {
     const device = await this.getDevices()
     return {
-      humidity: device[0].newest_events.hu.val,
-      illumination: device[0].newest_events.il.val,
+      humidity: device[0].newest_events.hu?.val,
+      illumination: device[0].newest_events.il?.val,
       temperature: device[0].newest_events.te.val,
     } as NatureRemo.ISensorValue
   }
