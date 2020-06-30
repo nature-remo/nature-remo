@@ -1,7 +1,7 @@
 {
   "name": "nature-remo",
   "description": "Nature Remo API client",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "author": "Yasuaki Uechi <y@uechi.io> (https://uechi.io/)",
   "scripts": {
     "build": "shx rm -rf ./lib && tsc",
