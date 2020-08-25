@@ -4,50 +4,45 @@
   "version": "1.2.3",
   "author": "Yasuaki Uechi <y@uechi.io> (https://uechi.io/)",
   "scripts": {
-    "build": "shx rm -rf ./lib && tsc",
+    "build": "npm run tsup -- --minify --dts",
+    "clean": "shx rm -rf lib",
+    "dev": "npm run tsup -- --watch",
     "docs": "typedoc --mode file --out docs --excludeExternals --excludePrivate --exclude '**/__tests__/*' src && shx touch ./docs/.nojekyll",
-    "prepublishOnly": "npm run build",
+    "prepublishOnly": "npm run clean && npm run build",
     "release": "release-it",
-    "test": "jest"
+    "test": "jest --coverage",
+    "tsup": "tsup src/index.ts -d lib"
   },
   "types": "lib/index.d.ts",
   "main": "lib/index.js",
   "files": [
-    "lib/*.js",
-    "lib/*.d.ts"
+    "lib"
   ],
   "dependencies": {
-    "axios": "^0.19.0"
+    "axios": "^0.20.0"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.9",
+    "@types/jest": "^26.0.10",
     "@types/nock": "^11.1.0",
-    "@types/node": "^14.0.14",
+    "@types/node": "^14.6.0",
     "codacy-coverage": "^3.4.0",
     "husky": "^4.2.1",
-    "jest": "26.3.0",
-    "lint-staged": "^10.2.9",
+    "jest": "26.4.2",
+    "lint-staged": "^10.2.12",
     "nock": "^13.0.4",
-    "prettier": "^2.0.2",
-    "pretty-quick": "^2.0.0",
-    "shipjs": "0.20.1",
+    "prettier": "^2.1.0",
+    "pretty-quick": "^3.0.0",
     "shx": "^0.3.2",
     "ts-jest": "^26.2.0",
-    "tslint": "^6.0.0",
+    "tsup": "^3.6.1",
     "typedoc": "^0.18.0",
-    "typescript": "^3.9.5"
+    "typescript": "^4.0.2"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged && pretty-quick --staged",
-      "pre-push": "yarn test"
+      "pre-commit": "pretty-quick --staged",
+      "pre-push": "npm test"
     }
-  },
-  "lint-staged": {
-    "*.ts": [
-      "tslint --fix",
-      "git add"
-    ]
   },
   "homepage": "https://github.com/uetchy/nature-remo",
   "repository": {

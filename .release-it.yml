@@ -10,4 +10,3 @@ hooks:
 plugins:
   '@release-it/conventional-changelog': # https://github.com/release-it/conventional-changelog
     preset: angular
-    infile: CHANGELOG.md
