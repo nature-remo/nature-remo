@@ -348,12 +348,59 @@
     {
       "id": 43,
       "kind": 256,
+      "name": "IUpdateAirconSettingsOptions",
+      "url": "interfaces/iupdateairconsettingsoptions.html",
+      "classes": "tsd-kind-interface"
+    },
+    {
+      "id": 44,
+      "kind": 1024,
+      "name": "temperature",
+      "url": "interfaces/iupdateairconsettingsoptions.html#temperature",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IUpdateAirconSettingsOptions"
+    },
+    {
+      "id": 45,
+      "kind": 1024,
+      "name": "operation_mode",
+      "url": "interfaces/iupdateairconsettingsoptions.html#operation_mode",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IUpdateAirconSettingsOptions"
+    },
+    {
+      "id": 46,
+      "kind": 1024,
+      "name": "air_volume",
+      "url": "interfaces/iupdateairconsettingsoptions.html#air_volume",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IUpdateAirconSettingsOptions"
+    },
+    {
+      "id": 47,
+      "kind": 1024,
+      "name": "air_direction",
+      "url": "interfaces/iupdateairconsettingsoptions.html#air_direction",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IUpdateAirconSettingsOptions"
+    },
+    {
+      "id": 48,
+      "kind": 1024,
+      "name": "button",
+      "url": "interfaces/iupdateairconsettingsoptions.html#button",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "IUpdateAirconSettingsOptions"
+    },
+    {
+      "id": 49,
+      "kind": 256,
       "name": "IUpdateAirconSettingsResponse",
       "url": "interfaces/iupdateairconsettingsresponse.html",
       "classes": "tsd-kind-interface"
     },
     {
-      "id": 44,
+      "id": 50,
       "kind": 1024,
       "name": "updated_at",
       "url": "interfaces/iupdateairconsettingsresponse.html#updated_at",
@@ -361,7 +408,7 @@
       "parent": "IUpdateAirconSettingsResponse"
     },
     {
-      "id": 45,
+      "id": 51,
       "kind": 1024,
       "name": "temp",
       "url": "interfaces/iupdateairconsettingsresponse.html#temp",
@@ -369,7 +416,7 @@
       "parent": "IUpdateAirconSettingsResponse"
     },
     {
-      "id": 46,
+      "id": 52,
       "kind": 1024,
       "name": "mode",
       "url": "interfaces/iupdateairconsettingsresponse.html#mode",
@@ -377,7 +424,7 @@
       "parent": "IUpdateAirconSettingsResponse"
     },
     {
-      "id": 47,
+      "id": 53,
       "kind": 1024,
       "name": "vol",
       "url": "interfaces/iupdateairconsettingsresponse.html#vol",
@@ -385,7 +432,7 @@
       "parent": "IUpdateAirconSettingsResponse"
     },
     {
-      "id": 48,
+      "id": 54,
       "kind": 1024,
       "name": "dir",
       "url": "interfaces/iupdateairconsettingsresponse.html#dir",
@@ -393,7 +440,7 @@
       "parent": "IUpdateAirconSettingsResponse"
     },
     {
-      "id": 49,
+      "id": 55,
       "kind": 1024,
       "name": "button",
       "url": "interfaces/iupdateairconsettingsresponse.html#button",
@@ -401,14 +448,14 @@
       "parent": "IUpdateAirconSettingsResponse"
     },
     {
-      "id": 50,
+      "id": 56,
       "kind": 256,
       "name": "IAirconModeValue",
       "url": "interfaces/iairconmodevalue.html",
       "classes": "tsd-kind-interface"
     },
     {
-      "id": 51,
+      "id": 57,
       "kind": 1024,
       "name": "temp",
       "url": "interfaces/iairconmodevalue.html#temp",
@@ -416,7 +463,7 @@
       "parent": "IAirconModeValue"
     },
     {
-      "id": 52,
+      "id": 58,
       "kind": 1024,
       "name": "dir",
       "url": "interfaces/iairconmodevalue.html#dir",
@@ -424,7 +471,7 @@
       "parent": "IAirconModeValue"
     },
     {
-      "id": 53,
+      "id": 59,
       "kind": 1024,
       "name": "vol",
       "url": "interfaces/iairconmodevalue.html#vol",
@@ -432,14 +479,14 @@
       "parent": "IAirconModeValue"
     },
     {
-      "id": 54,
+      "id": 60,
       "kind": 256,
       "name": "IAirconRange",
       "url": "interfaces/iairconrange.html",
       "classes": "tsd-kind-interface"
     },
     {
-      "id": 55,
+      "id": 61,
       "kind": 1024,
       "name": "modes",
       "url": "interfaces/iairconrange.html#modes",
@@ -447,7 +494,7 @@
       "parent": "IAirconRange"
     },
     {
-      "id": 56,
+      "id": 62,
       "kind": 65536,
       "name": "__type",
       "url": "interfaces/iairconrange.html#modes.__type",
@@ -455,7 +502,7 @@
       "parent": "IAirconRange.modes"
     },
     {
-      "id": 57,
+      "id": 63,
       "kind": 1024,
       "name": "fixedButtons",
       "url": "interfaces/iairconrange.html#fixedbuttons",
@@ -463,14 +510,14 @@
       "parent": "IAirconRange"
     },
     {
-      "id": 58,
+      "id": 64,
       "kind": 256,
       "name": "IAircon",
       "url": "interfaces/iaircon.html",
       "classes": "tsd-kind-interface"
     },
     {
-      "id": 59,
+      "id": 65,
       "kind": 1024,
       "name": "range",
       "url": "interfaces/iaircon.html#range",
@@ -478,7 +525,7 @@
       "parent": "IAircon"
     },
     {
-      "id": 60,
+      "id": 66,
       "kind": 1024,
       "name": "tempUnit",
       "url": "interfaces/iaircon.html#tempunit",
@@ -486,14 +533,14 @@
       "parent": "IAircon"
     },
     {
-      "id": 61,
+      "id": 67,
       "kind": 256,
       "name": "IButton",
       "url": "interfaces/ibutton.html",
       "classes": "tsd-kind-interface"
     },
     {
-      "id": 62,
+      "id": 68,
       "kind": 1024,
       "name": "name",
       "url": "interfaces/ibutton.html#name",
@@ -501,7 +548,7 @@
       "parent": "IButton"
     },
     {
-      "id": 63,
+      "id": 69,
       "kind": 1024,
       "name": "image",
       "url": "interfaces/ibutton.html#image",
@@ -509,7 +556,7 @@
       "parent": "IButton"
     },
     {
-      "id": 64,
+      "id": 70,
       "kind": 1024,
       "name": "label",
       "url": "interfaces/ibutton.html#label",
@@ -517,14 +564,14 @@
       "parent": "IButton"
     },
     {
-      "id": 65,
+      "id": 71,
       "kind": 256,
       "name": "ILightState",
       "url": "interfaces/ilightstate.html",
       "classes": "tsd-kind-interface"
     },
     {
-      "id": 66,
+      "id": 72,
       "kind": 1024,
       "name": "brightness",
       "url": "interfaces/ilightstate.html#brightness",
@@ -532,7 +579,7 @@
       "parent": "ILightState"
     },
     {
-      "id": 67,
+      "id": 73,
       "kind": 1024,
       "name": "power",
       "url": "interfaces/ilightstate.html#power",
@@ -540,7 +587,7 @@
       "parent": "ILightState"
     },
     {
-      "id": 68,
+      "id": 74,
       "kind": 1024,
       "name": "last_button",
       "url": "interfaces/ilightstate.html#last_button",
@@ -548,14 +595,14 @@
       "parent": "ILightState"
     },
     {
-      "id": 69,
+      "id": 75,
       "kind": 256,
       "name": "ILight",
       "url": "interfaces/ilight.html",
       "classes": "tsd-kind-interface"
     },
     {
-      "id": 70,
+      "id": 76,
       "kind": 1024,
       "name": "state",
       "url": "interfaces/ilight.html#state",
@@ -563,7 +610,7 @@
       "parent": "ILight"
     },
     {
-      "id": 71,
+      "id": 77,
       "kind": 1024,
       "name": "buttons",
       "url": "interfaces/ilight.html#buttons",
@@ -571,14 +618,14 @@
       "parent": "ILight"
     },
     {
-      "id": 72,
+      "id": 78,
       "kind": 256,
       "name": "ITVState",
       "url": "interfaces/itvstate.html",
       "classes": "tsd-kind-interface"
     },
     {
-      "id": 73,
+      "id": 79,
       "kind": 1024,
       "name": "input",
       "url": "interfaces/itvstate.html#input",
@@ -586,14 +633,14 @@
       "parent": "ITVState"
     },
     {
-      "id": 74,
+      "id": 80,
       "kind": 256,
       "name": "ITV",
       "url": "interfaces/itv.html",
       "classes": "tsd-kind-interface"
     },
     {
-      "id": 75,
+      "id": 81,
       "kind": 1024,
       "name": "state",
       "url": "interfaces/itv.html#state",
@@ -601,7 +648,7 @@
       "parent": "ITV"
     },
     {
-      "id": 76,
+      "id": 82,
       "kind": 1024,
       "name": "buttons",
       "url": "interfaces/itv.html#buttons",
@@ -609,14 +656,14 @@
       "parent": "ITV"
     },
     {
-      "id": 77,
+      "id": 83,
       "kind": 256,
       "name": "ISignal",
       "url": "interfaces/isignal.html",
       "classes": "tsd-kind-interface"
     },
     {
-      "id": 78,
+      "id": 84,
       "kind": 1024,
       "name": "id",
       "url": "interfaces/isignal.html#id",
@@ -624,7 +671,7 @@
       "parent": "ISignal"
     },
     {
-      "id": 79,
+      "id": 85,
       "kind": 1024,
       "name": "name",
       "url": "interfaces/isignal.html#name",
@@ -632,7 +679,7 @@
       "parent": "ISignal"
     },
     {
-      "id": 80,
+      "id": 86,
       "kind": 1024,
       "name": "image",
       "url": "interfaces/isignal.html#image",
@@ -640,14 +687,14 @@
       "parent": "ISignal"
     },
     {
-      "id": 81,
+      "id": 87,
       "kind": 256,
       "name": "IAppliance",
       "url": "interfaces/iappliance.html",
       "classes": "tsd-kind-interface"
     },
     {
-      "id": 82,
+      "id": 88,
       "kind": 1024,
       "name": "id",
       "url": "interfaces/iappliance.html#id",
@@ -655,7 +702,7 @@
       "parent": "IAppliance"
     },
     {
-      "id": 83,
+      "id": 89,
       "kind": 1024,
       "name": "device",
       "url": "interfaces/iappliance.html#device",
@@ -663,7 +710,7 @@
       "parent": "IAppliance"
     },
     {
-      "id": 84,
+      "id": 90,
       "kind": 1024,
       "name": "model",
       "url": "interfaces/iappliance.html#model",
@@ -671,7 +718,7 @@
       "parent": "IAppliance"
     },
     {
-      "id": 85,
+      "id": 91,
       "kind": 1024,
       "name": "nickname",
       "url": "interfaces/iappliance.html#nickname",
@@ -679,7 +726,7 @@
       "parent": "IAppliance"
     },
     {
-      "id": 86,
+      "id": 92,
       "kind": 1024,
       "name": "image",
       "url": "interfaces/iappliance.html#image",
@@ -687,7 +734,7 @@
       "parent": "IAppliance"
     },
     {
-      "id": 87,
+      "id": 93,
       "kind": 1024,
       "name": "type",
       "url": "interfaces/iappliance.html#type",
@@ -695,7 +742,7 @@
       "parent": "IAppliance"
     },
     {
-      "id": 88,
+      "id": 94,
       "kind": 1024,
       "name": "settings",
       "url": "interfaces/iappliance.html#settings",
@@ -703,7 +750,7 @@
       "parent": "IAppliance"
     },
     {
-      "id": 89,
+      "id": 95,
       "kind": 1024,
       "name": "aircon",
       "url": "interfaces/iappliance.html#aircon",
@@ -711,7 +758,7 @@
       "parent": "IAppliance"
     },
     {
-      "id": 90,
+      "id": 96,
       "kind": 1024,
       "name": "tv",
       "url": "interfaces/iappliance.html#tv",
@@ -719,7 +766,7 @@
       "parent": "IAppliance"
     },
     {
-      "id": 91,
+      "id": 97,
       "kind": 1024,
       "name": "light",
       "url": "interfaces/iappliance.html#light",
@@ -727,7 +774,7 @@
       "parent": "IAppliance"
     },
     {
-      "id": 92,
+      "id": 98,
       "kind": 1024,
       "name": "signals",
       "url": "interfaces/iappliance.html#signals",
@@ -735,14 +782,14 @@
       "parent": "IAppliance"
     },
     {
-      "id": 93,
+      "id": 99,
       "kind": 256,
       "name": "ISignalMessage",
       "url": "interfaces/isignalmessage.html",
       "classes": "tsd-kind-interface"
     },
     {
-      "id": 94,
+      "id": 100,
       "kind": 1024,
       "name": "data",
       "url": "interfaces/isignalmessage.html#data",
@@ -750,7 +797,7 @@
       "parent": "ISignalMessage"
     },
     {
-      "id": 95,
+      "id": 101,
       "kind": 1024,
       "name": "freq",
       "url": "interfaces/isignalmessage.html#freq",
@@ -758,7 +805,7 @@
       "parent": "ISignalMessage"
     },
     {
-      "id": 96,
+      "id": 102,
       "kind": 1024,
       "name": "format",
       "url": "interfaces/isignalmessage.html#format",
@@ -766,28 +813,28 @@
       "parent": "ISignalMessage"
     },
     {
-      "id": 97,
+      "id": 103,
       "kind": 4194304,
       "name": "IDeviceEventType",
       "url": "globals.html#ideviceeventtype",
       "classes": "tsd-kind-type-alias"
     },
     {
-      "id": 98,
+      "id": 104,
       "kind": 4194304,
       "name": "IAirconModeType",
       "url": "globals.html#iairconmodetype",
       "classes": "tsd-kind-type-alias"
     },
     {
-      "id": 99,
+      "id": 105,
       "kind": 128,
       "name": "Cloud",
       "url": "classes/cloud.html",
       "classes": "tsd-kind-class"
     },
     {
-      "id": 100,
+      "id": 106,
       "kind": 512,
       "name": "constructor",
       "url": "classes/cloud.html#constructor",
@@ -795,7 +842,7 @@
       "parent": "Cloud"
     },
     {
-      "id": 101,
+      "id": 107,
       "kind": 2048,
       "name": "getUser",
       "url": "classes/cloud.html#getuser",
@@ -803,7 +850,7 @@
       "parent": "Cloud"
     },
     {
-      "id": 102,
+      "id": 108,
       "kind": 2048,
       "name": "updateUser",
       "url": "classes/cloud.html#updateuser",
@@ -811,7 +858,7 @@
       "parent": "Cloud"
     },
     {
-      "id": 103,
+      "id": 109,
       "kind": 2048,
       "name": "getDevices",
       "url": "classes/cloud.html#getdevices",
@@ -819,7 +866,7 @@
       "parent": "Cloud"
     },
     {
-      "id": 104,
+      "id": 110,
       "kind": 2048,
       "name": "detectAppliance",
       "url": "classes/cloud.html#detectappliance",
@@ -827,7 +874,7 @@
       "parent": "Cloud"
     },
     {
-      "id": 105,
+      "id": 111,
       "kind": 2048,
       "name": "getSensorValue",
       "url": "classes/cloud.html#getsensorvalue",
@@ -835,7 +882,7 @@
       "parent": "Cloud"
     },
     {
-      "id": 106,
+      "id": 112,
       "kind": 2048,
       "name": "getAppliances",
       "url": "classes/cloud.html#getappliances",
@@ -843,7 +890,7 @@
       "parent": "Cloud"
     },
     {
-      "id": 107,
+      "id": 113,
       "kind": 2048,
       "name": "createAppliance",
       "url": "classes/cloud.html#createappliance",
@@ -851,7 +898,7 @@
       "parent": "Cloud"
     },
     {
-      "id": 108,
+      "id": 114,
       "kind": 2048,
       "name": "updateAppliancesOrder",
       "url": "classes/cloud.html#updateappliancesorder",
@@ -859,7 +906,7 @@
       "parent": "Cloud"
     },
     {
-      "id": 109,
+      "id": 115,
       "kind": 2048,
       "name": "deleteAppliance",
       "url": "classes/cloud.html#deleteappliance",
@@ -867,7 +914,7 @@
       "parent": "Cloud"
     },
     {
-      "id": 110,
+      "id": 116,
       "kind": 2048,
       "name": "updateAppliance",
       "url": "classes/cloud.html#updateappliance",
@@ -875,7 +922,7 @@
       "parent": "Cloud"
     },
     {
-      "id": 111,
+      "id": 117,
       "kind": 2048,
       "name": "listAircon",
       "url": "classes/cloud.html#listaircon",
@@ -883,7 +930,7 @@
       "parent": "Cloud"
     },
     {
-      "id": 112,
+      "id": 118,
       "kind": 2048,
       "name": "updateAirconSettings",
       "url": "classes/cloud.html#updateairconsettings",
@@ -891,7 +938,7 @@
       "parent": "Cloud"
     },
     {
-      "id": 113,
+      "id": 119,
       "kind": 2048,
       "name": "listTV",
       "url": "classes/cloud.html#listtv",
@@ -899,7 +946,7 @@
       "parent": "Cloud"
     },
     {
-      "id": 114,
+      "id": 120,
       "kind": 2048,
       "name": "updateTV",
       "url": "classes/cloud.html#updatetv",
@@ -907,7 +954,7 @@
       "parent": "Cloud"
     },
     {
-      "id": 115,
+      "id": 121,
       "kind": 2048,
       "name": "listLight",
       "url": "classes/cloud.html#listlight",
@@ -915,7 +962,7 @@
       "parent": "Cloud"
     },
     {
-      "id": 116,
+      "id": 122,
       "kind": 2048,
       "name": "updateLight",
       "url": "classes/cloud.html#updatelight",
@@ -923,7 +970,7 @@
       "parent": "Cloud"
     },
     {
-      "id": 117,
+      "id": 123,
       "kind": 2048,
       "name": "getApplianceSignals",
       "url": "classes/cloud.html#getappliancesignals",
@@ -931,7 +978,7 @@
       "parent": "Cloud"
     },
     {
-      "id": 118,
+      "id": 124,
       "kind": 2048,
       "name": "createApplianceSignal",
       "url": "classes/cloud.html#createappliancesignal",
@@ -939,7 +986,7 @@
       "parent": "Cloud"
     },
     {
-      "id": 119,
+      "id": 125,
       "kind": 2048,
       "name": "updateSignalOrders",
       "url": "classes/cloud.html#updatesignalorders",
@@ -947,7 +994,7 @@
       "parent": "Cloud"
     },
     {
-      "id": 120,
+      "id": 126,
       "kind": 2048,
       "name": "updateSignal",
       "url": "classes/cloud.html#updatesignal",
@@ -955,7 +1002,7 @@
       "parent": "Cloud"
     },
     {
-      "id": 121,
+      "id": 127,
       "kind": 2048,
       "name": "deleteSignal",
       "url": "classes/cloud.html#deletesignal",
@@ -963,7 +1010,7 @@
       "parent": "Cloud"
     },
     {
-      "id": 122,
+      "id": 128,
       "kind": 2048,
       "name": "sendSignal",
       "url": "classes/cloud.html#sendsignal",
@@ -971,7 +1018,7 @@
       "parent": "Cloud"
     },
     {
-      "id": 123,
+      "id": 129,
       "kind": 2048,
       "name": "updateDevice",
       "url": "classes/cloud.html#updatedevice",
@@ -979,7 +1026,7 @@
       "parent": "Cloud"
     },
     {
-      "id": 124,
+      "id": 130,
       "kind": 2048,
       "name": "deleteDevice",
       "url": "classes/cloud.html#deletedevice",
@@ -987,7 +1034,7 @@
       "parent": "Cloud"
     },
     {
-      "id": 125,
+      "id": 131,
       "kind": 2048,
       "name": "updateTemperatureOffset",
       "url": "classes/cloud.html#updatetemperatureoffset",
@@ -995,7 +1042,7 @@
       "parent": "Cloud"
     },
     {
-      "id": 126,
+      "id": 132,
       "kind": 2048,
       "name": "updateHumidityOffset",
       "url": "classes/cloud.html#updatehumidityoffset",
@@ -1003,14 +1050,14 @@
       "parent": "Cloud"
     },
     {
-      "id": 127,
+      "id": 133,
       "kind": 128,
       "name": "Local",
       "url": "classes/local.html",
       "classes": "tsd-kind-class"
     },
     {
-      "id": 128,
+      "id": 134,
       "kind": 512,
       "name": "constructor",
       "url": "classes/local.html#constructor",
@@ -1018,7 +1065,7 @@
       "parent": "Local"
     },
     {
-      "id": 129,
+      "id": 135,
       "kind": 2048,
       "name": "fetchReceivedSignal",
       "url": "classes/local.html#fetchreceivedsignal",
@@ -1026,7 +1073,7 @@
       "parent": "Local"
     },
     {
-      "id": 130,
+      "id": 136,
       "kind": 2048,
       "name": "sendSignal",
       "url": "classes/local.html#sendsignal",
@@ -1035,299 +1082,307 @@
     }
   ],
   "index": {
-    "version": "2.3.8",
+    "version": "2.3.9",
     "fields": ["name", "parent"],
     "fieldVectors": [
-      ["name/0", [0, 36.3]],
+      ["name/0", [0, 36.745]],
       ["parent/0", []],
-      ["name/1", [1, 30.11]],
-      ["parent/1", [0, 3.325]],
-      ["name/2", [2, 39.665]],
-      ["parent/2", [0, 3.325]],
-      ["name/3", [3, 36.3]],
+      ["name/1", [1, 30.555]],
+      ["parent/1", [0, 3.367]],
+      ["name/2", [2, 40.11]],
+      ["parent/2", [0, 3.367]],
+      ["name/3", [3, 36.745]],
       ["parent/3", []],
-      ["name/4", [4, 39.665]],
-      ["parent/4", [3, 3.325]],
-      ["name/5", [5, 44.773]],
-      ["parent/5", [3, 3.325]],
-      ["name/6", [6, 33.787]],
+      ["name/4", [4, 40.11]],
+      ["parent/4", [3, 3.367]],
+      ["name/5", [5, 45.218]],
+      ["parent/5", [3, 3.367]],
+      ["name/6", [6, 34.232]],
       ["parent/6", []],
-      ["name/7", [7, 44.773]],
-      ["parent/7", [6, 3.095]],
-      ["name/8", [8, 44.773]],
-      ["parent/8", [6, 3.095]],
-      ["name/9", [9, 44.773]],
-      ["parent/9", [6, 3.095]],
-      ["name/10", [10, 27.427]],
+      ["name/7", [7, 40.11]],
+      ["parent/7", [6, 3.137]],
+      ["name/8", [8, 45.218]],
+      ["parent/8", [6, 3.137]],
+      ["name/9", [9, 45.218]],
+      ["parent/9", [6, 3.137]],
+      ["name/10", [10, 27.872]],
       ["parent/10", []],
-      ["name/11", [1, 30.11]],
-      ["parent/11", [10, 2.512]],
-      ["name/12", [11, 31.781]],
-      ["parent/12", [10, 2.512]],
-      ["name/13", [12, 39.665]],
-      ["parent/13", [10, 2.512]],
-      ["name/14", [13, 39.665]],
-      ["parent/14", [10, 2.512]],
-      ["name/15", [14, 36.3]],
-      ["parent/15", [10, 2.512]],
-      ["name/16", [15, 36.3]],
-      ["parent/16", [10, 2.512]],
-      ["name/17", [16, 39.665]],
-      ["parent/17", [10, 2.512]],
-      ["name/18", [17, 26.315]],
+      ["name/11", [1, 30.555]],
+      ["parent/11", [10, 2.554]],
+      ["name/12", [11, 32.225]],
+      ["parent/12", [10, 2.554]],
+      ["name/13", [12, 40.11]],
+      ["parent/13", [10, 2.554]],
+      ["name/14", [13, 40.11]],
+      ["parent/14", [10, 2.554]],
+      ["name/15", [14, 36.745]],
+      ["parent/15", [10, 2.554]],
+      ["name/16", [15, 36.745]],
+      ["parent/16", [10, 2.554]],
+      ["name/17", [16, 40.11]],
+      ["parent/17", [10, 2.554]],
+      ["name/18", [17, 26.76]],
       ["parent/18", []],
-      ["name/19", [18, 44.773]],
-      ["parent/19", [17, 2.41]],
-      ["name/20", [19, 39.665]],
-      ["parent/20", [20, 4.101]],
-      ["name/21", [1, 30.11]],
-      ["parent/21", [17, 2.41]],
-      ["name/22", [11, 31.781]],
-      ["parent/22", [17, 2.41]],
-      ["name/23", [12, 39.665]],
-      ["parent/23", [17, 2.41]],
-      ["name/24", [13, 39.665]],
-      ["parent/24", [17, 2.41]],
-      ["name/25", [14, 36.3]],
-      ["parent/25", [17, 2.41]],
-      ["name/26", [15, 36.3]],
-      ["parent/26", [17, 2.41]],
-      ["name/27", [16, 39.665]],
-      ["parent/27", [17, 2.41]],
-      ["name/28", [21, 36.3]],
+      ["name/19", [18, 45.218]],
+      ["parent/19", [17, 2.452]],
+      ["name/20", [19, 40.11]],
+      ["parent/20", [20, 4.143]],
+      ["name/21", [1, 30.555]],
+      ["parent/21", [17, 2.452]],
+      ["name/22", [11, 32.225]],
+      ["parent/22", [17, 2.452]],
+      ["name/23", [12, 40.11]],
+      ["parent/23", [17, 2.452]],
+      ["name/24", [13, 40.11]],
+      ["parent/24", [17, 2.452]],
+      ["name/25", [14, 36.745]],
+      ["parent/25", [17, 2.452]],
+      ["name/26", [15, 36.745]],
+      ["parent/26", [17, 2.452]],
+      ["name/27", [16, 40.11]],
+      ["parent/27", [17, 2.452]],
+      ["name/28", [21, 36.745]],
       ["parent/28", []],
-      ["name/29", [22, 44.773]],
-      ["parent/29", [21, 3.325]],
-      ["name/30", [14, 36.3]],
-      ["parent/30", [21, 3.325]],
-      ["name/31", [23, 30.11]],
+      ["name/29", [22, 45.218]],
+      ["parent/29", [21, 3.367]],
+      ["name/30", [14, 36.745]],
+      ["parent/30", [21, 3.367]],
+      ["name/31", [23, 30.555]],
       ["parent/31", []],
-      ["name/32", [1, 30.11]],
-      ["parent/32", [23, 2.758]],
-      ["name/33", [24, 44.773]],
-      ["parent/33", [23, 2.758]],
-      ["name/34", [25, 44.773]],
-      ["parent/34", [23, 2.758]],
-      ["name/35", [11, 31.781]],
-      ["parent/35", [23, 2.758]],
-      ["name/36", [26, 33.787]],
-      ["parent/36", [23, 2.758]],
-      ["name/37", [27, 30.11]],
+      ["name/32", [1, 30.555]],
+      ["parent/32", [23, 2.8]],
+      ["name/33", [24, 45.218]],
+      ["parent/33", [23, 2.8]],
+      ["name/34", [25, 45.218]],
+      ["parent/34", [23, 2.8]],
+      ["name/35", [11, 32.225]],
+      ["parent/35", [23, 2.8]],
+      ["name/36", [26, 34.232]],
+      ["parent/36", [23, 2.8]],
+      ["name/37", [27, 30.555]],
       ["parent/37", []],
-      ["name/38", [28, 36.3]],
-      ["parent/38", [27, 2.758]],
-      ["name/39", [29, 39.665]],
-      ["parent/39", [27, 2.758]],
-      ["name/40", [30, 36.3]],
-      ["parent/40", [27, 2.758]],
-      ["name/41", [31, 36.3]],
-      ["parent/41", [27, 2.758]],
-      ["name/42", [32, 39.665]],
-      ["parent/42", [27, 2.758]],
-      ["name/43", [33, 28.679]],
+      ["name/38", [28, 36.745]],
+      ["parent/38", [27, 2.8]],
+      ["name/39", [29, 40.11]],
+      ["parent/39", [27, 2.8]],
+      ["name/40", [30, 36.745]],
+      ["parent/40", [27, 2.8]],
+      ["name/41", [31, 36.745]],
+      ["parent/41", [27, 2.8]],
+      ["name/42", [32, 36.745]],
+      ["parent/42", [27, 2.8]],
+      ["name/43", [33, 30.555]],
       ["parent/43", []],
-      ["name/44", [15, 36.3]],
-      ["parent/44", [33, 2.627]],
-      ["name/45", [28, 36.3]],
-      ["parent/45", [33, 2.627]],
-      ["name/46", [29, 39.665]],
-      ["parent/46", [33, 2.627]],
-      ["name/47", [30, 36.3]],
-      ["parent/47", [33, 2.627]],
-      ["name/48", [31, 36.3]],
-      ["parent/48", [33, 2.627]],
-      ["name/49", [32, 39.665]],
-      ["parent/49", [33, 2.627]],
-      ["name/50", [34, 33.787]],
-      ["parent/50", []],
-      ["name/51", [28, 36.3]],
-      ["parent/51", [34, 3.095]],
-      ["name/52", [31, 36.3]],
-      ["parent/52", [34, 3.095]],
-      ["name/53", [30, 36.3]],
-      ["parent/53", [34, 3.095]],
-      ["name/54", [35, 36.3]],
-      ["parent/54", []],
-      ["name/55", [36, 44.773]],
-      ["parent/55", [35, 3.325]],
-      ["name/56", [19, 39.665]],
-      ["parent/56", [37, 4.101]],
-      ["name/57", [38, 44.773]],
-      ["parent/57", [35, 3.325]],
-      ["name/58", [39, 36.3]],
-      ["parent/58", []],
-      ["name/59", [40, 44.773]],
-      ["parent/59", [39, 3.325]],
-      ["name/60", [41, 44.773]],
-      ["parent/60", [39, 3.325]],
-      ["name/61", [42, 33.787]],
-      ["parent/61", []],
-      ["name/62", [11, 31.781]],
-      ["parent/62", [42, 3.095]],
-      ["name/63", [26, 33.787]],
-      ["parent/63", [42, 3.095]],
-      ["name/64", [43, 44.773]],
-      ["parent/64", [42, 3.095]],
-      ["name/65", [44, 33.787]],
-      ["parent/65", []],
-      ["name/66", [45, 44.773]],
-      ["parent/66", [44, 3.095]],
-      ["name/67", [46, 44.773]],
-      ["parent/67", [44, 3.095]],
-      ["name/68", [47, 44.773]],
-      ["parent/68", [44, 3.095]],
-      ["name/69", [48, 36.3]],
-      ["parent/69", []],
-      ["name/70", [49, 39.665]],
-      ["parent/70", [48, 3.325]],
-      ["name/71", [50, 39.665]],
-      ["parent/71", [48, 3.325]],
-      ["name/72", [51, 39.665]],
-      ["parent/72", []],
-      ["name/73", [52, 44.773]],
-      ["parent/73", [51, 3.633]],
-      ["name/74", [53, 36.3]],
-      ["parent/74", []],
-      ["name/75", [49, 39.665]],
-      ["parent/75", [53, 3.325]],
-      ["name/76", [50, 39.665]],
-      ["parent/76", [53, 3.325]],
-      ["name/77", [54, 33.787]],
-      ["parent/77", []],
-      ["name/78", [1, 30.11]],
-      ["parent/78", [54, 3.095]],
-      ["name/79", [11, 31.781]],
-      ["parent/79", [54, 3.095]],
-      ["name/80", [26, 33.787]],
-      ["parent/80", [54, 3.095]],
-      ["name/81", [55, 23.571]],
-      ["parent/81", []],
-      ["name/82", [1, 30.11]],
-      ["parent/82", [55, 2.159]],
-      ["name/83", [56, 44.773]],
-      ["parent/83", [55, 2.159]],
-      ["name/84", [4, 39.665]],
-      ["parent/84", [55, 2.159]],
-      ["name/85", [2, 39.665]],
-      ["parent/85", [55, 2.159]],
-      ["name/86", [26, 33.787]],
-      ["parent/86", [55, 2.159]],
-      ["name/87", [57, 44.773]],
-      ["parent/87", [55, 2.159]],
-      ["name/88", [58, 44.773]],
-      ["parent/88", [55, 2.159]],
-      ["name/89", [59, 44.773]],
-      ["parent/89", [55, 2.159]],
-      ["name/90", [60, 44.773]],
-      ["parent/90", [55, 2.159]],
-      ["name/91", [61, 44.773]],
-      ["parent/91", [55, 2.159]],
-      ["name/92", [62, 44.773]],
-      ["parent/92", [55, 2.159]],
-      ["name/93", [63, 33.787]],
-      ["parent/93", []],
-      ["name/94", [64, 44.773]],
-      ["parent/94", [63, 3.095]],
-      ["name/95", [65, 44.773]],
-      ["parent/95", [63, 3.095]],
-      ["name/96", [66, 44.773]],
-      ["parent/96", [63, 3.095]],
-      ["name/97", [67, 44.773]],
-      ["parent/97", []],
-      ["name/98", [68, 44.773]],
-      ["parent/98", []],
-      ["name/99", [69, 15.329]],
+      ["name/44", [7, 40.11]],
+      ["parent/44", [33, 2.8]],
+      ["name/45", [34, 45.218]],
+      ["parent/45", [33, 2.8]],
+      ["name/46", [35, 45.218]],
+      ["parent/46", [33, 2.8]],
+      ["name/47", [36, 45.218]],
+      ["parent/47", [33, 2.8]],
+      ["name/48", [32, 36.745]],
+      ["parent/48", [33, 2.8]],
+      ["name/49", [37, 29.124]],
+      ["parent/49", []],
+      ["name/50", [15, 36.745]],
+      ["parent/50", [37, 2.669]],
+      ["name/51", [28, 36.745]],
+      ["parent/51", [37, 2.669]],
+      ["name/52", [29, 40.11]],
+      ["parent/52", [37, 2.669]],
+      ["name/53", [30, 36.745]],
+      ["parent/53", [37, 2.669]],
+      ["name/54", [31, 36.745]],
+      ["parent/54", [37, 2.669]],
+      ["name/55", [32, 36.745]],
+      ["parent/55", [37, 2.669]],
+      ["name/56", [38, 34.232]],
+      ["parent/56", []],
+      ["name/57", [28, 36.745]],
+      ["parent/57", [38, 3.137]],
+      ["name/58", [31, 36.745]],
+      ["parent/58", [38, 3.137]],
+      ["name/59", [30, 36.745]],
+      ["parent/59", [38, 3.137]],
+      ["name/60", [39, 36.745]],
+      ["parent/60", []],
+      ["name/61", [40, 45.218]],
+      ["parent/61", [39, 3.367]],
+      ["name/62", [19, 40.11]],
+      ["parent/62", [41, 4.143]],
+      ["name/63", [42, 45.218]],
+      ["parent/63", [39, 3.367]],
+      ["name/64", [43, 36.745]],
+      ["parent/64", []],
+      ["name/65", [44, 45.218]],
+      ["parent/65", [43, 3.367]],
+      ["name/66", [45, 45.218]],
+      ["parent/66", [43, 3.367]],
+      ["name/67", [46, 34.232]],
+      ["parent/67", []],
+      ["name/68", [11, 32.225]],
+      ["parent/68", [46, 3.137]],
+      ["name/69", [26, 34.232]],
+      ["parent/69", [46, 3.137]],
+      ["name/70", [47, 45.218]],
+      ["parent/70", [46, 3.137]],
+      ["name/71", [48, 34.232]],
+      ["parent/71", []],
+      ["name/72", [49, 45.218]],
+      ["parent/72", [48, 3.137]],
+      ["name/73", [50, 45.218]],
+      ["parent/73", [48, 3.137]],
+      ["name/74", [51, 45.218]],
+      ["parent/74", [48, 3.137]],
+      ["name/75", [52, 36.745]],
+      ["parent/75", []],
+      ["name/76", [53, 40.11]],
+      ["parent/76", [52, 3.367]],
+      ["name/77", [54, 40.11]],
+      ["parent/77", [52, 3.367]],
+      ["name/78", [55, 40.11]],
+      ["parent/78", []],
+      ["name/79", [56, 45.218]],
+      ["parent/79", [55, 3.675]],
+      ["name/80", [57, 36.745]],
+      ["parent/80", []],
+      ["name/81", [53, 40.11]],
+      ["parent/81", [57, 3.367]],
+      ["name/82", [54, 40.11]],
+      ["parent/82", [57, 3.367]],
+      ["name/83", [58, 34.232]],
+      ["parent/83", []],
+      ["name/84", [1, 30.555]],
+      ["parent/84", [58, 3.137]],
+      ["name/85", [11, 32.225]],
+      ["parent/85", [58, 3.137]],
+      ["name/86", [26, 34.232]],
+      ["parent/86", [58, 3.137]],
+      ["name/87", [59, 24.015]],
+      ["parent/87", []],
+      ["name/88", [1, 30.555]],
+      ["parent/88", [59, 2.201]],
+      ["name/89", [60, 45.218]],
+      ["parent/89", [59, 2.201]],
+      ["name/90", [4, 40.11]],
+      ["parent/90", [59, 2.201]],
+      ["name/91", [2, 40.11]],
+      ["parent/91", [59, 2.201]],
+      ["name/92", [26, 34.232]],
+      ["parent/92", [59, 2.201]],
+      ["name/93", [61, 45.218]],
+      ["parent/93", [59, 2.201]],
+      ["name/94", [62, 45.218]],
+      ["parent/94", [59, 2.201]],
+      ["name/95", [63, 45.218]],
+      ["parent/95", [59, 2.201]],
+      ["name/96", [64, 45.218]],
+      ["parent/96", [59, 2.201]],
+      ["name/97", [65, 45.218]],
+      ["parent/97", [59, 2.201]],
+      ["name/98", [66, 45.218]],
+      ["parent/98", [59, 2.201]],
+      ["name/99", [67, 34.232]],
       ["parent/99", []],
-      ["name/100", [70, 39.665]],
-      ["parent/100", [69, 1.404]],
-      ["name/101", [71, 44.773]],
-      ["parent/101", [69, 1.404]],
-      ["name/102", [72, 44.773]],
-      ["parent/102", [69, 1.404]],
-      ["name/103", [73, 44.773]],
-      ["parent/103", [69, 1.404]],
-      ["name/104", [74, 44.773]],
-      ["parent/104", [69, 1.404]],
-      ["name/105", [75, 44.773]],
-      ["parent/105", [69, 1.404]],
-      ["name/106", [76, 44.773]],
-      ["parent/106", [69, 1.404]],
-      ["name/107", [77, 44.773]],
-      ["parent/107", [69, 1.404]],
-      ["name/108", [78, 44.773]],
-      ["parent/108", [69, 1.404]],
-      ["name/109", [79, 44.773]],
-      ["parent/109", [69, 1.404]],
-      ["name/110", [80, 44.773]],
-      ["parent/110", [69, 1.404]],
-      ["name/111", [81, 44.773]],
-      ["parent/111", [69, 1.404]],
-      ["name/112", [82, 44.773]],
-      ["parent/112", [69, 1.404]],
-      ["name/113", [83, 44.773]],
-      ["parent/113", [69, 1.404]],
-      ["name/114", [84, 44.773]],
-      ["parent/114", [69, 1.404]],
-      ["name/115", [85, 44.773]],
-      ["parent/115", [69, 1.404]],
-      ["name/116", [86, 44.773]],
-      ["parent/116", [69, 1.404]],
-      ["name/117", [87, 44.773]],
-      ["parent/117", [69, 1.404]],
-      ["name/118", [88, 44.773]],
-      ["parent/118", [69, 1.404]],
-      ["name/119", [89, 44.773]],
-      ["parent/119", [69, 1.404]],
-      ["name/120", [90, 44.773]],
-      ["parent/120", [69, 1.404]],
-      ["name/121", [91, 44.773]],
-      ["parent/121", [69, 1.404]],
-      ["name/122", [92, 39.665]],
-      ["parent/122", [69, 1.404]],
-      ["name/123", [93, 44.773]],
-      ["parent/123", [69, 1.404]],
-      ["name/124", [94, 44.773]],
-      ["parent/124", [69, 1.404]],
-      ["name/125", [95, 44.773]],
-      ["parent/125", [69, 1.404]],
-      ["name/126", [96, 44.773]],
-      ["parent/126", [69, 1.404]],
-      ["name/127", [97, 33.787]],
-      ["parent/127", []],
-      ["name/128", [70, 39.665]],
-      ["parent/128", [97, 3.095]],
-      ["name/129", [98, 44.773]],
-      ["parent/129", [97, 3.095]],
-      ["name/130", [92, 39.665]],
-      ["parent/130", [97, 3.095]]
+      ["name/100", [68, 45.218]],
+      ["parent/100", [67, 3.137]],
+      ["name/101", [69, 45.218]],
+      ["parent/101", [67, 3.137]],
+      ["name/102", [70, 45.218]],
+      ["parent/102", [67, 3.137]],
+      ["name/103", [71, 45.218]],
+      ["parent/103", []],
+      ["name/104", [72, 45.218]],
+      ["parent/104", []],
+      ["name/105", [73, 15.773]],
+      ["parent/105", []],
+      ["name/106", [74, 40.11]],
+      ["parent/106", [73, 1.445]],
+      ["name/107", [75, 45.218]],
+      ["parent/107", [73, 1.445]],
+      ["name/108", [76, 45.218]],
+      ["parent/108", [73, 1.445]],
+      ["name/109", [77, 45.218]],
+      ["parent/109", [73, 1.445]],
+      ["name/110", [78, 45.218]],
+      ["parent/110", [73, 1.445]],
+      ["name/111", [79, 45.218]],
+      ["parent/111", [73, 1.445]],
+      ["name/112", [80, 45.218]],
+      ["parent/112", [73, 1.445]],
+      ["name/113", [81, 45.218]],
+      ["parent/113", [73, 1.445]],
+      ["name/114", [82, 45.218]],
+      ["parent/114", [73, 1.445]],
+      ["name/115", [83, 45.218]],
+      ["parent/115", [73, 1.445]],
+      ["name/116", [84, 45.218]],
+      ["parent/116", [73, 1.445]],
+      ["name/117", [85, 45.218]],
+      ["parent/117", [73, 1.445]],
+      ["name/118", [86, 45.218]],
+      ["parent/118", [73, 1.445]],
+      ["name/119", [87, 45.218]],
+      ["parent/119", [73, 1.445]],
+      ["name/120", [88, 45.218]],
+      ["parent/120", [73, 1.445]],
+      ["name/121", [89, 45.218]],
+      ["parent/121", [73, 1.445]],
+      ["name/122", [90, 45.218]],
+      ["parent/122", [73, 1.445]],
+      ["name/123", [91, 45.218]],
+      ["parent/123", [73, 1.445]],
+      ["name/124", [92, 45.218]],
+      ["parent/124", [73, 1.445]],
+      ["name/125", [93, 45.218]],
+      ["parent/125", [73, 1.445]],
+      ["name/126", [94, 45.218]],
+      ["parent/126", [73, 1.445]],
+      ["name/127", [95, 45.218]],
+      ["parent/127", [73, 1.445]],
+      ["name/128", [96, 40.11]],
+      ["parent/128", [73, 1.445]],
+      ["name/129", [97, 45.218]],
+      ["parent/129", [73, 1.445]],
+      ["name/130", [98, 45.218]],
+      ["parent/130", [73, 1.445]],
+      ["name/131", [99, 45.218]],
+      ["parent/131", [73, 1.445]],
+      ["name/132", [100, 45.218]],
+      ["parent/132", [73, 1.445]],
+      ["name/133", [101, 34.232]],
+      ["parent/133", []],
+      ["name/134", [74, 40.11]],
+      ["parent/134", [101, 3.137]],
+      ["name/135", [102, 45.218]],
+      ["parent/135", [101, 3.137]],
+      ["name/136", [96, 40.11]],
+      ["parent/136", [101, 3.137]]
     ],
     "invertedIndex": [
       [
         "__type",
-        { "_index": 19, "name": { "20": {}, "56": {} }, "parent": {} }
+        { "_index": 19, "name": { "20": {}, "62": {} }, "parent": {} }
       ],
-      ["aircon", { "_index": 59, "name": { "89": {} }, "parent": {} }],
-      ["brightness", { "_index": 45, "name": { "66": {} }, "parent": {} }],
+      ["air_direction", { "_index": 36, "name": { "47": {} }, "parent": {} }],
+      ["air_volume", { "_index": 35, "name": { "46": {} }, "parent": {} }],
+      ["aircon", { "_index": 63, "name": { "95": {} }, "parent": {} }],
+      ["brightness", { "_index": 49, "name": { "72": {} }, "parent": {} }],
       [
         "button",
-        { "_index": 32, "name": { "42": {}, "49": {} }, "parent": {} }
+        { "_index": 32, "name": { "42": {}, "48": {}, "55": {} }, "parent": {} }
       ],
       [
         "buttons",
-        { "_index": 50, "name": { "71": {}, "76": {} }, "parent": {} }
+        { "_index": 54, "name": { "77": {}, "82": {} }, "parent": {} }
       ],
       [
         "cloud",
         {
-          "_index": 69,
-          "name": { "99": {} },
+          "_index": 73,
+          "name": { "105": {} },
           "parent": {
-            "100": {},
-            "101": {},
-            "102": {},
-            "103": {},
-            "104": {},
-            "105": {},
             "106": {},
             "107": {},
             "108": {},
@@ -1348,61 +1403,67 @@
             "123": {},
             "124": {},
             "125": {},
-            "126": {}
+            "126": {},
+            "127": {},
+            "128": {},
+            "129": {},
+            "130": {},
+            "131": {},
+            "132": {}
           }
         }
       ],
       [
         "constructor",
-        { "_index": 70, "name": { "100": {}, "128": {} }, "parent": {} }
+        { "_index": 74, "name": { "106": {}, "134": {} }, "parent": {} }
       ],
       [
         "createappliance",
-        { "_index": 77, "name": { "107": {} }, "parent": {} }
+        { "_index": 81, "name": { "113": {} }, "parent": {} }
       ],
       [
         "createappliancesignal",
-        { "_index": 88, "name": { "118": {} }, "parent": {} }
+        { "_index": 92, "name": { "124": {} }, "parent": {} }
       ],
       [
         "created_at",
         { "_index": 14, "name": { "15": {}, "25": {}, "30": {} }, "parent": {} }
       ],
-      ["data", { "_index": 64, "name": { "94": {} }, "parent": {} }],
+      ["data", { "_index": 68, "name": { "100": {} }, "parent": {} }],
       [
         "deleteappliance",
-        { "_index": 79, "name": { "109": {} }, "parent": {} }
+        { "_index": 83, "name": { "115": {} }, "parent": {} }
       ],
-      ["deletedevice", { "_index": 94, "name": { "124": {} }, "parent": {} }],
-      ["deletesignal", { "_index": 91, "name": { "121": {} }, "parent": {} }],
+      ["deletedevice", { "_index": 98, "name": { "130": {} }, "parent": {} }],
+      ["deletesignal", { "_index": 95, "name": { "127": {} }, "parent": {} }],
       [
         "detectappliance",
-        { "_index": 74, "name": { "104": {} }, "parent": {} }
+        { "_index": 78, "name": { "110": {} }, "parent": {} }
       ],
-      ["device", { "_index": 56, "name": { "83": {} }, "parent": {} }],
+      ["device", { "_index": 60, "name": { "89": {} }, "parent": {} }],
       [
         "dir",
-        { "_index": 31, "name": { "41": {}, "48": {}, "52": {} }, "parent": {} }
+        { "_index": 31, "name": { "41": {}, "54": {}, "58": {} }, "parent": {} }
       ],
       [
         "fetchreceivedsignal",
-        { "_index": 98, "name": { "129": {} }, "parent": {} }
+        { "_index": 102, "name": { "135": {} }, "parent": {} }
       ],
       [
         "firmware_version",
         { "_index": 16, "name": { "17": {}, "27": {} }, "parent": {} }
       ],
-      ["fixedbuttons", { "_index": 38, "name": { "57": {} }, "parent": {} }],
-      ["format", { "_index": 66, "name": { "96": {} }, "parent": {} }],
-      ["freq", { "_index": 65, "name": { "95": {} }, "parent": {} }],
-      ["getappliances", { "_index": 76, "name": { "106": {} }, "parent": {} }],
+      ["fixedbuttons", { "_index": 42, "name": { "63": {} }, "parent": {} }],
+      ["format", { "_index": 70, "name": { "102": {} }, "parent": {} }],
+      ["freq", { "_index": 69, "name": { "101": {} }, "parent": {} }],
+      ["getappliances", { "_index": 80, "name": { "112": {} }, "parent": {} }],
       [
         "getappliancesignals",
-        { "_index": 87, "name": { "117": {} }, "parent": {} }
+        { "_index": 91, "name": { "123": {} }, "parent": {} }
       ],
-      ["getdevices", { "_index": 73, "name": { "103": {} }, "parent": {} }],
-      ["getsensorvalue", { "_index": 75, "name": { "105": {} }, "parent": {} }],
-      ["getuser", { "_index": 71, "name": { "101": {} }, "parent": {} }],
+      ["getdevices", { "_index": 77, "name": { "109": {} }, "parent": {} }],
+      ["getsensorvalue", { "_index": 79, "name": { "111": {} }, "parent": {} }],
+      ["getuser", { "_index": 75, "name": { "107": {} }, "parent": {} }],
       ["humidity", { "_index": 8, "name": { "8": {} }, "parent": {} }],
       [
         "humidity_offset",
@@ -1410,24 +1471,27 @@
       ],
       [
         "iaircon",
-        { "_index": 39, "name": { "58": {} }, "parent": { "59": {}, "60": {} } }
+        { "_index": 43, "name": { "64": {} }, "parent": { "65": {}, "66": {} } }
       ],
-      ["iairconmodetype", { "_index": 68, "name": { "98": {} }, "parent": {} }],
+      [
+        "iairconmodetype",
+        { "_index": 72, "name": { "104": {} }, "parent": {} }
+      ],
       [
         "iairconmodevalue",
         {
-          "_index": 34,
-          "name": { "50": {} },
-          "parent": { "51": {}, "52": {}, "53": {} }
+          "_index": 38,
+          "name": { "56": {} },
+          "parent": { "57": {}, "58": {}, "59": {} }
         }
       ],
       [
         "iairconrange",
-        { "_index": 35, "name": { "54": {} }, "parent": { "55": {}, "57": {} } }
+        { "_index": 39, "name": { "60": {} }, "parent": { "61": {}, "63": {} } }
       ],
       [
         "iairconrange.modes",
-        { "_index": 37, "name": {}, "parent": { "56": {} } }
+        { "_index": 41, "name": {}, "parent": { "62": {} } }
       ],
       [
         "iairconsettings",
@@ -1440,36 +1504,36 @@
       [
         "iappliance",
         {
-          "_index": 55,
-          "name": { "81": {} },
+          "_index": 59,
+          "name": { "87": {} },
           "parent": {
-            "82": {},
-            "83": {},
-            "84": {},
-            "85": {},
-            "86": {},
-            "87": {},
             "88": {},
             "89": {},
             "90": {},
             "91": {},
-            "92": {}
+            "92": {},
+            "93": {},
+            "94": {},
+            "95": {},
+            "96": {},
+            "97": {},
+            "98": {}
           }
         }
       ],
       [
         "ibutton",
         {
-          "_index": 42,
-          "name": { "61": {} },
-          "parent": { "62": {}, "63": {}, "64": {} }
+          "_index": 46,
+          "name": { "67": {} },
+          "parent": { "68": {}, "69": {}, "70": {} }
         }
       ],
       [
         "id",
         {
           "_index": 1,
-          "name": { "1": {}, "11": {}, "21": {}, "32": {}, "78": {}, "82": {} },
+          "name": { "1": {}, "11": {}, "21": {}, "32": {}, "84": {}, "88": {} },
           "parent": {}
         }
       ],
@@ -1495,7 +1559,7 @@
       ],
       [
         "ideviceeventtype",
-        { "_index": 67, "name": { "97": {} }, "parent": {} }
+        { "_index": 71, "name": { "103": {} }, "parent": {} }
       ],
       [
         "idevicewithevents",
@@ -1524,14 +1588,14 @@
       ],
       [
         "ilight",
-        { "_index": 48, "name": { "69": {} }, "parent": { "70": {}, "71": {} } }
+        { "_index": 52, "name": { "75": {} }, "parent": { "76": {}, "77": {} } }
       ],
       [
         "ilightstate",
         {
-          "_index": 44,
-          "name": { "65": {} },
-          "parent": { "66": {}, "67": {}, "68": {} }
+          "_index": 48,
+          "name": { "71": {} },
+          "parent": { "72": {}, "73": {}, "74": {} }
         }
       ],
       ["illumination", { "_index": 9, "name": { "9": {} }, "parent": {} }],
@@ -1539,7 +1603,7 @@
         "image",
         {
           "_index": 26,
-          "name": { "36": {}, "63": {}, "80": {}, "86": {} },
+          "name": { "36": {}, "69": {}, "86": {}, "92": {} },
           "parent": {}
         }
       ],
@@ -1551,7 +1615,7 @@
           "parent": { "32": {}, "33": {}, "34": {}, "35": {}, "36": {} }
         }
       ],
-      ["input", { "_index": 52, "name": { "73": {} }, "parent": {} }],
+      ["input", { "_index": 56, "name": { "79": {} }, "parent": {} }],
       [
         "isensorvalue",
         {
@@ -1563,39 +1627,47 @@
       [
         "isignal",
         {
-          "_index": 54,
-          "name": { "77": {} },
-          "parent": { "78": {}, "79": {}, "80": {} }
+          "_index": 58,
+          "name": { "83": {} },
+          "parent": { "84": {}, "85": {}, "86": {} }
         }
       ],
       [
         "isignalmessage",
         {
-          "_index": 63,
-          "name": { "93": {} },
-          "parent": { "94": {}, "95": {}, "96": {} }
+          "_index": 67,
+          "name": { "99": {} },
+          "parent": { "100": {}, "101": {}, "102": {} }
         }
       ],
       [
         "itv",
-        { "_index": 53, "name": { "74": {} }, "parent": { "75": {}, "76": {} } }
+        { "_index": 57, "name": { "80": {} }, "parent": { "81": {}, "82": {} } }
       ],
       [
         "itvstate",
-        { "_index": 51, "name": { "72": {} }, "parent": { "73": {} } }
+        { "_index": 55, "name": { "78": {} }, "parent": { "79": {} } }
+      ],
+      [
+        "iupdateairconsettingsoptions",
+        {
+          "_index": 33,
+          "name": { "43": {} },
+          "parent": { "44": {}, "45": {}, "46": {}, "47": {}, "48": {} }
+        }
       ],
       [
         "iupdateairconsettingsresponse",
         {
-          "_index": 33,
-          "name": { "43": {} },
+          "_index": 37,
+          "name": { "49": {} },
           "parent": {
-            "44": {},
-            "45": {},
-            "46": {},
-            "47": {},
-            "48": {},
-            "49": {}
+            "50": {},
+            "51": {},
+            "52": {},
+            "53": {},
+            "54": {},
+            "55": {}
           }
         }
       ],
@@ -1603,97 +1675,101 @@
         "iuser",
         { "_index": 0, "name": { "0": {} }, "parent": { "1": {}, "2": {} } }
       ],
-      ["label", { "_index": 43, "name": { "64": {} }, "parent": {} }],
-      ["last_button", { "_index": 47, "name": { "68": {} }, "parent": {} }],
-      ["light", { "_index": 61, "name": { "91": {} }, "parent": {} }],
-      ["listaircon", { "_index": 81, "name": { "111": {} }, "parent": {} }],
-      ["listlight", { "_index": 85, "name": { "115": {} }, "parent": {} }],
-      ["listtv", { "_index": 83, "name": { "113": {} }, "parent": {} }],
+      ["label", { "_index": 47, "name": { "70": {} }, "parent": {} }],
+      ["last_button", { "_index": 51, "name": { "74": {} }, "parent": {} }],
+      ["light", { "_index": 65, "name": { "97": {} }, "parent": {} }],
+      ["listaircon", { "_index": 85, "name": { "117": {} }, "parent": {} }],
+      ["listlight", { "_index": 89, "name": { "121": {} }, "parent": {} }],
+      ["listtv", { "_index": 87, "name": { "119": {} }, "parent": {} }],
       [
         "local",
         {
-          "_index": 97,
-          "name": { "127": {} },
-          "parent": { "128": {}, "129": {}, "130": {} }
+          "_index": 101,
+          "name": { "133": {} },
+          "parent": { "134": {}, "135": {}, "136": {} }
         }
       ],
       ["manufacturer", { "_index": 24, "name": { "33": {} }, "parent": {} }],
-      ["mode", { "_index": 29, "name": { "39": {}, "46": {} }, "parent": {} }],
-      ["model", { "_index": 4, "name": { "4": {}, "84": {} }, "parent": {} }],
-      ["modes", { "_index": 36, "name": { "55": {} }, "parent": {} }],
+      ["mode", { "_index": 29, "name": { "39": {}, "52": {} }, "parent": {} }],
+      ["model", { "_index": 4, "name": { "4": {}, "90": {} }, "parent": {} }],
+      ["modes", { "_index": 40, "name": { "61": {} }, "parent": {} }],
       [
         "name",
         {
           "_index": 11,
-          "name": { "12": {}, "22": {}, "35": {}, "62": {}, "79": {} },
+          "name": { "12": {}, "22": {}, "35": {}, "68": {}, "85": {} },
           "parent": {}
         }
       ],
       ["newest_events", { "_index": 18, "name": { "19": {} }, "parent": {} }],
       [
         "nickname",
-        { "_index": 2, "name": { "2": {}, "85": {} }, "parent": {} }
+        { "_index": 2, "name": { "2": {}, "91": {} }, "parent": {} }
       ],
+      ["operation_mode", { "_index": 34, "name": { "45": {} }, "parent": {} }],
       ["params", { "_index": 5, "name": { "5": {} }, "parent": {} }],
-      ["power", { "_index": 46, "name": { "67": {} }, "parent": {} }],
-      ["range", { "_index": 40, "name": { "59": {} }, "parent": {} }],
+      ["power", { "_index": 50, "name": { "73": {} }, "parent": {} }],
+      ["range", { "_index": 44, "name": { "65": {} }, "parent": {} }],
       ["remote_name", { "_index": 25, "name": { "34": {} }, "parent": {} }],
       [
         "sendsignal",
-        { "_index": 92, "name": { "122": {}, "130": {} }, "parent": {} }
+        { "_index": 96, "name": { "128": {}, "136": {} }, "parent": {} }
       ],
-      ["settings", { "_index": 58, "name": { "88": {} }, "parent": {} }],
-      ["signals", { "_index": 62, "name": { "92": {} }, "parent": {} }],
-      ["state", { "_index": 49, "name": { "70": {}, "75": {} }, "parent": {} }],
+      ["settings", { "_index": 62, "name": { "94": {} }, "parent": {} }],
+      ["signals", { "_index": 66, "name": { "98": {} }, "parent": {} }],
+      ["state", { "_index": 53, "name": { "76": {}, "81": {} }, "parent": {} }],
       [
         "temp",
-        { "_index": 28, "name": { "38": {}, "45": {}, "51": {} }, "parent": {} }
+        { "_index": 28, "name": { "38": {}, "51": {}, "57": {} }, "parent": {} }
       ],
-      ["temperature", { "_index": 7, "name": { "7": {} }, "parent": {} }],
+      [
+        "temperature",
+        { "_index": 7, "name": { "7": {}, "44": {} }, "parent": {} }
+      ],
       [
         "temperature_offset",
         { "_index": 12, "name": { "13": {}, "23": {} }, "parent": {} }
       ],
-      ["tempunit", { "_index": 41, "name": { "60": {} }, "parent": {} }],
-      ["tv", { "_index": 60, "name": { "90": {} }, "parent": {} }],
-      ["type", { "_index": 57, "name": { "87": {} }, "parent": {} }],
+      ["tempunit", { "_index": 45, "name": { "66": {} }, "parent": {} }],
+      ["tv", { "_index": 64, "name": { "96": {} }, "parent": {} }],
+      ["type", { "_index": 61, "name": { "93": {} }, "parent": {} }],
       [
         "updateairconsettings",
-        { "_index": 82, "name": { "112": {} }, "parent": {} }
+        { "_index": 86, "name": { "118": {} }, "parent": {} }
       ],
       [
         "updateappliance",
-        { "_index": 80, "name": { "110": {} }, "parent": {} }
+        { "_index": 84, "name": { "116": {} }, "parent": {} }
       ],
       [
         "updateappliancesorder",
-        { "_index": 78, "name": { "108": {} }, "parent": {} }
+        { "_index": 82, "name": { "114": {} }, "parent": {} }
       ],
       [
         "updated_at",
-        { "_index": 15, "name": { "16": {}, "26": {}, "44": {} }, "parent": {} }
+        { "_index": 15, "name": { "16": {}, "26": {}, "50": {} }, "parent": {} }
       ],
-      ["updatedevice", { "_index": 93, "name": { "123": {} }, "parent": {} }],
+      ["updatedevice", { "_index": 97, "name": { "129": {} }, "parent": {} }],
       [
         "updatehumidityoffset",
-        { "_index": 96, "name": { "126": {} }, "parent": {} }
+        { "_index": 100, "name": { "132": {} }, "parent": {} }
       ],
-      ["updatelight", { "_index": 86, "name": { "116": {} }, "parent": {} }],
-      ["updatesignal", { "_index": 90, "name": { "120": {} }, "parent": {} }],
+      ["updatelight", { "_index": 90, "name": { "122": {} }, "parent": {} }],
+      ["updatesignal", { "_index": 94, "name": { "126": {} }, "parent": {} }],
       [
         "updatesignalorders",
-        { "_index": 89, "name": { "119": {} }, "parent": {} }
+        { "_index": 93, "name": { "125": {} }, "parent": {} }
       ],
       [
         "updatetemperatureoffset",
-        { "_index": 95, "name": { "125": {} }, "parent": {} }
+        { "_index": 99, "name": { "131": {} }, "parent": {} }
       ],
-      ["updatetv", { "_index": 84, "name": { "114": {} }, "parent": {} }],
-      ["updateuser", { "_index": 72, "name": { "102": {} }, "parent": {} }],
+      ["updatetv", { "_index": 88, "name": { "120": {} }, "parent": {} }],
+      ["updateuser", { "_index": 76, "name": { "108": {} }, "parent": {} }],
       ["val", { "_index": 22, "name": { "29": {} }, "parent": {} }],
       [
         "vol",
-        { "_index": 30, "name": { "40": {}, "47": {}, "53": {} }, "parent": {} }
+        { "_index": 30, "name": { "40": {}, "53": {}, "59": {} }, "parent": {} }
       ]
     ],
     "pipeline": []

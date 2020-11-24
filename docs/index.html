@@ -85,7 +85,7 @@
             <a
               href="#nature-remo"
               id="nature-remo"
-              style="color: inherit; text-decoration: none;"
+              style="color: inherit; text-decoration: none"
             >
               <h1>Nature Remo</h1>
             </a>
@@ -95,6 +95,10 @@
                   src="https://badge.fury.io/js/nature-remo.svg"
                   alt="npm version"
               /></a>
+              <img
+                src="https://badgen.net/npm/dt/nature-remo"
+                alt="npm: total downloads"
+              />
               <a href="https://travis-ci.com/uetchy/nature-remo"
                 ><img
                   src="https://travis-ci.com/uetchy/nature-remo.svg?branch=master"
@@ -119,11 +123,11 @@ npm install nature-remo</code></pre>
             <a
               href="#basic-usage"
               id="basic-usage"
-              style="color: inherit; text-decoration: none;"
+              style="color: inherit; text-decoration: none"
             >
               <h2>Basic Usage</h2>
             </a>
-            <pre><code class="language-js"><span class="hljs-keyword">const</span> NatureRemo = <span class="hljs-built_in">require</span>(<span class="hljs-string">'nature-remo'</span>)
+            <pre><code class="language-js"><span class="hljs-keyword">const</span> NatureRemo = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;nature-remo&#x27;</span>)
 
 <span class="hljs-keyword">const</span> client = <span class="hljs-keyword">new</span> NatureRemo.Cloud(process.env.NATURE_REMO_CLOUD_API_TOKEN)
 
@@ -132,10 +136,10 @@ npm install nature-remo</code></pre>
   <span class="hljs-keyword">const</span> aircon = airconList[<span class="hljs-number">0</span>]
 
   <span class="hljs-keyword">await</span> client.updateAirconSettings(aircon.id, {
-    <span class="hljs-attr">button</span>: <span class="hljs-string">'power-off'</span>,
+    <span class="hljs-attr">button</span>: <span class="hljs-string">&#x27;power-off&#x27;</span>,
   })
 
-  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Aircon: turned off'</span>)
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&#x27;Aircon: turned off&#x27;</span>)
 }
 
 <span class="hljs-keyword">async</span> <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">turnOnAirConditioner</span>(<span class="hljs-params"></span>) </span>{
@@ -143,11 +147,11 @@ npm install nature-remo</code></pre>
   <span class="hljs-keyword">const</span> aircon = airconList[<span class="hljs-number">0</span>]
 
   <span class="hljs-keyword">await</span> client.updateAirconSettings(aircon.id, {
-    <span class="hljs-attr">operation_mode</span>: <span class="hljs-string">'cool'</span>,
+    <span class="hljs-attr">operation_mode</span>: <span class="hljs-string">&#x27;cool&#x27;</span>,
     <span class="hljs-attr">temperature</span>: <span class="hljs-number">24</span>,
   })
 
-  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Aircon: turned on'</span>)
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&#x27;Aircon: turned on&#x27;</span>)
 }</code></pre>
             <p>
               You might want to grab an API token from
@@ -182,15 +186,15 @@ npm install nature-remo</code></pre>
             <a
               href="#api"
               id="api"
-              style="color: inherit; text-decoration: none;"
+              style="color: inherit; text-decoration: none"
             >
               <h2>API</h2>
             </a>
-            <pre><code class="language-js"><span class="hljs-keyword">const</span> NatureRemo = <span class="hljs-built_in">require</span>(<span class="hljs-string">'nature-remo'</span>)</code></pre>
+            <pre><code class="language-js"><span class="hljs-keyword">const</span> NatureRemo = <span class="hljs-built_in">require</span>(<span class="hljs-string">&#x27;nature-remo&#x27;</span>)</code></pre>
             <a
               href="#cloud-api"
               id="cloud-api"
-              style="color: inherit; text-decoration: none;"
+              style="color: inherit; text-decoration: none"
             >
               <h3>Cloud API</h3>
             </a>
@@ -204,7 +208,7 @@ npm install nature-remo</code></pre>
             <a
               href="#local-api"
               id="local-api"
-              style="color: inherit; text-decoration: none;"
+              style="color: inherit; text-decoration: none"
             >
               <h3>Local API</h3>
             </a>
@@ -218,7 +222,7 @@ npm install nature-remo</code></pre>
             <a
               href="#development"
               id="development"
-              style="color: inherit; text-decoration: none;"
+              style="color: inherit; text-decoration: none"
             >
               <h2>Development</h2>
             </a>
@@ -229,7 +233,7 @@ NATURE_REMO_CLOUD_TOKEN=&lt;nature-remo-cloud-api-token&gt; yarn <span class="hl
             <a
               href="#sibling-projects"
               id="sibling-projects"
-              style="color: inherit; text-decoration: none;"
+              style="color: inherit; text-decoration: none"
             >
               <h2>Sibling projects</h2>
             </a>
@@ -244,7 +248,7 @@ NATURE_REMO_CLOUD_TOKEN=&lt;nature-remo-cloud-api-token&gt; yarn <span class="hl
             <a
               href="#contributors-✨"
               id="contributors-✨"
-              style="color: inherit; text-decoration: none;"
+              style="color: inherit; text-decoration: none"
             >
               <h2>Contributors ✨</h2>
             </a>
@@ -299,6 +303,19 @@ NATURE_REMO_CLOUD_TOKEN=&lt;nature-remo-cloud-api-token&gt; yarn <span class="hl
                     /><br /><sub><b>Satoshi Nakamatsu</b></sub></a
                   ><br /><a
                     href="https://github.com/uetchy/nature-remo/commits?author=satoshicano"
+                    title="Code"
+                    >💻</a
+                  >
+                </td>
+                <td align="center">
+                  <a href="http://kyo5884.com"
+                    ><img
+                      src="https://avatars1.githubusercontent.com/u/286439?v=4"
+                      width="100px;"
+                      alt=""
+                    /><br /><sub><b>kyo5884</b></sub></a
+                  ><br /><a
+                    href="https://github.com/uetchy/nature-remo/commits?author=kyo5884"
                     title="Code"
                     >💻</a
                   >
@@ -427,6 +444,13 @@ NATURE_REMO_CLOUD_TOKEN=&lt;nature-remo-cloud-api-token&gt; yarn <span class="hl
               </li>
               <li class="tsd-kind-interface">
                 <a
+                  href="interfaces/iupdateairconsettingsoptions.html"
+                  class="tsd-kind-icon"
+                  >IUpdate<wbr />Aircon<wbr />Settings<wbr />Options</a
+                >
+              </li>
+              <li class="tsd-kind-interface">
+                <a
                   href="interfaces/iupdateairconsettingsresponse.html"
                   class="tsd-kind-icon"
                   >IUpdate<wbr />Aircon<wbr />Settings<wbr />Response</a
@@ -478,9 +502,5 @@ NATURE_REMO_CLOUD_TOKEN=&lt;nature-remo-cloud-api-token&gt; yarn <span class="hl
     </div>
     <div class="overlay"></div>
     <script src="assets/js/main.js"></script>
-    <script>
-      if (location.protocol == 'file:')
-        document.write('<script src="assets/js/search.js"><' + '/script>')
-    </script>
   </body>
 </html>
