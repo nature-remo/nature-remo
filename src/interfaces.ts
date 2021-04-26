@@ -148,7 +148,7 @@ export interface ISignal {
 }
 
 export interface ISignalMessage {
-  data: number[]
   freq: number
+  data: number[]
   format: 'us'
 }
