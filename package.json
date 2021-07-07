@@ -8,6 +8,7 @@
     "clean": "shx rm -rf lib",
     "dev": "npm run tsup -- --watch",
     "docs": "typedoc --mode file --out docs --excludeExternals --excludePrivate --exclude '**/__tests__/*' src && shx touch ./docs/.nojekyll",
+    "prepare": "husky install",
     "prepublishOnly": "npm run clean && npm run build",
     "release": "release-it",
     "test": "jest --coverage",
@@ -22,27 +23,21 @@
     "axios": "^0.21.1"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.21",
+    "@types/jest": "^26.0.24",
     "@types/nock": "^11.1.0",
-    "@types/node": "^14.14.35",
+    "@types/node": "^16.0.1",
     "codacy-coverage": "^3.4.0",
-    "husky": "^4.3.8",
-    "jest": "26.6.3",
-    "lint-staged": "^10.5.4",
-    "nock": "^13.0.11",
-    "prettier": "^2.2.1",
-    "pretty-quick": "^3.0.0",
+    "husky": "^7.0.1",
+    "jest": "27.0.6",
+    "lint-staged": "^11.0.0",
+    "nock": "^13.1.1",
+    "prettier": "^2.3.2",
+    "pretty-quick": "^3.1.1",
     "shx": "^0.3.2",
-    "ts-jest": "^26.5.4",
-    "tsup": "^4.8.19",
-    "typedoc": "^0.20.33",
-    "typescript": "^4.2.3"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged",
-      "pre-push": "npm test"
-    }
+    "ts-jest": "^27.0.3",
+    "tsup": "^4.12.5",
+    "typedoc": "^0.21.2",
+    "typescript": "^4.3.5"
   },
   "homepage": "https://github.com/uetchy/nature-remo",
   "repository": {
