@@ -23,6 +23,8 @@ export interface IDevice {
   created_at: Date
   updated_at: Date
   firmware_version: string
+  mac_address: string
+  serial_number: string
 }
 
 export type IDeviceEventType = 'te' | 'hu' | 'il'

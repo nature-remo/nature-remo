@@ -289,6 +289,8 @@ test('#getDevices()', async () => {
   const response = await app.getDevices()
   expect(response).toBeInstanceOf(Array)
   expect(response[0].name).toEqual('Living Room')
+  expect(response[0].mac_address).toEqual('aa:aa:aa:aa:aa')
+  expect(response[0].serial_number).toEqual('00000000000000')
 })
 
 test('#getAppliances()', async () => {
