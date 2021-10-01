@@ -19,7 +19,7 @@
     "lib"
   ],
   "dependencies": {
-    "axios": "^0.21.1"
+    "axios": "^0.22.0"
   },
   "devDependencies": {
     "@types/jest": "^26.0.21",
