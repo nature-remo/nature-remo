@@ -93,15 +93,17 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://uechi.io"><img src="https://avatars0.githubusercontent.com/u/431808?v=4" width="100px;" alt=""/><br /><sub><b>Yasuaki Uechi</b></sub></a><br /><a href="https://github.com/uetchy/nature-remo/commits?author=uetchy" title="Code">💻</a> <a href="https://github.com/uetchy/nature-remo/commits?author=uetchy" title="Documentation">📖</a></td>
-    <td align="center"><a href="http://kksg.net"><img src="https://avatars0.githubusercontent.com/u/781452?v=4" width="100px;" alt=""/><br /><sub><b>Kosuge Kazuya</b></sub></a><br /><a href="https://github.com/uetchy/nature-remo/commits?author=kkosuge" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/satoshicano"><img src="https://avatars0.githubusercontent.com/u/7578069?v=4" width="100px;" alt=""/><br /><sub><b>Satoshi Nakamatsu</b></sub></a><br /><a href="https://github.com/uetchy/nature-remo/commits?author=satoshicano" title="Code">💻</a></td>
-    <td align="center"><a href="http://kyo5884.com"><img src="https://avatars1.githubusercontent.com/u/286439?v=4" width="100px;" alt=""/><br /><sub><b>kyo5884</b></sub></a><br /><a href="https://github.com/uetchy/nature-remo/commits?author=kyo5884" title="Code">💻</a></td>
+    <td align="center"><a href="https://uechi.io"><img src="https://avatars0.githubusercontent.com/u/431808?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Yasuaki Uechi</b></sub></a><br /><a href="https://github.com/uetchy/nature-remo/commits?author=uetchy" title="Code">💻</a> <a href="https://github.com/uetchy/nature-remo/commits?author=uetchy" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://kksg.net"><img src="https://avatars0.githubusercontent.com/u/781452?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kosuge Kazuya</b></sub></a><br /><a href="https://github.com/uetchy/nature-remo/commits?author=kkosuge" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/satoshicano"><img src="https://avatars0.githubusercontent.com/u/7578069?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Satoshi Nakamatsu</b></sub></a><br /><a href="https://github.com/uetchy/nature-remo/commits?author=satoshicano" title="Code">💻</a></td>
+    <td align="center"><a href="http://kyo5884.com"><img src="https://avatars1.githubusercontent.com/u/286439?v=4?s=100" width="100px;" alt=""/><br /><sub><b>kyo5884</b></sub></a><br /><a href="https://github.com/uetchy/nature-remo/commits?author=kyo5884" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/asari-mtr"><img src="https://avatars.githubusercontent.com/u/857715?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mitsuteru Asari</b></sub></a><br /><a href="https://github.com/uetchy/nature-remo/commits?author=asari-mtr" title="Code">💻</a></td>
   </tr>
 </table>
 
-<!-- markdownlint-enable -->
+<!-- markdownlint-restore -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
