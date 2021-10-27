@@ -338,11 +338,10 @@ export class Cloud {
       const response = await this.instance.post(path, stringify(body))
       return response.data
     } catch (error) {
-      if ((error as AxiosError).response) {
+      const errResponse = (error as AxiosError).response
+      if (errResponse) {
         throw new Error(
-          `Response code is out of 2xx: ${
-            (error as AxiosError).response?.status
-          }`
+          `${errResponse.statusText} (${errResponse.status})`
         )
       }
       throw error
@@ -354,11 +353,11 @@ export class Cloud {
       const response = await this.instance.get(path)
       return response.data
     } catch (error) {
-      if ((error as AxiosError).response) {
+      const errResponse = (error as AxiosError).response
+      if (errResponse) {
+        // Add the error message, it can be usefull in detecting what's heppening.
         throw new Error(
-          `Response code is out of 2xx: ${
-            (error as AxiosError).response?.status
-          }`
+          `${errResponse.statusText} (${errResponse.status})`
         )
       }
       throw error
