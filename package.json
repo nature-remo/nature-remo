@@ -11,32 +11,32 @@
     "prepare": "husky install",
     "prepublishOnly": "npm run clean && npm run build",
     "release": "release-it",
-    "test": "jest --coverage",
+    "test": "tsc --noEmit && jest --coverage",
     "tsup": "tsup src/index.ts -d lib"
   },
-  "types": "lib/index.d.ts",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
     "lib"
   ],
   "dependencies": {
-    "axios": "^0.21.1"
+    "axios": "^0.24.0"
   },
   "devDependencies": {
-    "@types/jest": "^26.0.24",
+    "@types/jest": "^27.0.2",
     "@types/nock": "^11.1.0",
     "@types/node": "^16.0.1",
     "codacy-coverage": "^3.4.0",
     "husky": "^7.0.1",
-    "jest": "27.0.6",
+    "jest": "27.3.1",
     "lint-staged": "^11.0.0",
     "nock": "^13.1.1",
     "prettier": "^2.3.2",
     "pretty-quick": "^3.1.1",
     "shx": "^0.3.2",
     "ts-jest": "^27.0.3",
-    "tsup": "^4.12.5",
-    "typedoc": "^0.21.2",
+    "tsup": "^5.5.0",
+    "typedoc": "^0.22.7",
     "typescript": "^4.3.5"
   },
   "homepage": "https://github.com/uetchy/nature-remo",
