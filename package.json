@@ -7,7 +7,7 @@
     "build": "npm run tsup -- --minify --dts",
     "clean": "shx rm -rf lib",
     "dev": "npm run tsup -- --watch",
-    "docs": "typedoc --mode file --out docs --excludeExternals --excludePrivate --exclude '**/__tests__/*' src && shx touch ./docs/.nojekyll",
+    "docs": "typedoc --out docs --excludeExternals --excludePrivate --excludeProtected --exclude '**/__tests__/*' src && shx touch ./docs/.nojekyll",
     "prepare": "husky install",
     "prepublishOnly": "npm run clean && npm run build",
     "release": "release-it",

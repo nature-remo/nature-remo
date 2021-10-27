@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html class="default no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <title>nature-remo</title>
+    <meta name="description" content="Documentation for nature-remo" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/highlight.css" />
+    <script async src="assets/search.js" id="search-script"></script>
+  </head>
+  <body>
+    <script>
+      document.body.classList.add(localStorage.getItem('tsd-theme') || 'os')
+    </script>
+    <header>
+      <div class="tsd-page-toolbar">
+        <div class="container">
+          <div class="table-wrap">
+            <div class="table-cell" id="tsd-search" data-base=".">
+              <div class="field">
+                <label
+                  for="tsd-search-field"
+                  class="tsd-widget search no-caption"
+                  >Search</label
+                ><input type="text" id="tsd-search-field" />
+              </div>
+              <ul class="results">
+                <li class="state loading">Preparing search index...</li>
+                <li class="state failure">The search index is not available</li>
+              </ul>
+              <a href="index.html" class="title">nature-remo</a>
+            </div>
+            <div class="table-cell" id="tsd-widgets">
+              <div id="tsd-filter">
+                <a
+                  href="#"
+                  class="tsd-widget options no-caption"
+                  data-toggle="options"
+                  >Options</a
+                >
+                <div class="tsd-filter-group">
+                  <div class="tsd-select" id="tsd-filter-visibility">
+                    <span class="tsd-select-label">All</span>
+                    <ul class="tsd-select-list">
+                      <li data-value="public">Public</li>
+                      <li data-value="protected">Public/Protected</li>
+                      <li data-value="private" class="selected">All</li>
+                    </ul>
+                  </div>
+                  <input
+                    type="checkbox"
+                    id="tsd-filter-inherited"
+                    checked
+                  /><label class="tsd-widget" for="tsd-filter-inherited"
+                    >Inherited</label
+                  >
+                </div>
+              </div>
+              <a href="#" class="tsd-widget menu no-caption" data-toggle="menu"
+                >Menu</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tsd-page-title">
+        <div class="container"><h1>nature-remo</h1></div>
+      </div>
+    </header>
+    <div class="container container-main">
+      <div class="row">
+        <div class="col-8 col-content">
+          <div class="tsd-panel tsd-typography">
+            <a
+              href="#nature-remo"
+              id="nature-remo"
+              style="color: inherit; text-decoration: none"
+            >
+              <h1>Nature Remo</h1>
+            </a>
+            <p>
+              <a href="https://badge.fury.io/js/nature-remo"
+                ><img
+                  src="https://badge.fury.io/js/nature-remo.svg"
+                  alt="npm version"
+              /></a>
+              <img
+                src="https://badgen.net/npm/dt/nature-remo"
+                alt="npm: total downloads"
+              />
+              <a href="https://travis-ci.com/uetchy/nature-remo"
+                ><img
+                  src="https://travis-ci.com/uetchy/nature-remo.svg?branch=master"
+                  alt="Build Status"
+              /></a>
+              <a
+                href="https://www.codacy.com/manual/uetchy/nature-remo?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=uetchy/nature-remo&amp;utm_campaign=Badge_Coverage"
+                ><img
+                  src="https://api.codacy.com/project/badge/Coverage/7913641e31be48f6ba6cf2c68fa8b698"
+                  alt="Codacy Badge"
+              /></a>
+              <a
+                href="https://www.codacy.com/manual/uetchy/nature-remo?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=uetchy/nature-remo&amp;utm_campaign=Badge_Grade"
+                ><img
+                  src="https://api.codacy.com/project/badge/Grade/7913641e31be48f6ba6cf2c68fa8b698"
+                  alt="Codacy Badge"
+              /></a>
+            </p>
+            <pre><code class="language-bash"><span class="hl-0">yarn add nature-remo</span><br/><span class="hl-1"># or</span><br/><span class="hl-0">npm install nature-remo</span>
+</code></pre>
+
+            <a
+              href="#basic-usage"
+              id="basic-usage"
+              style="color: inherit; text-decoration: none"
+            >
+              <h2>Basic Usage</h2>
+            </a>
+            <pre><code class="language-js"><span class="hl-2">const</span><span class="hl-0"> </span><span class="hl-3">NatureRemo</span><span class="hl-0"> = </span><span class="hl-4">require</span><span class="hl-0">(</span><span class="hl-5">&#39;nature-remo&#39;</span><span class="hl-0">)</span><br/><br/><span class="hl-2">const</span><span class="hl-0"> </span><span class="hl-3">client</span><span class="hl-0"> = </span><span class="hl-2">new</span><span class="hl-0"> </span><span class="hl-6">NatureRemo</span><span class="hl-0">.</span><span class="hl-4">Cloud</span><span class="hl-0">(</span><span class="hl-6">process</span><span class="hl-0">.</span><span class="hl-6">env</span><span class="hl-0">.</span><span class="hl-3">NATURE_REMO_CLOUD_API_TOKEN</span><span class="hl-0">)</span><br/><br/><span class="hl-2">async</span><span class="hl-0"> </span><span class="hl-2">function</span><span class="hl-0"> </span><span class="hl-4">turnOffAirConditioner</span><span class="hl-0">() {</span><br/><span class="hl-0">  </span><span class="hl-2">const</span><span class="hl-0"> </span><span class="hl-3">airconList</span><span class="hl-0"> = </span><span class="hl-7">await</span><span class="hl-0"> </span><span class="hl-6">client</span><span class="hl-0">.</span><span class="hl-4">listAircon</span><span class="hl-0">()</span><br/><span class="hl-0">  </span><span class="hl-2">const</span><span class="hl-0"> </span><span class="hl-3">aircon</span><span class="hl-0"> = </span><span class="hl-6">airconList</span><span class="hl-0">[</span><span class="hl-8">0</span><span class="hl-0">]</span><br/><br/><span class="hl-0">  </span><span class="hl-7">await</span><span class="hl-0"> </span><span class="hl-6">client</span><span class="hl-0">.</span><span class="hl-4">updateAirconSettings</span><span class="hl-0">(</span><span class="hl-6">aircon</span><span class="hl-0">.</span><span class="hl-6">id</span><span class="hl-0">, {</span><br/><span class="hl-0">    </span><span class="hl-6">button:</span><span class="hl-0"> </span><span class="hl-5">&#39;power-off&#39;</span><span class="hl-0">,</span><br/><span class="hl-0">  })</span><br/><br/><span class="hl-0">  </span><span class="hl-6">console</span><span class="hl-0">.</span><span class="hl-4">log</span><span class="hl-0">(</span><span class="hl-5">&#39;Aircon: turned off&#39;</span><span class="hl-0">)</span><br/><span class="hl-0">}</span><br/><br/><span class="hl-2">async</span><span class="hl-0"> </span><span class="hl-2">function</span><span class="hl-0"> </span><span class="hl-4">turnOnAirConditioner</span><span class="hl-0">() {</span><br/><span class="hl-0">  </span><span class="hl-2">const</span><span class="hl-0"> </span><span class="hl-3">airconList</span><span class="hl-0"> = </span><span class="hl-7">await</span><span class="hl-0"> </span><span class="hl-6">client</span><span class="hl-0">.</span><span class="hl-4">listAircon</span><span class="hl-0">()</span><br/><span class="hl-0">  </span><span class="hl-2">const</span><span class="hl-0"> </span><span class="hl-3">aircon</span><span class="hl-0"> = </span><span class="hl-6">airconList</span><span class="hl-0">[</span><span class="hl-8">0</span><span class="hl-0">]</span><br/><br/><span class="hl-0">  </span><span class="hl-7">await</span><span class="hl-0"> </span><span class="hl-6">client</span><span class="hl-0">.</span><span class="hl-4">updateAirconSettings</span><span class="hl-0">(</span><span class="hl-6">aircon</span><span class="hl-0">.</span><span class="hl-6">id</span><span class="hl-0">, {</span><br/><span class="hl-0">    </span><span class="hl-6">operation_mode:</span><span class="hl-0"> </span><span class="hl-5">&#39;cool&#39;</span><span class="hl-0">,</span><br/><span class="hl-0">    </span><span class="hl-6">temperature:</span><span class="hl-0"> </span><span class="hl-8">24</span><span class="hl-0">,</span><br/><span class="hl-0">  })</span><br/><br/><span class="hl-0">  </span><span class="hl-6">console</span><span class="hl-0">.</span><span class="hl-4">log</span><span class="hl-0">(</span><span class="hl-5">&#39;Aircon: turned on&#39;</span><span class="hl-0">)</span><br/><span class="hl-0">}</span>
+</code></pre>
+            <p>
+              You might want to grab an API token from
+              <a href="https://home.nature.global">https://home.nature.global</a
+              >.
+            </p>
+            <ul>
+              <li>
+                <strong>RunKit Notebook</strong>: Check out
+                <a
+                  href="https://runkit.com/uetchy/nature-remo-cloud-api-nodejs-example"
+                  >RunKit Notebook</a
+                >
+                for runnable code snippets.
+              </li>
+              <li>
+                <strong>Code Example</strong>: See
+                <a
+                  href="https://github.com/uetchy/nature-remo/tree/master/examples"
+                  >examples</a
+                >
+                for various code examples.
+              </li>
+              <li>
+                <strong>Documents</strong>: See
+                <a href="https://uetchy.github.io/nature-remo/"
+                  >API Documents</a
+                >
+                for detailed API documents.
+              </li>
+            </ul>
+
+            <a
+              href="#api"
+              id="api"
+              style="color: inherit; text-decoration: none"
+            >
+              <h2>API</h2>
+            </a>
+            <pre><code class="language-js"><span class="hl-2">const</span><span class="hl-0"> </span><span class="hl-3">NatureRemo</span><span class="hl-0"> = </span><span class="hl-4">require</span><span class="hl-0">(</span><span class="hl-5">&#39;nature-remo&#39;</span><span class="hl-0">)</span>
+</code></pre>
+
+            <a
+              href="#cloud-api"
+              id="cloud-api"
+              style="color: inherit; text-decoration: none"
+            >
+              <h3>Cloud API</h3>
+            </a>
+            <p>
+              See
+              <a href="https://uetchy.github.io/nature-remo/classes/cloud.html"
+                >Cloud API Documents</a
+              >.
+            </p>
+            <pre><code class="language-js"><span class="hl-2">const</span><span class="hl-0"> </span><span class="hl-3">client</span><span class="hl-0"> = </span><span class="hl-2">new</span><span class="hl-0"> </span><span class="hl-6">NatureRemo</span><span class="hl-0">.</span><span class="hl-4">Cloud</span><span class="hl-0">(</span><span class="hl-3">NATURE_REMO_CLOUD_API_TOKEN</span><span class="hl-0">)</span>
+</code></pre>
+
+            <a
+              href="#local-api"
+              id="local-api"
+              style="color: inherit; text-decoration: none"
+            >
+              <h3>Local API</h3>
+            </a>
+            <p>
+              See
+              <a href="https://uetchy.github.io/nature-remo/classes/local.html"
+                >Local API Documents</a
+              >.
+            </p>
+            <pre><code class="language-js"><span class="hl-2">const</span><span class="hl-0"> </span><span class="hl-3">client</span><span class="hl-0"> = </span><span class="hl-2">new</span><span class="hl-0"> </span><span class="hl-6">NatureRemo</span><span class="hl-0">.</span><span class="hl-4">Local</span><span class="hl-0">(</span><span class="hl-3">NATURE_REMO_LOCAL_ADDRESS</span><span class="hl-0">)</span>
+</code></pre>
+
+            <a
+              href="#development"
+              id="development"
+              style="color: inherit; text-decoration: none"
+            >
+              <h2>Development</h2>
+            </a>
+            <pre><code class="language-bash"><span class="hl-0">git clone https://github.com/uetchy/nature-remo </span><span class="hl-1"># clone this repository</span><br/><span class="hl-4">cd</span><span class="hl-0"> nature-remo </span><span class="hl-1"># move to the repository folder</span><br/><span class="hl-0">yarn install </span><span class="hl-1"># install deps</span><br/><span class="hl-0">NATURE_REMO_CLOUD_TOKEN=&lt;nature-remo-cloud-api-token&gt; yarn </span><span class="hl-4">test</span><span class="hl-0"> </span><span class="hl-1"># run test before creating a pull request</span>
+</code></pre>
+
+            <a
+              href="#sibling-projects"
+              id="sibling-projects"
+              style="color: inherit; text-decoration: none"
+            >
+              <h2>Sibling projects</h2>
+            </a>
+            <ul>
+              <li>
+                🌇
+                <a href="https://github.com/uetchy/nature-remo-rs"
+                  >Nature Remo for Rust</a
+                >
+              </li>
+            </ul>
+
+            <a
+              href="#contributors-✨"
+              id="contributors-✨"
+              style="color: inherit; text-decoration: none"
+            >
+              <h2>Contributors ✨</h2>
+            </a>
+            <p>
+              Thanks goes to these wonderful people (<a
+                href="https://allcontributors.org/docs/en/emoji-key"
+                >emoji key</a
+              >):
+            </p>
+            <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+            <!-- prettier-ignore-start -->
+            <!-- markdownlint-disable -->
+            <table>
+              <tr>
+                <td align="center">
+                  <a href="https://uechi.io"
+                    ><img
+                      src="https://avatars0.githubusercontent.com/u/431808?v=4?s=100"
+                      width="100px;"
+                      alt=""
+                    /><br /><sub><b>Yasuaki Uechi</b></sub></a
+                  ><br /><a
+                    href="https://github.com/uetchy/nature-remo/commits?author=uetchy"
+                    title="Code"
+                    >💻</a
+                  >
+                  <a
+                    href="https://github.com/uetchy/nature-remo/commits?author=uetchy"
+                    title="Documentation"
+                    >📖</a
+                  >
+                </td>
+                <td align="center">
+                  <a href="http://kksg.net"
+                    ><img
+                      src="https://avatars0.githubusercontent.com/u/781452?v=4?s=100"
+                      width="100px;"
+                      alt=""
+                    /><br /><sub><b>Kosuge Kazuya</b></sub></a
+                  ><br /><a
+                    href="https://github.com/uetchy/nature-remo/commits?author=kkosuge"
+                    title="Code"
+                    >💻</a
+                  >
+                </td>
+                <td align="center">
+                  <a href="https://github.com/satoshicano"
+                    ><img
+                      src="https://avatars0.githubusercontent.com/u/7578069?v=4?s=100"
+                      width="100px;"
+                      alt=""
+                    /><br /><sub><b>Satoshi Nakamatsu</b></sub></a
+                  ><br /><a
+                    href="https://github.com/uetchy/nature-remo/commits?author=satoshicano"
+                    title="Code"
+                    >💻</a
+                  >
+                </td>
+                <td align="center">
+                  <a href="http://kyo5884.com"
+                    ><img
+                      src="https://avatars1.githubusercontent.com/u/286439?v=4?s=100"
+                      width="100px;"
+                      alt=""
+                    /><br /><sub><b>kyo5884</b></sub></a
+                  ><br /><a
+                    href="https://github.com/uetchy/nature-remo/commits?author=kyo5884"
+                    title="Code"
+                    >💻</a
+                  >
+                </td>
+                <td align="center">
+                  <a href="https://github.com/asari-mtr"
+                    ><img
+                      src="https://avatars.githubusercontent.com/u/857715?v=4?s=100"
+                      width="100px;"
+                      alt=""
+                    /><br /><sub><b>Mitsuteru Asari</b></sub></a
+                  ><br /><a
+                    href="https://github.com/uetchy/nature-remo/commits?author=asari-mtr"
+                    title="Code"
+                    >💻</a
+                  >
+                </td>
+                <td align="center">
+                  <a href="https://github.com/Ekristoffe"
+                    ><img
+                      src="https://avatars.githubusercontent.com/u/5562219?v=4?s=100"
+                      width="100px;"
+                      alt=""
+                    /><br /><sub><b>Chris</b></sub></a
+                  ><br /><a
+                    href="https://github.com/uetchy/nature-remo/commits?author=Ekristoffe"
+                    title="Code"
+                    >💻</a
+                  >
+                </td>
+              </tr>
+            </table>
+
+            <!-- markdownlint-restore -->
+            <!-- prettier-ignore-end -->
+
+            <!-- ALL-CONTRIBUTORS-LIST:END -->
+
+            <p>
+              This project follows the
+              <a href="https://github.com/all-contributors/all-contributors"
+                >all-contributors</a
+              >
+              specification. Contributions of any kind welcome!
+            </p>
+          </div>
+        </div>
+        <div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+          <nav class="tsd-navigation primary">
+            <ul>
+              <li class="current"><a href="modules.html">Exports</a></li>
+            </ul>
+          </nav>
+          <nav class="tsd-navigation secondary menu-sticky">
+            <ul>
+              <li class="tsd-kind-class">
+                <a href="classes/Cloud.html" class="tsd-kind-icon">Cloud</a>
+              </li>
+              <li class="tsd-kind-class">
+                <a href="classes/Local.html" class="tsd-kind-icon">Local</a>
+              </li>
+              <li class="tsd-kind-interface">
+                <a href="interfaces/IAircon.html" class="tsd-kind-icon"
+                  >IAircon</a
+                >
+              </li>
+              <li class="tsd-kind-interface">
+                <a href="interfaces/IAirconModeValue.html" class="tsd-kind-icon"
+                  >IAircon<wbr />Mode<wbr />Value</a
+                >
+              </li>
+              <li class="tsd-kind-interface">
+                <a href="interfaces/IAirconRange.html" class="tsd-kind-icon"
+                  >IAircon<wbr />Range</a
+                >
+              </li>
+              <li class="tsd-kind-interface">
+                <a href="interfaces/IAirconSettings.html" class="tsd-kind-icon"
+                  >IAircon<wbr />Settings</a
+                >
+              </li>
+              <li class="tsd-kind-interface">
+                <a href="interfaces/IAppliance.html" class="tsd-kind-icon"
+                  >IAppliance</a
+                >
+              </li>
+              <li class="tsd-kind-interface">
+                <a href="interfaces/IButton.html" class="tsd-kind-icon"
+                  >IButton</a
+                >
+              </li>
+              <li class="tsd-kind-interface">
+                <a
+                  href="interfaces/IDetectedAirconModel.html"
+                  class="tsd-kind-icon"
+                  >IDetected<wbr />Aircon<wbr />Model</a
+                >
+              </li>
+              <li class="tsd-kind-interface">
+                <a href="interfaces/IDevice.html" class="tsd-kind-icon"
+                  >IDevice</a
+                >
+              </li>
+              <li class="tsd-kind-interface">
+                <a
+                  href="interfaces/IDeviceWithEvents.html"
+                  class="tsd-kind-icon"
+                  >IDevice<wbr />With<wbr />Events</a
+                >
+              </li>
+              <li class="tsd-kind-interface">
+                <a
+                  href="interfaces/IEchonetliteProperties.html"
+                  class="tsd-kind-icon"
+                  >IEchonetlite<wbr />Properties</a
+                >
+              </li>
+              <li class="tsd-kind-interface">
+                <a href="interfaces/IEventValue.html" class="tsd-kind-icon"
+                  >IEvent<wbr />Value</a
+                >
+              </li>
+              <li class="tsd-kind-interface">
+                <a href="interfaces/ILight.html" class="tsd-kind-icon"
+                  >ILight</a
+                >
+              </li>
+              <li class="tsd-kind-interface">
+                <a href="interfaces/ILightState.html" class="tsd-kind-icon"
+                  >ILight<wbr />State</a
+                >
+              </li>
+              <li class="tsd-kind-interface">
+                <a href="interfaces/IModel.html" class="tsd-kind-icon"
+                  >IModel</a
+                >
+              </li>
+              <li class="tsd-kind-interface">
+                <a href="interfaces/ISensorValue.html" class="tsd-kind-icon"
+                  >ISensor<wbr />Value</a
+                >
+              </li>
+              <li class="tsd-kind-interface">
+                <a href="interfaces/ISignal.html" class="tsd-kind-icon"
+                  >ISignal</a
+                >
+              </li>
+              <li class="tsd-kind-interface">
+                <a href="interfaces/ISignalMessage.html" class="tsd-kind-icon"
+                  >ISignal<wbr />Message</a
+                >
+              </li>
+              <li class="tsd-kind-interface">
+                <a href="interfaces/ISmartMeter.html" class="tsd-kind-icon"
+                  >ISmart<wbr />Meter</a
+                >
+              </li>
+              <li class="tsd-kind-interface">
+                <a href="interfaces/ITV.html" class="tsd-kind-icon">ITV</a>
+              </li>
+              <li class="tsd-kind-interface">
+                <a href="interfaces/ITVState.html" class="tsd-kind-icon"
+                  >ITVState</a
+                >
+              </li>
+              <li class="tsd-kind-interface">
+                <a
+                  href="interfaces/IUpdateAirconSettingsOptions.html"
+                  class="tsd-kind-icon"
+                  >IUpdate<wbr />Aircon<wbr />Settings<wbr />Options</a
+                >
+              </li>
+              <li class="tsd-kind-interface">
+                <a
+                  href="interfaces/IUpdateAirconSettingsResponse.html"
+                  class="tsd-kind-icon"
+                  >IUpdate<wbr />Aircon<wbr />Settings<wbr />Response</a
+                >
+              </li>
+              <li class="tsd-kind-interface">
+                <a href="interfaces/IUser.html" class="tsd-kind-icon">IUser</a>
+              </li>
+              <li class="tsd-kind-type-alias">
+                <a href="modules.html#IAirconModeType" class="tsd-kind-icon"
+                  >IAircon<wbr />Mode<wbr />Type</a
+                >
+              </li>
+              <li class="tsd-kind-type-alias">
+                <a href="modules.html#IDeviceEventType" class="tsd-kind-icon"
+                  >IDevice<wbr />Event<wbr />Type</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <footer class="with-border-bottom">
+      <div class="container">
+        <h2>Legend</h2>
+        <div class="tsd-legend-group">
+          <ul class="tsd-legend">
+            <li class="tsd-kind-constructor tsd-parent-kind-class">
+              <span class="tsd-kind-icon">Constructor</span>
+            </li>
+            <li class="tsd-kind-method tsd-parent-kind-class">
+              <span class="tsd-kind-icon">Method</span>
+            </li>
+          </ul>
+          <ul class="tsd-legend">
+            <li class="tsd-kind-property tsd-parent-kind-interface">
+              <span class="tsd-kind-icon">Property</span>
+            </li>
+          </ul>
+        </div>
+        <h2>Settings</h2>
+        <p>
+          Theme
+          <select id="theme">
+            <option value="os">OS</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+          </select>
+        </p>
+      </div>
+    </footer>
+    <div class="container tsd-generator">
+      <p>
+        Generated using
+        <a href="https://typedoc.org/" target="_blank">TypeDoc</a>
+      </p>
+    </div>
+    <div class="overlay"></div>
+    <script src="assets/main.js"></script>
+  </body>
+</html>
