@@ -6,7 +6,6 @@ github:
   releaseName: 'v${version}'
 hooks:
   before:init: npm test
-  after:bump: npm run docs
 plugins:
   '@release-it/conventional-changelog': # https://github.com/release-it/conventional-changelog
     preset: angular
