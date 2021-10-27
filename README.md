@@ -98,6 +98,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/satoshicano"><img src="https://avatars0.githubusercontent.com/u/7578069?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Satoshi Nakamatsu</b></sub></a><br /><a href="https://github.com/uetchy/nature-remo/commits?author=satoshicano" title="Code">💻</a></td>
     <td align="center"><a href="http://kyo5884.com"><img src="https://avatars1.githubusercontent.com/u/286439?v=4?s=100" width="100px;" alt=""/><br /><sub><b>kyo5884</b></sub></a><br /><a href="https://github.com/uetchy/nature-remo/commits?author=kyo5884" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/asari-mtr"><img src="https://avatars.githubusercontent.com/u/857715?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mitsuteru Asari</b></sub></a><br /><a href="https://github.com/uetchy/nature-remo/commits?author=asari-mtr" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Ekristoffe"><img src="https://avatars.githubusercontent.com/u/5562219?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Chris</b></sub></a><br /><a href="https://github.com/uetchy/nature-remo/commits?author=Ekristoffe" title="Code">💻</a></td>
   </tr>
 </table>
 
