@@ -130,11 +130,11 @@ export interface IAppliance {
   signals: ISignal[]
 }
 
-interface ISmartMeter {
+export interface ISmartMeter {
   echonetlite_properties: IEchonetliteProperties[]
 }
 
-interface IEchonetliteProperties {
+export interface IEchonetliteProperties {
   name: string
   epc: number
   val: string
