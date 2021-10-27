@@ -55,6 +55,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "Ekristoffe",
+      "name": "Chris",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5562219?v=4",
+      "profile": "https://github.com/Ekristoffe",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
