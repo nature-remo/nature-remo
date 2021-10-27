@@ -23,6 +23,8 @@ export interface IDevice {
   created_at: Date
   updated_at: Date
   firmware_version: string
+  mac_address: string
+  serial_number: string
 }
 
 export type IDeviceEventType = 'te' | 'hu' | 'il'
@@ -124,7 +126,19 @@ export interface IAppliance {
   aircon?: IAircon
   tv?: ITV
   light?: ILight
+  smart_meter?: ISmartMeter
   signals: ISignal[]
+}
+
+interface ISmartMeter {
+  echonetlite_properties: IEchonetliteProperties[]
+}
+
+interface IEchonetliteProperties {
+  name: string
+  epc: number
+  val: string
+  updated_at: Date
 }
 
 export interface ISignal {

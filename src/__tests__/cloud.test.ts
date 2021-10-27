@@ -192,6 +192,73 @@ beforeEach(() => {
           },
         ],
       },
+      {
+        id: '45ef6b37-7e5b-f6d4-e92f-9f883794cc3d',
+        device: {
+          name: 'Remo E lite',
+          id: '72f822bb-3b6b-8a10-a9ed-af9e12b7e4ae',
+          created_at: '2020-05-02T01:42:08Z',
+          updated_at: '2021-03-22T02:49:02Z',
+          mac_address: '52:42:00:47:e6:85',
+          bt_mac_address: '52:42:00:6f:2f:d5',
+          serial_number: '4W122222222222',
+          firmware_version: 'Remo-E-lite/1.1.27',
+          temperature_offset: 0,
+          humidity_offset: 0,
+        },
+        model: {
+          id: '6e6b6f43-7d9f-7315-371c-80fc44ce9616',
+          manufacturer: '',
+          name: 'Smart Meter',
+          image: 'ico_smartmeter',
+        },
+        type: 'EL_SMART_METER',
+        nickname: 'Smart Meter',
+        image: 'ico_smartmeter',
+        settings: null,
+        aircon: null,
+        signals: [],
+        smart_meter: {
+          echonetlite_properties: [
+            {
+              name: 'coefficient',
+              epc: 211,
+              val: '1',
+              updated_at: '2021-07-09T14:00:39Z',
+            },
+            {
+              name: 'cumulative_electric_energy_effective_digits',
+              epc: 215,
+              val: '6',
+              updated_at: '2021-07-09T14:00:39Z',
+            },
+            {
+              name: 'normal_direction_cumulative_electric_energy',
+              epc: 224,
+              val: '100000',
+              updated_at: '2021-07-09T14:00:39Z',
+            },
+            {
+              name: 'cumulative_electric_energy_unit',
+              epc: 225,
+              val: '1',
+              updated_at: '2021-07-09T14:00:39Z',
+            },
+            {
+              name: 'reverse_direction_cumulative_electric_energy',
+              epc: 227,
+              val: '12',
+              updated_at: '2021-07-09T14:00:39Z',
+            },
+            {
+              name: 'measured_instantaneous',
+              epc: 231,
+              val: '500',
+              updated_at: '2021-07-09T14:00:39Z',
+            },
+          ],
+        },
+      },
     ])
     .post(/\/appliances\/.+\/aircon_settings/)
     .reply(200, {
@@ -222,6 +289,8 @@ test('#getDevices()', async () => {
   const response = await app.getDevices()
   expect(response).toBeInstanceOf(Array)
   expect(response[0].name).toEqual('Living Room')
+  expect(response[0].mac_address).toEqual('aa:aa:aa:aa:aa')
+  expect(response[0].serial_number).toEqual('00000000000000')
 })
 
 test('#getAppliances()', async () => {
@@ -229,6 +298,16 @@ test('#getAppliances()', async () => {
   const response = await app.getAppliances()
   expect(response).toBeInstanceOf(Array)
   expect(response[0].device.name).toEqual('Living Room')
+  expect(response[0]).not.toHaveProperty('smart_meter')
+
+  expect(response[2].device.name).toEqual('Remo E lite')
+  expect(response[2]).toHaveProperty('smart_meter')
+  expect(response[2].smart_meter?.echonetlite_properties[0]).toEqual({
+    name: 'coefficient',
+    epc: 211,
+    val: '1',
+    updated_at: '2021-07-09T14:00:39Z',
+  })
 })
 
 test('#listAircon', async () => {
