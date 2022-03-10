@@ -20,24 +20,24 @@
     "lib"
   ],
   "dependencies": {
-    "axios": "^0.24.0"
+    "axios": "^0.26.1"
   },
   "devDependencies": {
-    "@types/jest": "^27.0.2",
+    "@types/jest": "^27.4.1",
     "@types/nock": "^11.1.0",
-    "@types/node": "^16.0.1",
+    "@types/node": "^17.0.21",
     "codacy-coverage": "^3.4.0",
     "husky": "^7.0.1",
-    "jest": "27.3.1",
-    "lint-staged": "^11.0.0",
-    "nock": "^13.1.1",
-    "prettier": "^2.3.2",
-    "pretty-quick": "^3.1.1",
-    "shx": "^0.3.2",
-    "ts-jest": "^27.0.3",
-    "tsup": "^5.5.0",
-    "typedoc": "^0.22.7",
-    "typescript": "^4.3.5"
+    "jest": "27.5.1",
+    "lint-staged": "^12.3.5",
+    "nock": "^13.2.4",
+    "prettier": "^2.5.1",
+    "pretty-quick": "^3.1.3",
+    "shx": "^0.3.4",
+    "ts-jest": "^27.1.3",
+    "tsup": "^5.12.0",
+    "typedoc": "^0.22.13",
+    "typescript": "^4.6.2"
   },
   "homepage": "https://github.com/uetchy/nature-remo",
   "repository": {
