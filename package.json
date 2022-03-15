@@ -53,6 +53,6 @@
     "smart-home"
   ],
   "engines": {
-    "node": ">=8.14.3"
+    "node": ">=12"
   }
 }
