@@ -137,8 +137,8 @@ export interface Appliance {
   type: string
   signals: Signal[]
   model: Model | null
-  aircon?: Aircon
-  settings?: AirconSettingsWithTimestamp
+  settings: AirconSettingsWithTimestamp | null
+  aircon: Aircon | null
   tv?: TV
   light?: Light
   smart_meter?: SmartMeter
