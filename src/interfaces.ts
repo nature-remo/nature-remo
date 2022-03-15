@@ -46,8 +46,11 @@ export interface IModel {
   image: string
 }
 
+export type TemperatureUnit = 'c' | 'f'
+
 export interface IAirconSettings {
   temp: string
+  temp_unit: TemperatureUnit
   mode: IAirconModeType
   vol: string
   dir: string
@@ -67,6 +70,7 @@ export interface IUpdateAirconSettingsResponse extends IAirconSettings {
 }
 
 export type IAirconModeType = 'cool' | 'warm' | 'dry' | 'blow' | 'auto'
+
 export interface IAirconModeValue {
   temp: string[]
   dir: string[]
@@ -118,16 +122,16 @@ export interface ISignal {
 export interface IAppliance {
   id: string
   device: IDevice
-  model: IModel
   nickname: string
   image: string
   type: string
-  settings: IAirconSettings
+  signals: ISignal[]
   aircon?: IAircon
+  settings?: IAirconSettings
+  model?: IModel
   tv?: ITV
   light?: ILight
   smart_meter?: ISmartMeter
-  signals: ISignal[]
 }
 
 export interface ISmartMeter {
