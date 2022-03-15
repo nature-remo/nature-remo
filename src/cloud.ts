@@ -1,6 +1,6 @@
 import axios, { AxiosError, AxiosInstance } from 'axios'
 import { ParsedUrlQueryInput, stringify } from 'querystring'
-import * as NatureRemo from './interfaces'
+import * as Remo from './interfaces'
 
 export class Cloud {
   private readonly token: string
@@ -21,8 +21,8 @@ export class Cloud {
   /**
    * Fetch the authenticated user’s information.
    */
-  public async getUser(): Promise<NatureRemo.User> {
-    const response = await this._get<NatureRemo.User>('/1/users/me')
+  public async getUser(): Promise<Remo.User> {
+    const response = await this._get<Remo.User>('/1/users/me')
     return response
   }
 
@@ -30,8 +30,8 @@ export class Cloud {
    * Update authenticated user’s information.
    * @returns updated user
    */
-  public async updateUser(nickname: string): Promise<NatureRemo.User> {
-    const response = await this._post<NatureRemo.User>('/1/users/me', {
+  public async updateUser(nickname: string): Promise<Remo.User> {
+    const response = await this._post<Remo.User>('/1/users/me', {
       nickname,
     })
     return response
@@ -40,10 +40,8 @@ export class Cloud {
   /**
    * Fetch the list of Remo devices the user has access to.
    */
-  public async getDevices(): Promise<NatureRemo.DeviceWithEvents[]> {
-    const response = await this._get<NatureRemo.DeviceWithEvents[]>(
-      '/1/devices'
-    )
+  public async getDevices(): Promise<Remo.DeviceWithEvents[]> {
+    const response = await this._get<Remo.DeviceWithEvents[]>('/1/devices')
     return response
   }
 
@@ -52,36 +50,33 @@ export class Cloud {
    * @param message JSON serialized object describing infrared signals. Includes "data", “freq” and “format” keys.
    */
   public async detectAppliance(
-    message: NatureRemo.SignalMessage
-  ): Promise<NatureRemo.DetectedAirconModel> {
-    const response = await this._post<NatureRemo.DetectedAirconModel>(
-      '/1/users/me',
-      {
-        message: JSON.stringify(message),
-      }
-    )
+    message: Remo.SignalMessage
+  ): Promise<Remo.DetectedAirconModel> {
+    const response = await this._post<Remo.DetectedAirconModel>('/1/users/me', {
+      message: JSON.stringify(message),
+    })
     return response
   }
 
   /**
    * get sensor value of arbitrary device. "humidity" and "illumination" will be undefined if Nature Remo mini
    */
-  public async getSensorValue(): Promise<NatureRemo.SensorValue> {
+  public async getSensorValue(): Promise<Remo.SensorValue> {
     const device = await this.getDevices()
     return {
       humidity: device[0].newest_events.hu?.val,
       illumination: device[0].newest_events.il?.val,
       temperature: device[0].newest_events.te.val,
-    } as NatureRemo.SensorValue
+    } as Remo.SensorValue
   }
 
   /**
    * Fetch the list of appliances.
    */
   public async getAppliances(
-    type?: 'AC' | 'TV' | 'LIGHT'
-  ): Promise<NatureRemo.Appliance[]> {
-    const response = await this._get<NatureRemo.Appliance[]>('/1/appliances')
+    type?: Remo.ApplianceType
+  ): Promise<Remo.Appliance[]> {
+    const response = await this._get<Remo.Appliance[]>('/1/appliances')
 
     if (type) {
       return response.filter((appliance) => appliance.type === type)
@@ -98,8 +93,8 @@ export class Cloud {
     device: string,
     image: string,
     model?: string
-  ): Promise<NatureRemo.Appliance[]> {
-    const response = await this._post<NatureRemo.Appliance[]>('/1/appliances', {
+  ): Promise<Remo.Appliance[]> {
+    const response = await this._post<Remo.Appliance[]>('/1/appliances', {
       device,
       image,
       model,
@@ -135,8 +130,8 @@ export class Cloud {
     applianceId: string,
     nickname: string,
     imageId: string
-  ): Promise<NatureRemo.Appliance> {
-    const response = await this._post<NatureRemo.Appliance>(
+  ): Promise<Remo.Appliance> {
+    const response = await this._post<Remo.Appliance>(
       `/1/appliances/${applianceId}`,
       {
         image: imageId,
@@ -150,7 +145,7 @@ export class Cloud {
   /**
    * get all appliances which has AC characteristics
    */
-  public async listAircon(): Promise<NatureRemo.Appliance[]> {
+  public async listAircon(): Promise<Remo.Appliance[]> {
     return await this.getAppliances('AC')
   }
 
@@ -159,9 +154,9 @@ export class Cloud {
    */
   public async updateAirconSettings(
     applianceId: string,
-    settings: Partial<NatureRemo.UpdateAirconSettingsOptions>
-  ): Promise<NatureRemo.AirconSettingsWithTimestamp> {
-    const response = await this._post<NatureRemo.AirconSettingsWithTimestamp>(
+    settings: Partial<Remo.UpdateAirconSettingsOptions>
+  ): Promise<Remo.AirconSettingsWithTimestamp> {
+    const response = await this._post<Remo.AirconSettingsWithTimestamp>(
       `/1/appliances/${applianceId}/aircon_settings`,
       settings
     )
@@ -172,7 +167,7 @@ export class Cloud {
   /**
    * get all appliances which has TV characteristics
    */
-  public async listTV(): Promise<NatureRemo.Appliance[]> {
+  public async listTV(): Promise<Remo.Appliance[]> {
     return await this.getAppliances('TV')
   }
 
@@ -182,8 +177,8 @@ export class Cloud {
   public async updateTV(
     applianceId: string,
     button: string
-  ): Promise<NatureRemo.TVState> {
-    const response = await this._post<NatureRemo.TVState>(
+  ): Promise<Remo.TVState> {
+    const response = await this._post<Remo.TVState>(
       `/1/appliances/${applianceId}/tv`,
       { button }
     )
@@ -194,7 +189,7 @@ export class Cloud {
   /**
    * get all appliances which has LIGHT characteristics
    */
-  public async listLight(): Promise<NatureRemo.Appliance[]> {
+  public async listLight(): Promise<Remo.Appliance[]> {
     return await this.getAppliances('LIGHT')
   }
 
@@ -204,8 +199,8 @@ export class Cloud {
   public async updateLight(
     applianceId: string,
     button: string
-  ): Promise<NatureRemo.LightState> {
-    const response = this._post<NatureRemo.LightState>(
+  ): Promise<Remo.LightState> {
+    const response = this._post<Remo.LightState>(
       `/1/appliances/${applianceId}/light`,
       { button }
     )
@@ -218,8 +213,8 @@ export class Cloud {
    */
   public async getApplianceSignals(
     applianceId: string
-  ): Promise<NatureRemo.Signal[]> {
-    const response = await this._get<NatureRemo.Signal[]>(
+  ): Promise<Remo.Signal[]> {
+    const response = await this._get<Remo.Signal[]>(
       `/1/appliances/${applianceId}/signals`
     )
     return response
@@ -231,10 +226,10 @@ export class Cloud {
   public async createApplianceSignal(
     applianceId: string,
     name: string,
-    message: NatureRemo.SignalMessage,
+    message: Remo.SignalMessage,
     imageId: string
-  ): Promise<NatureRemo.Signal> {
-    const response = await this._post<NatureRemo.Signal>(
+  ): Promise<Remo.Signal> {
+    const response = await this._post<Remo.Signal>(
       `/1/appliances/${applianceId}/signals`,
       {
         appliance: applianceId,

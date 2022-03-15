@@ -1,3 +1,5 @@
+export type ApplianceType = 'AC' | 'TV' | 'LIGHT'
+
 /** User */
 export interface User {
   id: string
