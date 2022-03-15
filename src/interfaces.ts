@@ -18,15 +18,15 @@ export interface SensorValue {
 }
 
 export interface Device {
-  id: string
   name: string
-  temperature_offset: number
-  humidity_offset: number
-  created_at: Date
-  updated_at: Date
-  firmware_version: string
+  id: string
+  created_at: string
+  updated_at: string
   mac_address: string
   serial_number: string
+  firmware_version: string
+  temperature_offset: number
+  humidity_offset: number
 }
 
 export type DeviceEventType = 'te' | 'hu' | 'il'
@@ -42,13 +42,15 @@ export interface DeviceWithEvents extends Device {
 
 export interface EventValue {
   val: number
-  created_at: Date
+  created_at: string
 }
 
 export interface Model {
   id: string
+  country: string
   manufacturer: string
   remote_name: string
+  series: string
   name: string
   image: string
 }
@@ -74,7 +76,7 @@ export interface UpdateAirconSettingsOptions {
 }
 
 export interface AirconSettingsWithTimestamp extends AirconSettings {
-  updated_at: Date
+  updated_at: string
 }
 
 export type AirconModeType = 'cool' | 'warm' | 'dry' | 'blow' | 'auto'
@@ -134,9 +136,9 @@ export interface Appliance {
   image: string
   type: string
   signals: Signal[]
+  model: Model | null
   aircon?: Aircon
   settings?: AirconSettingsWithTimestamp
-  model?: Model
   tv?: TV
   light?: Light
   smart_meter?: SmartMeter
@@ -150,7 +152,7 @@ export interface EchonetliteProperties {
   name: string
   epc: number
   val: string
-  updated_at: Date
+  updated_at: string
 }
 
 export interface Signal {
