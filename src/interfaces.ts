@@ -1,21 +1,21 @@
 /** User */
-export interface IUser {
+export interface User {
   id: string
   nickname: string
 }
 
-export interface IDetectedAirconModel {
-  model: IModel
-  params: IAirconSettings
+export interface DetectedAirconModel {
+  model: Model
+  params: AirconSettings
 }
 
-export interface ISensorValue {
+export interface SensorValue {
   temperature: number
   humidity: number | undefined
   illumination: number | undefined
 }
 
-export interface IDevice {
+export interface Device {
   id: string
   name: string
   temperature_offset: number
@@ -27,18 +27,18 @@ export interface IDevice {
   serial_number: string
 }
 
-export type IDeviceEventType = 'te' | 'hu' | 'il'
+export type DeviceEventType = 'te' | 'hu' | 'il'
 
-export interface IDeviceWithEvents extends IDevice {
-  newest_events: { [key in IDeviceEventType]: IEventValue }
+export interface DeviceWithEvents extends Device {
+  newest_events: { [key in DeviceEventType]: EventValue }
 }
 
-export interface IEventValue {
+export interface EventValue {
   val: number
   created_at: Date
 }
 
-export interface IModel {
+export interface Model {
   id: string
   manufacturer: string
   remote_name: string
@@ -48,16 +48,16 @@ export interface IModel {
 
 export type TemperatureUnit = 'c' | 'f'
 
-export interface IAirconSettings {
+export interface AirconSettings {
   temp: string
   temp_unit: TemperatureUnit
-  mode: IAirconModeType
+  mode: AirconModeType
   vol: string
   dir: string
   button: string
 }
 
-export interface IUpdateAirconSettingsOptions {
+export interface UpdateAirconSettingsOptions {
   temperature: string
   operation_mode: string
   air_volume: string
@@ -65,93 +65,93 @@ export interface IUpdateAirconSettingsOptions {
   button: string
 }
 
-export interface IUpdateAirconSettingsResponse extends IAirconSettings {
+export interface UpdateAirconSettingsResponse extends AirconSettings {
   updated_at: Date
 }
 
-export type IAirconModeType = 'cool' | 'warm' | 'dry' | 'blow' | 'auto'
+export type AirconModeType = 'cool' | 'warm' | 'dry' | 'blow' | 'auto'
 
-export interface IAirconModeValue {
+export interface AirconModeValue {
   temp: string[]
   dir: string[]
   vol: string[]
 }
 
-export interface IAirconRange {
-  modes: { [key in IAirconModeType]: IAirconModeValue }
+export interface AirconRange {
+  modes: { [key in AirconModeType]: AirconModeValue }
   fixedButtons: string[]
 }
 
-export interface IAircon {
-  range: IAirconRange
+export interface Aircon {
+  range: AirconRange
   tempUnit: 'c' | 'f'
 }
 
-export interface IButton {
+export interface Button {
   name: string
   image: string
   label: string
 }
 
-export interface ILightState {
+export interface LightState {
   brightness: string
   power: 'on' | 'off'
   last_button: string
 }
 
-export interface ILight {
-  state: ILightState
-  buttons: IButton[]
+export interface Light {
+  state: LightState
+  buttons: Button[]
 }
 
-export interface ITVState {
+export interface TVState {
   input: 't' | 'bs' | 'cs'
 }
 
-export interface ITV {
-  state: ITVState
-  buttons: IButton[]
+export interface TV {
+  state: TVState
+  buttons: Button[]
 }
 
-export interface ISignal {
+export interface Signal {
   id: string
   name: string
   image: string
 }
 
-export interface IAppliance {
+export interface Appliance {
   id: string
-  device: IDevice
+  device: Device
   nickname: string
   image: string
   type: string
-  signals: ISignal[]
-  aircon?: IAircon
-  settings?: IAirconSettings
-  model?: IModel
-  tv?: ITV
-  light?: ILight
-  smart_meter?: ISmartMeter
+  signals: Signal[]
+  aircon?: Aircon
+  settings?: AirconSettings
+  model?: Model
+  tv?: TV
+  light?: Light
+  smart_meter?: SmartMeter
 }
 
-export interface ISmartMeter {
-  echonetlite_properties: IEchonetliteProperties[]
+export interface SmartMeter {
+  echonetlite_properties: EchonetliteProperties[]
 }
 
-export interface IEchonetliteProperties {
+export interface EchonetliteProperties {
   name: string
   epc: number
   val: string
   updated_at: Date
 }
 
-export interface ISignal {
+export interface Signal {
   id: string
   name: string
   image: string
 }
 
-export interface ISignalMessage {
+export interface SignalMessage {
   freq: number
   data: number[]
   format: 'us'

@@ -30,7 +30,7 @@ test('#fetchReceivedSignal()', async () => {
 
 test('#sendSignal(signal)', async () => {
   const app = new Local(address)
-  const signal: NatureRemo.ISignalMessage = {
+  const signal: NatureRemo.SignalMessage = {
     freq: 0,
     data: [0],
     format: 'us',

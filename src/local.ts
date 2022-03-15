@@ -17,7 +17,7 @@ export class Local {
   /**
    * Fetch the newest received IR signal
    */
-  public async fetchReceivedSignal(): Promise<NatureRemo.ISignalMessage> {
+  public async fetchReceivedSignal(): Promise<NatureRemo.SignalMessage> {
     const response = await this.instance.get('/messages')
     return response.data
   }
@@ -25,7 +25,7 @@ export class Local {
   /**
    * Send a signal
    */
-  public async sendSignal(signal: NatureRemo.ISignalMessage) {
+  public async sendSignal(signal: NatureRemo.SignalMessage) {
     const response = await this.instance.post('/messages', signal)
     return response.data
   }
