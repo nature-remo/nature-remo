@@ -32,6 +32,11 @@ export interface Device {
 export type DeviceEventType = 'te' | 'hu' | 'il'
 
 export interface DeviceWithEvents extends Device {
+  /**
+   * te: Temperature
+   * hu: Humidity
+   * il: Illumination
+   */
   newest_events: { [key in DeviceEventType]: EventValue }
 }
 

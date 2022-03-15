@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html class="default no-js">
+<html class="default">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="IE=edge" />
-    <title>ILightState | nature-remo</title>
+    <title>SensorValue | nature-remo</title>
     <meta name="description" content="Documentation for nature-remo" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../assets/style.css" />
@@ -69,9 +69,9 @@
         <div class="container">
           <ul class="tsd-breadcrumb">
             <li><a href="../modules.html">nature-remo</a></li>
-            <li><a href="ILightState.html">ILightState</a></li>
+            <li><a href="SensorValue.html">SensorValue</a></li>
           </ul>
-          <h1>Interface ILightState</h1>
+          <h1>Interface SensorValue</h1>
         </div>
       </div>
     </header>
@@ -81,7 +81,7 @@
           <section class="tsd-panel tsd-hierarchy">
             <h3>Hierarchy</h3>
             <ul class="tsd-hierarchy">
-              <li><span class="target">ILightState</span></li>
+              <li><span class="target">SensorValue</span></li>
             </ul>
           </section>
           <section class="tsd-panel-group tsd-index-group">
@@ -92,22 +92,22 @@
                   <h3>Properties</h3>
                   <ul class="tsd-index-list">
                     <li class="tsd-kind-property tsd-parent-kind-interface">
-                      <a
-                        href="ILightState.html#brightness"
-                        class="tsd-kind-icon"
-                        >brightness</a
+                      <a href="SensorValue.html#humidity" class="tsd-kind-icon"
+                        >humidity</a
                       >
                     </li>
                     <li class="tsd-kind-property tsd-parent-kind-interface">
                       <a
-                        href="ILightState.html#last_button"
+                        href="SensorValue.html#illumination"
                         class="tsd-kind-icon"
-                        >last_<wbr />button</a
+                        >illumination</a
                       >
                     </li>
                     <li class="tsd-kind-property tsd-parent-kind-interface">
-                      <a href="ILightState.html#power" class="tsd-kind-icon"
-                        >power</a
+                      <a
+                        href="SensorValue.html#temperature"
+                        class="tsd-kind-icon"
+                        >temperature</a
                       >
                     </li>
                   </ul>
@@ -118,71 +118,136 @@
           <section class="tsd-panel-group tsd-member-group">
             <h2>Properties</h2>
             <section
-              class="
-                tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface
-              "
+              class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"
             >
-              <a id="brightness" class="tsd-anchor"></a>
-              <h3>brightness</h3>
+              <a id="humidity" class="tsd-anchor"></a>
+              <h3 class="tsd-anchor-link">
+                humidity<a
+                  href="#humidity"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-link"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                    ></path>
+                    <path
+                      d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                    ></path></svg
+                ></a>
+              </h3>
               <div class="tsd-signature tsd-kind-icon">
-                brightness<span class="tsd-signature-symbol">:</span>
-                <span class="tsd-signature-type">string</span>
-              </div>
-              <aside class="tsd-sources">
-                <ul>
-                  <li>
-                    Defined in
-                    <a
-                      href="https://github.com/uetchy/nature-remo/blob/01a6357/src/interfaces.ts#L93"
-                      >interfaces.ts:93</a
-                    >
-                  </li>
-                </ul>
-              </aside>
-            </section>
-            <section
-              class="
-                tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface
-              "
-            >
-              <a id="last_button" class="tsd-anchor"></a>
-              <h3>last_<wbr />button</h3>
-              <div class="tsd-signature tsd-kind-icon">
-                last_<wbr />button<span class="tsd-signature-symbol">:</span>
-                <span class="tsd-signature-type">string</span>
-              </div>
-              <aside class="tsd-sources">
-                <ul>
-                  <li>
-                    Defined in
-                    <a
-                      href="https://github.com/uetchy/nature-remo/blob/01a6357/src/interfaces.ts#L95"
-                      >interfaces.ts:95</a
-                    >
-                  </li>
-                </ul>
-              </aside>
-            </section>
-            <section
-              class="
-                tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface
-              "
-            >
-              <a id="power" class="tsd-anchor"></a>
-              <h3>power</h3>
-              <div class="tsd-signature tsd-kind-icon">
-                power<span class="tsd-signature-symbol">:</span>
-                <span class="tsd-signature-type">&quot;on&quot;</span
+                humidity<span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">undefined</span
                 ><span class="tsd-signature-symbol"> | </span
-                ><span class="tsd-signature-type">&quot;off&quot;</span>
+                ><span class="tsd-signature-type">number</span>
               </div>
               <aside class="tsd-sources">
                 <ul>
                   <li>
                     Defined in
                     <a
-                      href="https://github.com/uetchy/nature-remo/blob/01a6357/src/interfaces.ts#L94"
-                      >interfaces.ts:94</a
+                      href="https://github.com/uetchy/nature-remo/blob/b20ee0a/src/interfaces.ts#L16"
+                      >interfaces.ts:16</a
+                    >
+                  </li>
+                </ul>
+              </aside>
+            </section>
+            <section
+              class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"
+            >
+              <a id="illumination" class="tsd-anchor"></a>
+              <h3 class="tsd-anchor-link">
+                illumination<a
+                  href="#illumination"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-link"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                    ></path>
+                    <path
+                      d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                    ></path></svg
+                ></a>
+              </h3>
+              <div class="tsd-signature tsd-kind-icon">
+                illumination<span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">undefined</span
+                ><span class="tsd-signature-symbol"> | </span
+                ><span class="tsd-signature-type">number</span>
+              </div>
+              <aside class="tsd-sources">
+                <ul>
+                  <li>
+                    Defined in
+                    <a
+                      href="https://github.com/uetchy/nature-remo/blob/b20ee0a/src/interfaces.ts#L17"
+                      >interfaces.ts:17</a
+                    >
+                  </li>
+                </ul>
+              </aside>
+            </section>
+            <section
+              class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"
+            >
+              <a id="temperature" class="tsd-anchor"></a>
+              <h3 class="tsd-anchor-link">
+                temperature<a
+                  href="#temperature"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-link"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                    ></path>
+                    <path
+                      d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                    ></path></svg
+                ></a>
+              </h3>
+              <div class="tsd-signature tsd-kind-icon">
+                temperature<span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">number</span>
+              </div>
+              <aside class="tsd-sources">
+                <ul>
+                  <li>
+                    Defined in
+                    <a
+                      href="https://github.com/uetchy/nature-remo/blob/b20ee0a/src/interfaces.ts#L15"
+                      >interfaces.ts:15</a
                     >
                   </li>
                 </ul>
@@ -199,23 +264,25 @@
           <nav class="tsd-navigation secondary menu-sticky">
             <ul>
               <li class="current tsd-kind-interface">
-                <a href="ILightState.html" class="tsd-kind-icon"
-                  >ILight<wbr />State</a
+                <a href="SensorValue.html" class="tsd-kind-icon"
+                  >Sensor<wbr />Value</a
                 >
                 <ul>
                   <li class="tsd-kind-property tsd-parent-kind-interface">
-                    <a href="ILightState.html#brightness" class="tsd-kind-icon"
-                      >brightness</a
+                    <a href="SensorValue.html#humidity" class="tsd-kind-icon"
+                      >humidity</a
                     >
                   </li>
                   <li class="tsd-kind-property tsd-parent-kind-interface">
-                    <a href="ILightState.html#last_button" class="tsd-kind-icon"
-                      >last_<wbr />button</a
+                    <a
+                      href="SensorValue.html#illumination"
+                      class="tsd-kind-icon"
+                      >illumination</a
                     >
                   </li>
                   <li class="tsd-kind-property tsd-parent-kind-interface">
-                    <a href="ILightState.html#power" class="tsd-kind-icon"
-                      >power</a
+                    <a href="SensorValue.html#temperature" class="tsd-kind-icon"
+                      >temperature</a
                     >
                   </li>
                 </ul>

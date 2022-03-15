@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html class="default no-js">
+<html class="default">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="IE=edge" />
-    <title>ILight | nature-remo</title>
+    <title>AirconModeValue | nature-remo</title>
     <meta name="description" content="Documentation for nature-remo" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../assets/style.css" />
@@ -69,9 +69,9 @@
         <div class="container">
           <ul class="tsd-breadcrumb">
             <li><a href="../modules.html">nature-remo</a></li>
-            <li><a href="ILight.html">ILight</a></li>
+            <li><a href="AirconModeValue.html">AirconModeValue</a></li>
           </ul>
-          <h1>Interface ILight</h1>
+          <h1>Interface AirconModeValue</h1>
         </div>
       </div>
     </header>
@@ -81,7 +81,7 @@
           <section class="tsd-panel tsd-hierarchy">
             <h3>Hierarchy</h3>
             <ul class="tsd-hierarchy">
-              <li><span class="target">ILight</span></li>
+              <li><span class="target">AirconModeValue</span></li>
             </ul>
           </section>
           <section class="tsd-panel-group tsd-index-group">
@@ -92,13 +92,18 @@
                   <h3>Properties</h3>
                   <ul class="tsd-index-list">
                     <li class="tsd-kind-property tsd-parent-kind-interface">
-                      <a href="ILight.html#buttons" class="tsd-kind-icon"
-                        >buttons</a
+                      <a href="AirconModeValue.html#dir" class="tsd-kind-icon"
+                        >dir</a
                       >
                     </li>
                     <li class="tsd-kind-property tsd-parent-kind-interface">
-                      <a href="ILight.html#state" class="tsd-kind-icon"
-                        >state</a
+                      <a href="AirconModeValue.html#temp" class="tsd-kind-icon"
+                        >temp</a
+                      >
+                    </li>
+                    <li class="tsd-kind-property tsd-parent-kind-interface">
+                      <a href="AirconModeValue.html#vol" class="tsd-kind-icon"
+                        >vol</a
                       >
                     </li>
                   </ul>
@@ -109,19 +114,33 @@
           <section class="tsd-panel-group tsd-member-group">
             <h2>Properties</h2>
             <section
-              class="
-                tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface
-              "
+              class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"
             >
-              <a id="buttons" class="tsd-anchor"></a>
-              <h3>buttons</h3>
+              <a id="dir" class="tsd-anchor"></a>
+              <h3 class="tsd-anchor-link">
+                dir<a href="#dir" aria-label="Permalink" class="tsd-anchor-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-link"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                    ></path>
+                    <path
+                      d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                    ></path></svg
+                ></a>
+              </h3>
               <div class="tsd-signature tsd-kind-icon">
-                buttons<span class="tsd-signature-symbol">:</span>
-                <a
-                  href="IButton.html"
-                  class="tsd-signature-type"
-                  data-tsd-kind="Interface"
-                  >IButton</a
+                dir<span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">string</span
                 ><span class="tsd-signature-symbol">[]</span>
               </div>
               <aside class="tsd-sources">
@@ -129,36 +148,95 @@
                   <li>
                     Defined in
                     <a
-                      href="https://github.com/uetchy/nature-remo/blob/01a6357/src/interfaces.ts#L100"
-                      >interfaces.ts:100</a
+                      href="https://github.com/uetchy/nature-remo/blob/b20ee0a/src/interfaces.ts#L84"
+                      >interfaces.ts:84</a
                     >
                   </li>
                 </ul>
               </aside>
             </section>
             <section
-              class="
-                tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface
-              "
+              class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"
             >
-              <a id="state" class="tsd-anchor"></a>
-              <h3>state</h3>
+              <a id="temp" class="tsd-anchor"></a>
+              <h3 class="tsd-anchor-link">
+                temp<a
+                  href="#temp"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-link"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                    ></path>
+                    <path
+                      d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                    ></path></svg
+                ></a>
+              </h3>
               <div class="tsd-signature tsd-kind-icon">
-                state<span class="tsd-signature-symbol">:</span>
-                <a
-                  href="ILightState.html"
-                  class="tsd-signature-type"
-                  data-tsd-kind="Interface"
-                  >ILightState</a
-                >
+                temp<span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">string</span
+                ><span class="tsd-signature-symbol">[]</span>
               </div>
               <aside class="tsd-sources">
                 <ul>
                   <li>
                     Defined in
                     <a
-                      href="https://github.com/uetchy/nature-remo/blob/01a6357/src/interfaces.ts#L99"
-                      >interfaces.ts:99</a
+                      href="https://github.com/uetchy/nature-remo/blob/b20ee0a/src/interfaces.ts#L83"
+                      >interfaces.ts:83</a
+                    >
+                  </li>
+                </ul>
+              </aside>
+            </section>
+            <section
+              class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"
+            >
+              <a id="vol" class="tsd-anchor"></a>
+              <h3 class="tsd-anchor-link">
+                vol<a href="#vol" aria-label="Permalink" class="tsd-anchor-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-link"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                    ></path>
+                    <path
+                      d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                    ></path></svg
+                ></a>
+              </h3>
+              <div class="tsd-signature tsd-kind-icon">
+                vol<span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">string</span
+                ><span class="tsd-signature-symbol">[]</span>
+              </div>
+              <aside class="tsd-sources">
+                <ul>
+                  <li>
+                    Defined in
+                    <a
+                      href="https://github.com/uetchy/nature-remo/blob/b20ee0a/src/interfaces.ts#L85"
+                      >interfaces.ts:85</a
                     >
                   </li>
                 </ul>
@@ -175,15 +253,24 @@
           <nav class="tsd-navigation secondary menu-sticky">
             <ul>
               <li class="current tsd-kind-interface">
-                <a href="ILight.html" class="tsd-kind-icon">ILight</a>
+                <a href="AirconModeValue.html" class="tsd-kind-icon"
+                  >Aircon<wbr />Mode<wbr />Value</a
+                >
                 <ul>
                   <li class="tsd-kind-property tsd-parent-kind-interface">
-                    <a href="ILight.html#buttons" class="tsd-kind-icon"
-                      >buttons</a
+                    <a href="AirconModeValue.html#dir" class="tsd-kind-icon"
+                      >dir</a
                     >
                   </li>
                   <li class="tsd-kind-property tsd-parent-kind-interface">
-                    <a href="ILight.html#state" class="tsd-kind-icon">state</a>
+                    <a href="AirconModeValue.html#temp" class="tsd-kind-icon"
+                      >temp</a
+                    >
+                  </li>
+                  <li class="tsd-kind-property tsd-parent-kind-interface">
+                    <a href="AirconModeValue.html#vol" class="tsd-kind-icon"
+                      >vol</a
+                    >
                   </li>
                 </ul>
               </li>

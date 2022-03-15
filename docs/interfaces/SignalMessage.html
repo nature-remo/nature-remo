@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html class="default no-js">
+<html class="default">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="IE=edge" />
-    <title>ISignal | nature-remo</title>
+    <title>SignalMessage | nature-remo</title>
     <meta name="description" content="Documentation for nature-remo" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="../assets/style.css" />
@@ -69,9 +69,9 @@
         <div class="container">
           <ul class="tsd-breadcrumb">
             <li><a href="../modules.html">nature-remo</a></li>
-            <li><a href="ISignal.html">ISignal</a></li>
+            <li><a href="SignalMessage.html">SignalMessage</a></li>
           </ul>
-          <h1>Interface ISignal</h1>
+          <h1>Interface SignalMessage</h1>
         </div>
       </div>
     </header>
@@ -81,7 +81,7 @@
           <section class="tsd-panel tsd-hierarchy">
             <h3>Hierarchy</h3>
             <ul class="tsd-hierarchy">
-              <li><span class="target">ISignal</span></li>
+              <li><span class="target">SignalMessage</span></li>
             </ul>
           </section>
           <section class="tsd-panel-group tsd-index-group">
@@ -92,15 +92,19 @@
                   <h3>Properties</h3>
                   <ul class="tsd-index-list">
                     <li class="tsd-kind-property tsd-parent-kind-interface">
-                      <a href="ISignal.html#id" class="tsd-kind-icon">id</a>
-                    </li>
-                    <li class="tsd-kind-property tsd-parent-kind-interface">
-                      <a href="ISignal.html#image" class="tsd-kind-icon"
-                        >image</a
+                      <a href="SignalMessage.html#data" class="tsd-kind-icon"
+                        >data</a
                       >
                     </li>
                     <li class="tsd-kind-property tsd-parent-kind-interface">
-                      <a href="ISignal.html#name" class="tsd-kind-icon">name</a>
+                      <a href="SignalMessage.html#format" class="tsd-kind-icon"
+                        >format</a
+                      >
+                    </li>
+                    <li class="tsd-kind-property tsd-parent-kind-interface">
+                      <a href="SignalMessage.html#freq" class="tsd-kind-icon"
+                        >freq</a
+                      >
                     </li>
                   </ul>
                 </section>
@@ -110,69 +114,133 @@
           <section class="tsd-panel-group tsd-member-group">
             <h2>Properties</h2>
             <section
-              class="
-                tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface
-              "
+              class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"
             >
-              <a id="id" class="tsd-anchor"></a>
-              <h3>id</h3>
+              <a id="data" class="tsd-anchor"></a>
+              <h3 class="tsd-anchor-link">
+                data<a
+                  href="#data"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-link"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                    ></path>
+                    <path
+                      d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                    ></path></svg
+                ></a>
+              </h3>
               <div class="tsd-signature tsd-kind-icon">
-                id<span class="tsd-signature-symbol">:</span>
-                <span class="tsd-signature-type">string</span>
+                data<span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">number</span
+                ><span class="tsd-signature-symbol">[]</span>
               </div>
               <aside class="tsd-sources">
                 <ul>
                   <li>
                     Defined in
                     <a
-                      href="https://github.com/uetchy/nature-remo/blob/01a6357/src/interfaces.ts#L113"
-                      >interfaces.ts:113</a
+                      href="https://github.com/uetchy/nature-remo/blob/b20ee0a/src/interfaces.ts#L164"
+                      >interfaces.ts:164</a
                     >
                   </li>
                 </ul>
               </aside>
             </section>
             <section
-              class="
-                tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface
-              "
+              class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"
             >
-              <a id="image" class="tsd-anchor"></a>
-              <h3>image</h3>
+              <a id="format" class="tsd-anchor"></a>
+              <h3 class="tsd-anchor-link">
+                format<a
+                  href="#format"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-link"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                    ></path>
+                    <path
+                      d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                    ></path></svg
+                ></a>
+              </h3>
               <div class="tsd-signature tsd-kind-icon">
-                image<span class="tsd-signature-symbol">:</span>
-                <span class="tsd-signature-type">string</span>
+                format<span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">&quot;us&quot;</span>
               </div>
               <aside class="tsd-sources">
                 <ul>
                   <li>
                     Defined in
                     <a
-                      href="https://github.com/uetchy/nature-remo/blob/01a6357/src/interfaces.ts#L115"
-                      >interfaces.ts:115</a
+                      href="https://github.com/uetchy/nature-remo/blob/b20ee0a/src/interfaces.ts#L165"
+                      >interfaces.ts:165</a
                     >
                   </li>
                 </ul>
               </aside>
             </section>
             <section
-              class="
-                tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface
-              "
+              class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface"
             >
-              <a id="name" class="tsd-anchor"></a>
-              <h3>name</h3>
+              <a id="freq" class="tsd-anchor"></a>
+              <h3 class="tsd-anchor-link">
+                freq<a
+                  href="#freq"
+                  aria-label="Permalink"
+                  class="tsd-anchor-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-link"
+                    viewBox="0 0 24 24"
+                    stroke-width="2"
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                      d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5"
+                    ></path>
+                    <path
+                      d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5"
+                    ></path></svg
+                ></a>
+              </h3>
               <div class="tsd-signature tsd-kind-icon">
-                name<span class="tsd-signature-symbol">:</span>
-                <span class="tsd-signature-type">string</span>
+                freq<span class="tsd-signature-symbol">:</span>
+                <span class="tsd-signature-type">number</span>
               </div>
               <aside class="tsd-sources">
                 <ul>
                   <li>
                     Defined in
                     <a
-                      href="https://github.com/uetchy/nature-remo/blob/01a6357/src/interfaces.ts#L114"
-                      >interfaces.ts:114</a
+                      href="https://github.com/uetchy/nature-remo/blob/b20ee0a/src/interfaces.ts#L163"
+                      >interfaces.ts:163</a
                     >
                   </li>
                 </ul>
@@ -189,16 +257,24 @@
           <nav class="tsd-navigation secondary menu-sticky">
             <ul>
               <li class="current tsd-kind-interface">
-                <a href="ISignal.html" class="tsd-kind-icon">ISignal</a>
+                <a href="SignalMessage.html" class="tsd-kind-icon"
+                  >Signal<wbr />Message</a
+                >
                 <ul>
                   <li class="tsd-kind-property tsd-parent-kind-interface">
-                    <a href="ISignal.html#id" class="tsd-kind-icon">id</a>
+                    <a href="SignalMessage.html#data" class="tsd-kind-icon"
+                      >data</a
+                    >
                   </li>
                   <li class="tsd-kind-property tsd-parent-kind-interface">
-                    <a href="ISignal.html#image" class="tsd-kind-icon">image</a>
+                    <a href="SignalMessage.html#format" class="tsd-kind-icon"
+                      >format</a
+                    >
                   </li>
                   <li class="tsd-kind-property tsd-parent-kind-interface">
-                    <a href="ISignal.html#name" class="tsd-kind-icon">name</a>
+                    <a href="SignalMessage.html#freq" class="tsd-kind-icon"
+                      >freq</a
+                    >
                   </li>
                 </ul>
               </li>
