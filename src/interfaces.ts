@@ -65,7 +65,7 @@ export interface UpdateAirconSettingsOptions {
   button: string
 }
 
-export interface UpdateAirconSettingsResponse extends AirconSettings {
+export interface AirconSettingsWithTimestamp extends AirconSettings {
   updated_at: Date
 }
 
@@ -127,7 +127,7 @@ export interface Appliance {
   type: string
   signals: Signal[]
   aircon?: Aircon
-  settings?: AirconSettings
+  settings?: AirconSettingsWithTimestamp
   model?: Model
   tv?: TV
   light?: Light
