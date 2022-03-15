@@ -54,6 +54,7 @@ export interface AirconSettings {
   mode: AirconModeType
   vol: string
   dir: string
+  dirh: string
   button: string
 }
 
