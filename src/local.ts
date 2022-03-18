@@ -9,7 +9,7 @@ export class Local {
       baseURL: address,
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded; charset=utf-8',
-        'accept': 'application/json',
+        'Accept': 'application/json',
         'X-Requested-With': 'XMLHttpRequest',
       },
       timeout: 5000,
