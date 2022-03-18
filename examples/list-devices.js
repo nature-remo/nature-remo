@@ -7,11 +7,13 @@ async function listDevices() {
   // Get a list of the devices
   const devices = await client.getDevices()
   for (const device of devices) {
-    const { id, nickname, type } = device
+    const { id, mac_address, serial_number, name, firmware_version } = device
     console.log({
       id,
-      nickname,
-      type,
+      mac_address,
+      serial_number,
+      name,
+      firmware_version,
     })
   }
 }
