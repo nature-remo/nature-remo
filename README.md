@@ -46,7 +46,7 @@ async function turnOnAirConditioner() {
 You might want to grab an API token from https://home.nature.global.
 
 - **RunKit Notebook**: Check out [RunKit Notebook](https://runkit.com/uetchy/nature-remo-cloud-api-nodejs-example) for runnable code snippets.
-- **Code Example**: See [examples](https://github.com/uetchy/nature-remo/tree/master/examples) for various code examples.
+- **Code Example**: See [examples](https://github.com/nature-remo/nature-remo/tree/master/examples) for various code examples.
 - **Documents**: See [API Documents](https://uetchy.github.io/nature-remo/) for detailed API documents.
 
 ## API
@@ -74,7 +74,7 @@ const client = new NatureRemo.Local(NATURE_REMO_LOCAL_ADDRESS)
 ## Development
 
 ```bash
-git clone https://github.com/uetchy/nature-remo # clone this repository
+git clone https://github.com/nature-remo/nature-remo # clone this repository
 cd nature-remo # move to the repository folder
 yarn install # install deps
 NATURE_REMO_CLOUD_TOKEN=<nature-remo-cloud-api-token> yarn test # run test before creating a pull request
@@ -82,7 +82,7 @@ NATURE_REMO_CLOUD_TOKEN=<nature-remo-cloud-api-token> yarn test # run test befor
 
 ## Sibling projects
 
-- 🌇 [Nature Remo for Rust](https://github.com/uetchy/nature-remo-rs)
+- 🌇 [Nature Remo for Rust](https://github.com/nature-remo/nature-remo-rs)
 
 ## Contributors ✨
 
@@ -93,12 +93,12 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://uechi.io"><img src="https://avatars0.githubusercontent.com/u/431808?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Yasuaki Uechi</b></sub></a><br /><a href="https://github.com/uetchy/nature-remo/commits?author=uetchy" title="Code">💻</a> <a href="https://github.com/uetchy/nature-remo/commits?author=uetchy" title="Documentation">📖</a></td>
-    <td align="center"><a href="http://kksg.net"><img src="https://avatars0.githubusercontent.com/u/781452?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kosuge Kazuya</b></sub></a><br /><a href="https://github.com/uetchy/nature-remo/commits?author=kkosuge" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/satoshicano"><img src="https://avatars0.githubusercontent.com/u/7578069?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Satoshi Nakamatsu</b></sub></a><br /><a href="https://github.com/uetchy/nature-remo/commits?author=satoshicano" title="Code">💻</a></td>
-    <td align="center"><a href="http://kyo5884.com"><img src="https://avatars1.githubusercontent.com/u/286439?v=4?s=100" width="100px;" alt=""/><br /><sub><b>kyo5884</b></sub></a><br /><a href="https://github.com/uetchy/nature-remo/commits?author=kyo5884" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/asari-mtr"><img src="https://avatars.githubusercontent.com/u/857715?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mitsuteru Asari</b></sub></a><br /><a href="https://github.com/uetchy/nature-remo/commits?author=asari-mtr" title="Code">💻</a></td>
-    <td align="center"><a href="https://github.com/Ekristoffe"><img src="https://avatars.githubusercontent.com/u/5562219?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Chris</b></sub></a><br /><a href="https://github.com/uetchy/nature-remo/commits?author=Ekristoffe" title="Code">💻</a></td>
+    <td align="center"><a href="https://uechi.io"><img src="https://avatars0.githubusercontent.com/u/431808?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Yasuaki Uechi</b></sub></a><br /><a href="https://github.com/nature-remo/nature-remo/commits?author=uetchy" title="Code">💻</a> <a href="https://github.com/nature-remo/nature-remo/commits?author=uetchy" title="Documentation">📖</a></td>
+    <td align="center"><a href="http://kksg.net"><img src="https://avatars0.githubusercontent.com/u/781452?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kosuge Kazuya</b></sub></a><br /><a href="https://github.com/nature-remo/nature-remo/commits?author=kkosuge" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/satoshicano"><img src="https://avatars0.githubusercontent.com/u/7578069?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Satoshi Nakamatsu</b></sub></a><br /><a href="https://github.com/nature-remo/nature-remo/commits?author=satoshicano" title="Code">💻</a></td>
+    <td align="center"><a href="http://kyo5884.com"><img src="https://avatars1.githubusercontent.com/u/286439?v=4?s=100" width="100px;" alt=""/><br /><sub><b>kyo5884</b></sub></a><br /><a href="https://github.com/nature-remo/nature-remo/commits?author=kyo5884" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/asari-mtr"><img src="https://avatars.githubusercontent.com/u/857715?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mitsuteru Asari</b></sub></a><br /><a href="https://github.com/nature-remo/nature-remo/commits?author=asari-mtr" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/Ekristoffe"><img src="https://avatars.githubusercontent.com/u/5562219?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Chris</b></sub></a><br /><a href="https://github.com/nature-remo/nature-remo/commits?author=Ekristoffe" title="Code">💻</a></td>
   </tr>
 </table>
 
